@@ -1,6 +1,6 @@
 # ActiveRAG
 
-Source code for our paper :
+Source code for our paper :  
 ***ActiveRAG: Revealing the Treasures of Knowledge via Active Learning***
 
 If you find this work useful, please cite our paper  and give us a shining star 🌟
@@ -25,7 +25,7 @@ python -m logs.eval --dataset nq --topk 5
 **Parameters:**
 
 - `dataset`: dataset name.
-- `topk`: using top-k of retrieved results to augment.
+- `topk`: using top-k of retrieved passages to augment.
 
 ##  Re-request
 
