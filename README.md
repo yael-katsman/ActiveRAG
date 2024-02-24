@@ -5,6 +5,15 @@ Source code for our paper :
 
 If you find this work useful, please cite our paper  and give us a shining star 🌟
 
+```
+@article{xu2024activerag,
+  title={ActiveRAG: Revealing the Treasures of Knowledge via Active Learning},
+  author={Xu, Zhipeng and Liu, Zhenghao and Liu, Yibin and Xiong, Chenyan and Yan, Yukun and Wang, Shuo and Yu, Shi and Liu, Zhiyuan and Yu, Ge},
+  journal={arXiv preprint arXiv:2402.13547},
+  year={2024}
+}
+```
+
 ## Quick Start
 
 ### Install from git
