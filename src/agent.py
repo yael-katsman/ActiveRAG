@@ -36,7 +36,7 @@ class Agent:
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
             ans = model.generate_content(
-                model=self.model,
+              
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
