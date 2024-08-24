@@ -16,7 +16,7 @@ def acc(output):
     correctness = 'True' if any(answer.lower() in output.lower() for answer in answer_key) else 'False'
     return correctness
 
-csv_file_path = f'log/{dataset}/top{topk}/result.csv'
+csv_file_path = f'log/{dataset}/top{topk}/original_gemini.csv'
 csv_columns = ['id', 'anchoring_output', 'anchoring_correctness', 'associate_output', 'associate_correctness',
                'logician_output', 'logician_correctness', 'cognition_output', 'cognition_correctness', 'true_answer']
 
