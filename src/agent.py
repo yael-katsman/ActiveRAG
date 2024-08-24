@@ -45,9 +45,6 @@ class Agent:
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
-            print(f"Model type: {type(self.model)}")
-            print(f"Message content: {self.message[-1]['content']}")
-
             ans = self.model.generate_content(
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
