@@ -57,7 +57,7 @@ class Agent:
             ans = self.model.generate_content(
                self.message[-1]['content'],
                temperature = 0.2
-            }
+            
                 
             )
             self.parse_message(ans)
