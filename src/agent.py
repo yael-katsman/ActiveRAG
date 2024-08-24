@@ -47,8 +47,8 @@ class Agent:
         try:
             ans = self.model.generate_content(
                 request={
-                prompt=self.message[-1]['content'],
-                temperature=0.2
+                "prompt": self.message[-1]['content'],
+                "temperature": 0.2
             }
                 
             )
@@ -59,8 +59,8 @@ class Agent:
             time.sleep(20)
             ans = self.model.generate_content(
                 request={
-                prompt=self.message[-1]['content'],
-                temperature=0.2
+                "prompt": self.message[-1]['content'],
+                "temperature": 0.2
             }
                 
             )
