@@ -4,10 +4,15 @@ import asyncio
 import types
 from typing import Union
 import google.generativeai as genai
+from dotenv import load_dotenv
 import os
 
-# Configure Gemini API
-gemeni_api_key = ''
+# Load variables from .env file
+load_dotenv()
+
+# Access variables
+gemeni_api_key = os.getenv('gemeni_api_key')
+
 genai.configure(api_key=gemeni_api_key)
 MODEL = genai.GenerativeModel('gemini-pro')
 DEFAULT_PROMPT = ""
