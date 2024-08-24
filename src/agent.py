@@ -37,7 +37,7 @@ class Agent:
         try:
             ans = model.generate_content(
               
-                prompt=self.message[-1]['content'],
+                #prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
             )
@@ -47,8 +47,8 @@ class Agent:
             print(e)
             time.sleep(20)
             ans = model.generate_content(
-                model=self.model,
-                prompt=self.message[-1]['content'],
+                #model=self.model,
+                #prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
             )
