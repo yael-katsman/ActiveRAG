@@ -81,12 +81,6 @@ def create_plan(group:AgentGroup, init_input:dict)->Plan:
             pre_func_name='padding_template',
             input=new_init_input,
             post_func_name='default'
-        ),
-        SubPlan(
-            agent=plan.agents.agent_dic['crit'],
-            pre_func_name='padding_template',
-            input=new_init_input,
-            post_func_name='default'
         )
     ])
 
