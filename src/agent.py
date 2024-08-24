@@ -35,6 +35,9 @@ class Agent:
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
+            print(f"Model type: {type(self.model)}")
+            print(f"Message content: {self.message[-1]['content']}")
+
             ans = self.model.generate_content(
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
@@ -56,8 +59,8 @@ class Agent:
     
     async def send_message_async(self):
         try:
-            ans = await genai.generate_async(
-                model=self.model,
+            ans = await self.model.generate_async(
+                #model=self.model,
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
@@ -67,8 +70,8 @@ class Agent:
         except Exception as e:
             print(e)
             await asyncio.sleep(20)
-            ans = await genai.generate_async(
-                model=self.model,
+            ans = await self.model.generate_async(
+                #model=self.model,
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
