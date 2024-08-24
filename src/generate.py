@@ -7,6 +7,18 @@ from .plan import *
 import json
 from datetime import datetime
 import traceback
+import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+# Load variables from .env file
+load_dotenv()
+
+# Access variables
+gemeni_api_key = os.getenv('gemeni_api_key')
+
+genai.configure(api_key=gemeni_api_key)
+model = genai.GenerativeModel('gemini-pro')
 
 
 def create_agent_group(prompt:Prompt): 
@@ -22,7 +34,7 @@ def create_agent_group(prompt:Prompt):
     }
 
     for key, val in prompt.template.items():
-        group.add_agent(Agent(template=val,model='gpt-3.5-turbo-1106',key_map=key_map),key)
+        group.add_agent(Agent(template=val,model=model,key_map=key_map),key)
     return group
 
 def create_plan(group:AgentGroup, init_input:dict)->Plan:
