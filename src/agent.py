@@ -18,7 +18,7 @@ model = genai.GenerativeModel('gemini-pro')
 DEFAULT_PROMPT = ""
 
 class Agent:
-    def __init__(self, template, model=MODEL, key_map: Union[dict, None] = None) -> None:
+    def __init__(self, template, model=model, key_map: Union[dict, None] = None) -> None:
         self.message = []
         if isinstance(template, str):
             self.TEMPLATE = template
