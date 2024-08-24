@@ -46,11 +46,8 @@ class Agent:
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
             ans = self.model.generate_content(
-                request={
-                "prompt": self.message[-1]['content'],
-                "temperature": 0.2
-            }
-                
+                self.message[-1]['content'],
+                temperature= 0.2
             )
             self.parse_message(ans)
             return ans
@@ -58,9 +55,8 @@ class Agent:
             print(e)
             time.sleep(20)
             ans = self.model.generate_content(
-                request={
-                "prompt": self.message[-1]['content'],
-                "temperature": 0.2
+               self.message[-1]['content'],
+               temperature = 0.2
             }
                 
             )
@@ -71,8 +67,7 @@ class Agent:
     async def send_message_async(self):
         try:
             ans = await self.model.generate_async(
-                model=self.model,
-                prompt=self.message[-1]['content'],
+                self.message[-1]['content'],
                 temperature=0.2
               
             )
@@ -82,8 +77,7 @@ class Agent:
             print(e)
             await asyncio.sleep(20)
             ans = await self.model.generate_async(
-                model=self.model,
-                prompt=self.message[-1]['content'],
+                self.message[-1]['content'],
                 temperature=0.2
                 
             )
