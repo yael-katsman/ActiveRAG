@@ -12,7 +12,7 @@ import openai
 load_dotenv()
 
 # Get the OpenAI API key from the environment variable
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('API_KEY')
 
 MODEL = 'gpt-4o-mini-2024-07-18'
 DEFAULT_PROMPT = ""
