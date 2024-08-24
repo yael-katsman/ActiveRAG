@@ -18,7 +18,7 @@ model = genai.GenerativeModel('gemini-pro')
 DEFAULT_PROMPT = ""
 
 class Agent:
-    def __init__(self, template, model=model, key_map: Union[dict, None] = None) -> None:
+    def __init__(self, template, model=None, key_map: Union[dict, None] = None) -> None:
         self.message = []
         if isinstance(template, str):
             self.TEMPLATE = template
@@ -26,11 +26,21 @@ class Agent:
             self.TEMPLATE = template[0]
             self.template_list = template
         self.key_map = key_map
-        self.model = model
+        
+        if model is None:
+            self.model = genai.GenerativeModel('gemini-pro')
+        else:
+            self.model = model
+        
+        # Verify the model is correctly assigned
+        if isinstance(self.model, str):
+            raise ValueError("The model should be an instance of GenerativeModel, not a string.")
+        
         self.func_dic = {
             'default': self.get_output,
             'padding_template': self.padding_template
         }
+
 
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
