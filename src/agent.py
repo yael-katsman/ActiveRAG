@@ -35,7 +35,7 @@ class Agent:
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
-            ans = genai.generate(
+            ans = genai.generate_content(
                 model=self.model,
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
@@ -46,7 +46,7 @@ class Agent:
         except Exception as e:
             print(e)
             time.sleep(20)
-            ans = genai.generate(
+            ans = genai.generate_content(
                 model=self.model,
                 prompt=self.message[-1]['content'],
                 temperature=0.2,
