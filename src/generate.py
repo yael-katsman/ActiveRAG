@@ -18,7 +18,7 @@ def create_agent_group(prompt:Prompt):
         'anchoring':  'unknown_knowledge_reply',
         'associate':  'recite_knowledge_reply',
         'logician':     'logic_knowledge_reply',
-        'cognition': 'fact_knowledge_reply',
+        'cognition': 'fact_knowledge_reply'
     }
 
     for key, val in prompt.template.items():
@@ -78,6 +78,12 @@ def create_plan(group:AgentGroup, init_input:dict)->Plan:
         ),
         SubPlan(
             agent=plan.agents.agent_dic['cognition'],
+            pre_func_name='padding_template',
+            input=new_init_input,
+            post_func_name='default'
+        ),
+        SubPlan(
+            agent=plan.agents.agent_dic['crit'],
             pre_func_name='padding_template',
             input=new_init_input,
             post_func_name='default'
