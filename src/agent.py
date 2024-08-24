@@ -35,9 +35,8 @@ class Agent:
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
-            ans = model.generate_content(
-              
-                #prompt=self.message[-1]['content'],
+            ans = self.model.generate_content(
+                prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
             )
@@ -46,15 +45,15 @@ class Agent:
         except Exception as e:
             print(e)
             time.sleep(20)
-            ans = model.generate_content(
-                #model=self.model,
-                #prompt=self.message[-1]['content'],
+            ans = self.model.generate_content(
+                prompt=self.message[-1]['content'],
                 temperature=0.2,
                 max_tokens=150  # Adjust max_tokens as needed
             )
             self.parse_message(ans)
             return ans
 
+    
     async def send_message_async(self):
         try:
             ans = await genai.generate_async(
@@ -76,6 +75,7 @@ class Agent:
             )
             self.parse_message(ans)
             return ans
+
 
     def padding_template(self, input):
         input = self.key_mapping(input)
