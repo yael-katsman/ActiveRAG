@@ -7,18 +7,6 @@ from .plan import *
 import json
 from datetime import datetime
 import traceback
-import google.generativeai as genai
-from dotenv import load_dotenv
-import os
-
-# Load variables from .env file
-load_dotenv()
-
-# Access variables
-gemeni_api_key = os.getenv('gemeni_api_key')
-
-genai.configure(api_key=gemeni_api_key)
-model = genai.GenerativeModel('gemini-pro')
 
 
 def create_agent_group(prompt:Prompt): 
@@ -30,11 +18,11 @@ def create_agent_group(prompt:Prompt):
         'anchoring':  'unknown_knowledge_reply',
         'associate':  'recite_knowledge_reply',
         'logician':     'logic_knowledge_reply',
-        'cognition': 'fact_knowledge_reply'
+        'cognition': 'fact_knowledge_reply',
     }
 
     for key, val in prompt.template.items():
-        group.add_agent(Agent(template=val,model=model,key_map=key_map),key)
+        group.add_agent(Agent(template=val,model='gpt-4o-mini-2024-07-18',key_map=key_map),key)
     return group
 
 def create_plan(group:AgentGroup, init_input:dict)->Plan:
@@ -128,4 +116,3 @@ def create_plan(group:AgentGroup, init_input:dict)->Plan:
     ])
 
     return plan
-

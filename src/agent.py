@@ -1,102 +1,98 @@
 import time
+import openai
 import re
 import asyncio
 import types
 from typing import Union
-import google.generativeai as genai
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+import openai
 
-# Load variables from .env file
+# Load environment variables from .env file
 load_dotenv()
 
-# Access variables
-gemeni_api_key = os.getenv('gemeni_api_key')
+# Get the OpenAI API key from the environment variable
+openai.api_key = os.getenv('API_KEY')
 
-genai.configure(api_key=gemeni_api_key)
-model = genai.GenerativeModel('gemini-pro')
+MODEL = 'gpt-4o-mini-2024-07-18'
 DEFAULT_PROMPT = ""
 
 class Agent:
-    def __init__(self, template, model=None, key_map: Union[dict, None] = None) -> None:
+    def __init__(self,template, model=MODEL, key_map:Union[dict,None]=None) -> None:
         self.message = []
-        if isinstance(template, str):
+        if isinstance(template,str):
             self.TEMPLATE = template
-        elif isinstance(template, list) and len(template) > 1:
+        elif isinstance(template,list) and len(template)>1:
             self.TEMPLATE = template[0]
             self.template_list = template
         self.key_map = key_map
-        
-        if model is None:
-            self.model = genai.GenerativeModel('gemini-pro')
-        else:
-            self.model = model
-        
-        # Verify the model is correctly assigned
-        if isinstance(self.model, str):
-            raise ValueError("The model should be an instance of GenerativeModel, not a string.")
-        
+        self.model = model
         self.func_dic = {
-            'default': self.get_output,
-            'padding_template': self.padding_template
-        }
 
+        }
+        self.func_dic['default'] = self.get_output
+        self.func_dic['padding_template'] = self.padding_template
 
     def send_message(self):
         assert len(self.message) != 0 and self.message[-1]['role'] != 'assistant', 'ERROR in message format'
         try:
-            ans = self.model.generate_content(
-                prompt=self.message[-1]['content'],
+            ans = openai.ChatCompletion.create(
+                model = self.model,
+                messages = self.message,
                 temperature=0.2,
-                max_tokens=150  # Adjust max_tokens as needed
+                n = 1
             )
             self.parse_message(ans)
             return ans
         except Exception as e:
+            #TODO
             print(e)
             time.sleep(20)
-            ans = self.model.generate_content(
-                prompt=self.message[-1]['content'],
+            ans = openai.ChatCompletion.create(
+                model = self.model,
+                messages = self.message,
                 temperature=0.2,
-                max_tokens=150  # Adjust max_tokens as needed
+                n = 1
             )
             self.parse_message(ans)
             return ans
+            #aviod frequently request
 
-    
     async def send_message_async(self):
+        #TODO add try-expect block
         try:
-            ans = await self.model.generate_async(
-                #model=self.model,
-                prompt=self.message[-1]['content'],
+            ans = await openai.ChatCompletion.acreate(
+                model = self.model,
+                messages = self.message,
                 temperature=0.2,
-                max_tokens=150  # Adjust max_tokens as needed
+                n=1
             )
             self.parse_message(ans)
             return ans
         except Exception as e:
             print(e)
             await asyncio.sleep(20)
-            ans = await self.model.generate_async(
-                #model=self.model,
-                prompt=self.message[-1]['content'],
+            ans = await openai.ChatCompletion.acreate(
+                model = self.model,
+                messages = self.message,
                 temperature=0.2,
-                max_tokens=150  # Adjust max_tokens as needed
+                n=1
             )
             self.parse_message(ans)
             return ans
 
-
     def padding_template(self, input):
         input = self.key_mapping(input)
-        assert self._check_format(input.keys()), f"input lacks the necessary key"
+
+        assert self._check_format(input.keys()), f"input lack of the necessary key"
+
         msg = self.TEMPLATE.format(**input)
         self.message.append({
-            'role': 'user',
-            'content': msg
+            'role':'user',
+            'content':msg
         })
 
-    def key_mapping(self, input):
+    def key_mapping(self,input):
         if self.key_map is not None:
             new_input = {}
             for key, val in input.items():
@@ -105,26 +101,29 @@ class Agent:
                 else:
                     new_input[key] = val
             input = new_input
-        return input
+            return input
+        else:
+            return input
 
-    def _check_format(self, key_list):
+    def _check_format(self,key_list):
         placeholders = re.findall(r'\{([^}]+)\}', self.TEMPLATE)
         for key in placeholders:
             if key not in key_list:
                 return False
         return True
 
-    def get_output(self) -> str:
+
+    def get_output(self)->str:
         assert len(self.message) != 0 and self.message[-1]['role'] == 'assistant'
         return self.message[-1]['content']
-
+    
     def parse_message(self, completion):
-        content = completion['candidates'][0]['output']  # Adapt to Gemini response structure
-        role = 'assistant'  # Adjust role handling as needed
-        record = {'role': role, 'content': content}
+        content =  completion['choices'][0]['message']['content']
+        role = completion['choices'][0]['message']['role']
+        record =  {'role':role, 'content':content}
         self.message.append(record)
         return record
-
+    
     def regist_fn(self, func, name):
-        setattr(self, name, types.MethodType(func, self))
-        self.func_dic[name] = getattr(self, name)
+        setattr(self,name,types.MethodType(func,self))
+        self.func_dic[name] = getattr(self,name)
