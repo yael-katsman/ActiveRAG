@@ -45,7 +45,7 @@ if __name__ == '__main__':
                 plan = create_plan(create_agent_group(Prompt()),init_input=input)
                 plan.excute()
                 
-                plan.save_log(f'log/{dataset}/top{topk}/{dataset}_idx_{i}.json')
+                plan.save_log(f'log_1/{dataset}/top{topk}/{dataset}_idx_{i}.json')
 
             except Exception as e:
                 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
