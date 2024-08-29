@@ -20,7 +20,7 @@ if __name__ == '__main__':
     filename = f'data/data_{dataset}_sampled.jsonl'
     topk = args.topk
 
-    directory = f'log/{dataset}/top{topk}'
+    directory = f'log_2/{dataset}/top{topk}'
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -44,8 +44,8 @@ if __name__ == '__main__':
                 time.sleep(5)
                 plan = create_plan(create_agent_group(Prompt()),init_input=input)
                 plan.excute()
-                
-                plan.save_log(f'log_1/{dataset}/top{topk}/{dataset}_idx_{i}.json')
+
+                plan.save_log(f'log_2/{dataset}/top{topk}/{dataset}_idx_{i}.json')
 
             except Exception as e:
                 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
