@@ -28,6 +28,6 @@ def calculate_average_bleu(data, column):
     return average_bleu
 
 # Update file path to match the BLEU-based CSV file
-file_name = f'log/{dataset}/top{topk}/prompt_bleu.csv'
+file_name = f'log_2/{dataset}/top{topk}/prompt_bleu.csv'
 
 evaluate(file_name)

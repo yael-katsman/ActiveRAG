@@ -27,6 +27,6 @@ def calculate_accuracy(data, column):
     return accuracy
 
 
-file_name = f'log/{dataset}/top{topk}/result.csv'
+file_name = f'log_2/{dataset}/top{topk}/prompt_og.csv'
 
 evaluate(file_name)

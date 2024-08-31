@@ -5,8 +5,6 @@ from argparse import ArgumentParser
 import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-# Download necessary NLTK resources
-nltk.download('punkt')
 
 parser = ArgumentParser()
 parser.add_argument('--dataset', required=True)
@@ -23,7 +21,7 @@ def calculate_bleu(reference, candidate):
     smoothie = SmoothingFunction().method4
     return sentence_bleu(reference_tokens, candidate_tokens, smoothing_function=smoothie)
 
-csv_file_path = f'log/{dataset}/top{topk}/prompt_bleu.csv'
+csv_file_path = f'log_2/{dataset}/top{topk}/prompt_bleu.csv'
 csv_columns = ['id', 'anchoring_output', 'anchoring_bleu', 'associate_output', 'associate_bleu',
                'logician_output', 'logician_bleu', 'cognition_output', 'cognition_bleu', 'true_answer']
 
@@ -32,7 +30,7 @@ with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
     csv_writer.writeheader()
 
     for i in range(500):
-        file_path = f'log/{dataset}/top{topk}/{dataset}_idx_{i}.json'
+        file_path = f'log_2/{dataset}/top{topk}/{dataset}_idx_{i}.json'
 
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:
