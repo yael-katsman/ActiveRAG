@@ -16,7 +16,7 @@ def acc(output):
     correctness = 'True' if any(answer.lower() in output.lower() for answer in answer_key) else 'False'
     return correctness
 
-csv_file_path = f'log/{dataset}/top{topk}/original_gemini.csv'
+csv_file_path = f'log_2/{dataset}/top{topk}/prompt_og.csv'
 csv_columns = ['id', 'anchoring_output', 'anchoring_correctness', 'associate_output', 'associate_correctness',
                'logician_output', 'logician_correctness', 'cognition_output', 'cognition_correctness', 'true_answer']
 
@@ -25,7 +25,7 @@ with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
     csv_writer.writeheader()
 
     for i in range(500):
-        file_path = f'log/{dataset}/top{topk}/{dataset}_idx_{i}.json'
+        file_path = f'log_2/{dataset}/top{topk}/{dataset}_idx_{i}.json'
 
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:
