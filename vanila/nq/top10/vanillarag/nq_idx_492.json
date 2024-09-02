@@ -1,0 +1,1 @@
+{"question": "which layer of the osi model handles physical addressing", "vanilla_rag_result": "The layer of the OSI model that handles physical addressing is the Data Link Layer, which is layer 2. This layer includes the Media Access Control (MAC) sublayer, responsible for managing physical addressing and access to the physical transmission medium."}
