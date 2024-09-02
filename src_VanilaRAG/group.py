@@ -42,7 +42,6 @@ class AgentGroup:
             if getattr(self,name,None) != None:
                 delattr(self,name)
         else:
-            #TODO
             pass
     
     def change_agent(self, agent, name):
