@@ -1,0 +1,1 @@
+{"question": "how many characters are present in icd-10 codes", "api_result": "ICD-10 codes consist of up to 7 characters. The format typically includes one letter followed by two digits, a decimal point, and then up to four additional characters (which can be letters or digits). For example, a typical ICD-10 code might look like \"A00.0\" or \"E11.9\"."}
