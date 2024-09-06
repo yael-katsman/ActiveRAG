@@ -30,7 +30,7 @@ def calculate_average_bleu(data, column):
     return np.mean(bleu_scores) * 100  # Convert to percentage
 
 # Path to the CSV file containing API results with BLEU scores
-file_name = f'api_4_mini/{dataset}/results/api_results_bleu.csv'
+file_name = f'api_4/{dataset}/results/api_results_bleu.csv'
 
 # Evaluate the results
 evaluate(file_name)

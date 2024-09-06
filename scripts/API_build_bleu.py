@@ -41,7 +41,7 @@ def calculate_bleu(output, reference):
     return sentence_bleu(reference_tokens, candidate_tokens, smoothing_function=smoothie)
 
 # Path to save the CSV file
-csv_file_path = f'api_4_mini/{dataset}/results/api_results_bleu.csv'
+csv_file_path = f'api_4/{dataset}/results/api_results_bleu.csv'
 csv_columns = ['id', 'api_output', 'bleu_score', 'true_answer']
 
 # Create CSV file and write headers
@@ -51,7 +51,7 @@ with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
 
     # Loop through files and process each one
     for i in range(500):  # Adjust 500 based on the number of data points
-        file_path = f'api_4_mini/{dataset}/results/{dataset}_idx_{i}.json'
+        file_path = f'api_4/{dataset}/results/{dataset}_idx_{i}.json'
 
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:

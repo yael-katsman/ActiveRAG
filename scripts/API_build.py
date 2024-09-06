@@ -35,7 +35,7 @@ def acc(output, answer_key):
     return 'True' if any(answer.lower() in output.lower() for answer in answer_key) else 'False'
 
 # Path to save the CSV file with results
-csv_file_path = f'api_4_mini/{dataset}/results/api_results.csv'
+csv_file_path = f'api_4/{dataset}/results/api_results.csv'
 csv_columns = ['id', 'api_output', 'correctness', 'true_answer']
 
 # Create CSV file and write headers
@@ -45,7 +45,7 @@ with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
 
     # Loop through files and process each one
     for i in range(500):  # Adjust 500 to your actual number of data points
-        file_path = f'api_4_mini/{dataset}/results/{dataset}_idx_{i}.json'
+        file_path = f'api_4/{dataset}/results/{dataset}_idx_{i}.json'
 
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:

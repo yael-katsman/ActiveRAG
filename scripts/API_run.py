@@ -17,7 +17,7 @@ openai.api_key = os.getenv('API_KEY')
 
 
 class VanillaAgent:
-    def __init__(self, model='gpt-4o-mini-2024-07-18'):
+    def __init__(self, model='gpt-4-turbo'):
         self.message = []
         self.model = model
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     dataset = args.dataset
     filename = f'data/data_{dataset}_sampled.jsonl'
 
-    api_directory = f'api_4_mini/{dataset}/results'
+    api_directory = f'api_4/{dataset}/results'
 
     # Create directory for logs if it doesn't exist
     if not os.path.exists(api_directory):

@@ -30,7 +30,7 @@ def calculate_accuracy(data, column):
     return accuracy
 
 # Path to the CSV file containing API results
-file_name = f'api_4_mini/{dataset}/results/api_results.csv'
+file_name = f'api_4/{dataset}/results/api_results.csv'
 
 # Evaluate the results
 evaluate(file_name)
