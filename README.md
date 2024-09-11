@@ -11,5 +11,5 @@ Building on ActiveRAG’s approach, our work specifically focuses on enhancing t
 
 1. data - contains all the datasats: nq, popqa, triviaqa, webq.
 2. src - ACTIVERAG source files: the Associate agent's original prompt can be found in src/prompt.py.
-3. 
+3. logs - contains JSON files documenting the detailed performance of the original ACTIVERAG on various datasets and retrieval settings (e.g., top-5 and top-10)
 
