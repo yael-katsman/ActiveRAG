@@ -7,3 +7,9 @@ ActiveRAG is designed to enhance traditional Retrieval-Augmented Generation (RAG
 
 Building on ActiveRAG’s approach, our work specifically focuses on enhancing the Associate agent, which plays a crucial role in linking new data with the model’s existing knowledge. We ran ACTIVERAG using GPT-4.0 mini, rather than the original GPT-3.5 setup, to evaluate how prompt engineering techniques like contextual extraction and multi-perspective reasoning impact performance. We tested two modified prompts on the Natural Questions (NQ) and TriviaQA datasets, comparing ACTIVERAG’s results with baseline models like Vanilla RAG, Chain-of-Thought (CoT), and GPT-4 Turbo.
 
+## File Descriptions
+
+1. data - contains all the datasats: nq, popqa, triviaqa, webq.
+2. src - ACTIVERAG source files: the Associate agent's original prompt can be found in src/prompt.py.
+3. 
+
