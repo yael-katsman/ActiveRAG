@@ -1,9 +1,5 @@
-# ActiveRAG: Revealing the Treasures of Knowledge via Active Learning
-
 Source code for our paper :  
 ***[ActiveRAG: Revealing the Treasures of Knowledge via Active Learning](https://arxiv.org/abs/2402.13547)***
-
-If you find this work useful, please cite our paper  and give us a shining star 🌟
 
 ## Overview
 
