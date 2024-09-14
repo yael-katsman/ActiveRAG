@@ -48,12 +48,41 @@ Models Used
 4. GPT-4.0 mini: Lightweight LLM for efficient inference.
 5. GPT-4 Turbo: High-performance LLM used for comparison.
 
+## Results
+We evaluated the impact of different prompts on the Associate agent's performance using Top-5 and Top-10 accuracy and BLEU scores on Natural Questions (NQ) and TriviaQA datasets.
 
+1. Top-K Accuracy                                                    
+   a. Original Prompt:
+   Top-5 Accuracy: NQ - 66.8%, TriviaQA - 95.0%
+   Top-10 Accuracy: NQ - 68.0%, TriviaQA - 95.4%
+   Summary: Strong on factual retrieval but limited in handling complex queries, especially in NQ.
+   
+   b. Prompt 1 (Contextual Deepening):
+   Top-5 Accuracy: NQ - 64.6%, TriviaQA - 94.8%
+   Top-10 Accuracy: NQ - 69.8%, TriviaQA - 96.0%
+   Summary: Improved Top-10 accuracy by deepening context, particularly in NQ.
+   
+   c. Prompt 2 (Multi-Perspective Reasoning):
+   Top-5 Accuracy: NQ - 65.4%, TriviaQA - 95.2%
+   Top-10 Accuracy: NQ - 68.0%, TriviaQA - 96.4%
+   Summary: Best in complex fact retrieval for TriviaQA, stable for NQ.
 
-## Performance Breakdown
+2. BLEU Scores                 
+   a. Original Prompt:
+   Top-5 BLEU: NQ - 0.28, TriviaQA - 0.32                          
+   b. Prompt 1:
+   Top-5 BLEU: NQ - 0.30, TriviaQA - 0.34                        
+   c. Prompt 2:
+   Top-5 BLEU: NQ - 0.27, TriviaQA - 0.32
 
+## Discussion
+Our experiments show that prompt engineering plays a crucial role in improving the performance of the Associate agent within the ActiveRAG framework. The original prompt provided a solid baseline but struggled with deeper contextual reasoning, particularly in NQ tasks.
 
+Prompt 1 successfully enhanced Top-10 accuracy by introducing more context-aware retrieval, showing improvements in both NQ and TriviaQA. This approach allowed the model to generate more contextually relevant answers, especially in tasks requiring nuanced understanding.
 
+Prompt 2, focusing on multi-perspective reasoning, yielded the best results for TriviaQA, where combining facts from multiple sources was essential. While this prompt showed only moderate gains in NQ, it highlighted the potential of using expert-like reasoning to handle complex, fact-intensive questions.
+
+Despite the improvements, there are opportunities for further refinement. Future work could explore dynamic prompt generation or incorporating feedback loops to improve real-time decision-making. Additionally, integrating few-shot learning might further boost performance in complex scenarios.
    
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
