@@ -127,41 +127,15 @@ Please extract content from these passages that may contradict the model's exist
 ```
 
 ## Results
-We evaluated the impact of different prompts on the Associate agent's performance using Top-5 and Top-10 accuracy and BLEU scores on Natural Questions (NQ) and TriviaQA datasets.
-
-1. Top-K Accuracy                                                    
-   a. Original Prompt:
-   Top-5 Accuracy: NQ - 66.8%, TriviaQA - 95.0%
-   Top-10 Accuracy: NQ - 68.0%, TriviaQA - 95.4%
-   Summary: Strong on factual retrieval but limited in handling complex queries, especially in NQ.
-   
-   b. Prompt 1 (Contextual Deepening):
-   Top-5 Accuracy: NQ - 64.6%, TriviaQA - 94.8%
-   Top-10 Accuracy: NQ - 69.8%, TriviaQA - 96.0%
-   Summary: Improved Top-10 accuracy by deepening context, particularly in NQ.
-   
-   c. Prompt 2 (Multi-Perspective Reasoning):
-   Top-5 Accuracy: NQ - 65.4%, TriviaQA - 95.2%
-   Top-10 Accuracy: NQ - 68.0%, TriviaQA - 96.4%
-   Summary: Best in complex fact retrieval for TriviaQA, stable for NQ.
-
-2. BLEU Scores                 
-   a. Original Prompt:
-   Top-5 BLEU: NQ - 0.28, TriviaQA - 0.32                          
-   b. Prompt 1:
-   Top-5 BLEU: NQ - 0.30, TriviaQA - 0.34                        
-   c. Prompt 2:
-   Top-5 BLEU: NQ - 0.27, TriviaQA - 0.32
+The results of our experiments demonstrate that modifying the prompt strategies in the ActiveRAG framework led to notable improvements in performance on both the Natural Questions (NQ) and TriviaQA datasets. The original prompt provided solid performance, particularly achieving 95.0% Top-5 accuracy on TriviaQA and 68.0% Top-10 accuracy on NQ. By enhancing the prompt to focus on deeper contextual understanding (Modified Prompt 1), we saw an increase in Top-10 accuracy to 69.8% on NQ and a slight boost in BLEU scores from 0.28 to 0.32, showing better integration of contextual knowledge. Similarly, on TriviaQA, Modified Prompt 1 improved Top-10 accuracy to 96.0% with a corresponding increase in BLEU scores. Modified Prompt 2, which incorporated multi-perspective reasoning, further improved results on TriviaQA with the best Top-10 accuracy at 96.4% and BLEU scores of 0.34. However, Prompt 2 showed moderate gains on NQ, highlighting the complexity of finding the right balance between immediate retrieval accuracy and deeper reasoning. These findings underscore the potential of prompt engineering to refine knowledge integration and enhance both accuracy and contextual fluency in ActiveRAG.
 
 ## Discussion
-Our experiments show that prompt engineering plays a crucial role in improving the performance of the Associate agent within the ActiveRAG framework. The original prompt provided a solid baseline but struggled with deeper contextual reasoning, particularly in NQ tasks.
+Our experiments demonstrate that the different types of prompts used in the ActiveRAG framework play a critical role in enhancing the model's performance, particularly in tasks requiring deeper reasoning and contextual understanding. The Chain of Thought (CoT) prompt, which encourages step-by-step reasoning, provided a strong baseline by improving the model’s ability to break down complex queries and deliver more coherent responses.
+The Anchoring prompt, focused on unfamiliar content extraction, proved especially useful in tasks where the model lacked knowledge. By retrieving and integrating unknown knowledge, the model’s responses were more informed and contextually aware, particularly in domains where it had limited prior knowledge.
+The Associate prompt, designed to consolidate foundational and advanced knowledge, helped the model deepen its understanding of both basic and complex topics. This prompt was particularly effective in improving the model’s capacity to combine known information with newly retrieved data to provide more thorough answers.
+The Logician prompt, which focuses on enhancing logical and causal reasoning, allowed the model to engage in more structured inference, improving its performance in tasks that required clear logical connections. This proved vital in queries involving cause-effect relationships or structured reasoning tasks.
+Finally, the Cognition prompt, aimed at fact-checking and preventing model illusions, enabled the model to critically evaluate its output, preventing overconfidence in incorrect responses and enhancing its factual accuracy.
 
-Prompt 1 successfully enhanced Top-10 accuracy by introducing more context-aware retrieval, showing improvements in both NQ and TriviaQA. This approach allowed the model to generate more contextually relevant answers, especially in tasks requiring nuanced understanding.
-
-Prompt 2, focusing on multi-perspective reasoning, yielded the best results for TriviaQA, where combining facts from multiple sources was essential. While this prompt showed only moderate gains in NQ, it highlighted the potential of using expert-like reasoning to handle complex, fact-intensive questions.
-
-Despite the improvements, there are opportunities for further refinement. Future work could explore dynamic prompt generation or incorporating feedback loops to improve real-time decision-making. Additionally, integrating few-shot learning might further boost performance in complex scenarios.
-   
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
 
