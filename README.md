@@ -29,13 +29,16 @@ To use ActiveRAG, you will need the following dependencies installed on your mac
 ### Installation
 To reproduce the results of this project, you can clone the repository and install the required dependencies:
 
-``` git clone [https://github.com/hillysegal1/ActiveRAG] ```                                                                                
-``` pip install -r requirements.txt ```
+```bash
+git clone https://github.com/hillysegal1/ActiveRAG
+pip install -r requirements.txt
+```
 
 ### Reproduction
-You can reproduce the results from our paper using the following command:           
-``` python -m logs.eval --dataset nq --topk 5 ```
-
+You can reproduce the results from our paper using the following command:
+```bash
+python -m logs.eval --dataset nq --topk 5
+```
 
 ## File Descriptions
 
