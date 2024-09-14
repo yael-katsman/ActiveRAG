@@ -3,7 +3,7 @@
 ## Project Outline
  [Overview](#overview)                             
  [Prerequisites](#prerequisites)                          
- [Installation](#installation)                      
+ [Setup Guide](#setup-guide)                      
  [File Descriptions](#file-descriptions)                         
  [Experiments](#experiments)
  [Prompts](#prompts)
