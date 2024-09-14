@@ -1,23 +1,21 @@
 # Bridging Retrieval and Reasoning: Enhancing the Associate Agent in ACTIVERAG for Knowledge-Intensive Tasks
 
 ## Project Outline
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [File Descriptions](#file-descriptions)
-- [Experiments](#experiments)
-- [Results](#results)
-- [Discussion](#discussion)
-- [Contact](#contact)
-
-Source code for our paper :  
-***[ActiveRAG: Revealing the Treasures of Knowledge via Active Learning](https://arxiv.org/abs/2402.13547)***
+ [Overview](#overview)                             
+ [Prerequisites](#prerequisites)                          
+ [Installation](#installation)                      
+ [File Descriptions](#file-descriptions)                         
+ [Experiments](#experiments)
+ [Prompts](#prompts)
+ [Results](#results)                                    
+ [Discussion](#discussion)                                      
+ [Contact](#contact)
 
 ## Overview
 
-ActiveRAG is designed to enhance traditional Retrieval-Augmented Generation (RAG) models by introducing an active learning approach. Unlike conventional RAG systems that passively integrate retrieved information, ActiveRAG employs a multi-agent system—including Anchoring, Logician, Cognition, and Associate agents—that actively engages with external knowledge. This system allows the model to refine and link new information with its existing knowledge base, improving the quality and contextual relevance of generated responses.
+ActiveRAG is an innovative Retrieval-Augmented Generation (RAG) framework that introduces an active learning mechanism to enhance the model’s understanding of external knowledge. Unlike traditional RAG systems that passively retrieve and integrate information, ActiveRAG uses Knowledge Construction to associate new information with previously acquired knowledge. This allows the model to refine and calibrate its internal understanding, improving reasoning and response quality.
 
-Building on ActiveRAG’s approach, our work specifically focuses on enhancing the Associate agent, which plays a crucial role in linking new data with the model’s existing knowledge. We ran ACTIVERAG using GPT-4.0 mini, rather than the original GPT-3.5 setup, to evaluate how prompt engineering techniques like contextual extraction and multi-perspective reasoning impact performance. We tested two modified prompts on the Natural Questions (NQ) and TriviaQA datasets, comparing ACTIVERAG’s results with baseline models, specifially, Vanilla RAG and Chain-of-Thought (CoT). To further evaluate our modifications, we also compared our results against GPT-4 turbo. 
+Our project specifically focuses on enhancing the Associate agent within the ActiveRAG framework to boost performance in knowledge-intensive tasks. We evaluate this approach on datasets such as Natural Questions (NQ) and TriviaQA, using prompt engineering techniques like contextual extraction and multi-perspective reasoning to further improve model output.
 
 ## Prerequisites
 To use ActiveRAG, you will need the following dependencies installed on your machine:
@@ -27,11 +25,17 @@ To use ActiveRAG, you will need the following dependencies installed on your mac
 3. Huggingface Transformers library
 4. Other dependencies specified in requirements.txt
 
-## Installation
+## Setup Guide
+### Installation
 To reproduce the results of this project, you can clone the repository and install the required dependencies:
 
-git clone [https://github.com/hillysegal1/ActiveRAG]                                                                                    
-pip install -r requirements.txt
+``` git clone [https://github.com/hillysegal1/ActiveRAG] ```                                                                                
+``` pip install -r requirements.txt ```
+
+### Reproduction
+You can reproduce the results from our paper using the following command:           
+``` python -m logs.eval --dataset nq --topk 5 ```
+
 
 ## File Descriptions
 
@@ -47,6 +51,25 @@ Models Used
 3. Chain-of-Thought (CoT): Step-by-step reasoning to improve comprehension.
 4. GPT-4.0 mini: Lightweight LLM for efficient inference.
 5. GPT-4 Turbo: High-performance LLM used for comparison.
+
+## Prompts
+We explored different prompt engineering techniques to enhance the Associate agent within the ActiveRAG framework. Each prompt was designed to tackle specific challenges in knowledge retrieval and reasoning:
+
+1. Original Prompt                         
+The baseline prompt, focused on retrieving top-k relevant passages without additional reasoning steps.
+Strengths: Good at handling straightforward factual questions.
+Limitations: Struggled with complex queries that required deeper reasoning or integration of multiple pieces of knowledge.
+2. Prompt 1: Contextual Deepening                      
+Designed to improve contextual awareness by linking retrieved passages more closely to the query.
+Purpose: To enhance the model’s understanding of nuanced relationships between the query and retrieved information.
+Strengths: Improved performance in Top-10 accuracy for NQ by providing more contextually relevant answers.
+Limitations: Slight drop in Top-5 accuracy as the model spent more time deepening context rather than focusing on direct retrieval.
+3. Prompt 2: Multi-Perspective Reasoning                        
+Focused on engaging the model in reasoning from multiple perspectives (e.g., logical reasoning, factual retrieval).
+Purpose: To synthesize information from various sources and produce a more comprehensive response.
+Strengths: Showed strong performance in TriviaQA, where combining facts from multiple retrieved passages is essential.
+Limitations: Did not significantly improve performance in NQ, where deeper contextual reasoning was more effective.
+
 
 ## Results
 We evaluated the impact of different prompts on the Associate agent's performance using Top-5 and Top-10 accuracy and BLEU scores on Natural Questions (NQ) and TriviaQA datasets.
@@ -86,3 +109,6 @@ Despite the improvements, there are opportunities for further refinement. Future
    
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
+
+Source code for our paper :  
+***[ActiveRAG: Revealing the Treasures of Knowledge via Active Learning](https://arxiv.org/abs/2402.13547)***
