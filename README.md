@@ -56,23 +56,75 @@ Models Used
 5. GPT-4 Turbo: High-performance LLM used for comparison.
 
 ## Prompts
-We explored different prompt engineering techniques to enhance the Associate agent within the ActiveRAG framework. Each prompt was designed to tackle specific challenges in knowledge retrieval and reasoning:
+In our project, we utilize various prompt templates to improve the model’s reasoning and decision-making capabilities. Below are the different prompts used:
 
-1. Original Prompt                         
-The baseline prompt, focused on retrieving top-k relevant passages without additional reasoning steps.
-Strengths: Good at handling straightforward factual questions.
-Limitations: Struggled with complex queries that required deeper reasoning or integration of multiple pieces of knowledge.
-2. Prompt 1: Contextual Deepening                      
-Designed to improve contextual awareness by linking retrieved passages more closely to the query.
-Purpose: To enhance the model’s understanding of nuanced relationships between the query and retrieved information.
-Strengths: Improved performance in Top-10 accuracy for NQ by providing more contextually relevant answers.
-Limitations: Slight drop in Top-5 accuracy as the model spent more time deepening context rather than focusing on direct retrieval.
-3. Prompt 2: Multi-Perspective Reasoning                        
-Focused on engaging the model in reasoning from multiple perspectives (e.g., logical reasoning, factual retrieval).
-Purpose: To synthesize information from various sources and produce a more comprehensive response.
-Strengths: Showed strong performance in TriviaQA, where combining facts from multiple retrieved passages is essential.
-Limitations: Did not significantly improve performance in NQ, where deeper contextual reasoning was more effective.
+### 1. Chain of Thought (CoT) Prompt
 
+This prompt encourages the model to solve problems through step-by-step reasoning.
+
+```text
+To solve the problem, please think and reason step by step, then answer.
+question:
+{question}
+
+Generation Format:
+Reasoning process:
+Answer:
+```
+
+### 2. Anchoring Prompt
+This prompt helps the model extract unfamiliar information from retrieved passages.
+```text
+You are a cognitive scientist. To answer the following question:
+{question}
+I will provide you with several retrieved passages:
+Passages:
+{passages}
+
+Task Description:
+Please extract content that may be unfamiliar to the model from these passages. This content should provide the model with relevant background knowledge, helping it better understand the question.
+```
+
+### 3. Associate Prompt
+This prompt guides the model to consolidate foundational and advanced knowledge.
+```text
+You are a cognitive scientist. To answer the following question:
+{question}
+I will provide you with several retrieved passages:
+Passages:
+{passages}
+
+Task Description:
+Please extract foundational knowledge that may be familiar to the model, or advanced information beyond what the model already knows. Consolidate these contents to help the model deepen its understanding of the question.
+```
+
+### 4. Logician Prompt
+This prompt improves the model's causal reasoning and logical inference abilities.
+This prompt guides the model to consolidate foundational and advanced knowledge.
+```text
+You are a logician. To answer the following question:
+{question}
+I will provide you with several retrieved passages:
+Passages:
+{passages}
+
+Task Description:
+Please extract content from these passages that can enhance the model's causal reasoning and logical inference abilities. Consolidate these contents, and analyze how the selected information may impact the improvement of the model's reasoning capabilities.
+```
+
+### 5. Cognition Prompt
+This prompt focuses on updating the model's knowledge to prevent factual errors and alleviate model illusions.
+```text
+You are a logician. To answer the following question:
+You are a scientist researching fact-checking and model illusions in artificial intelligence. To answer the following question:
+{question}
+I will provide you with several retrieved passages:
+Passages:
+{passages}
+
+Task Description:
+Please extract content from these passages that may contradict the model's existing knowledge. Identify information that, when added, could update the model's knowledge and prevent factual errors.
+```
 
 ## Results
 We evaluated the impact of different prompts on the Associate agent's performance using Top-5 and Top-10 accuracy and BLEU scores on Natural Questions (NQ) and TriviaQA datasets.
