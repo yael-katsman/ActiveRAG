@@ -35,7 +35,8 @@ You can reproduce the results from our paper using the following command:
 ```bash
 python -m logs.eval --dataset nq --topk 5
 ```
-## **Script Files**
+## **File description **
+### **Script Files**
 The scripts are used for running and evaluating the ActiveRAG model, VanillaRAG, Chain of Thought (COT), and the LLM's GPT 4.0 Turbo and GPT 4.0-mini models.
 
 #### **Run Files (Model Execution)**
@@ -74,6 +75,17 @@ These files are used to calculate the accuracy or BLEU scores.
 - `API_evaluate_bleu.py`: BLEU evaluation for **LLM** model.
 - `COT_evaluate_bleu.py`: BLEU evaluation for **COT** model.
 - `vanila_evaluate_bleu.py`: BLEU evaluation for **VanillaRAG** model.
+- 
+### **Result Folders**
+These folders contain the log files generated from running the models.
+
+- **Log**: Files created from running **ActiveRAG** with the original prompt.
+- **log_1**: Files created from running **ActiveRAG** with prompt 1.
+- **log_2**: Files created from running **ActiveRAG** with prompt 2.
+- **vanila**: Files created from running **VanillaRAG**.
+- **cot**: Files created from running **COT**.
+- **api_4**: Files created from running the **GPT 4.0-turbo** model.
+- **api_4_mini**: Files created from running the **GPT 4.0-mini** model.
 
 
 
