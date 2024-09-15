@@ -38,7 +38,11 @@ python -m logs.eval --dataset nq --topk 5
 ```
 We also provide the full request code, you can re-request for further exploration.
 
-First, you will be asked to enter your openai api key. 
+First you need to enter your openai api key:
+
+```python
+API_KEY="your-key"
+```
 
 Then, run the following script:
 
