@@ -1,15 +1,25 @@
 # Bridging Retrieval and Reasoning: Enhancing the Associate Agent in ACTIVERAG for Knowledge-Intensive Tasks
 
-## Project Outline
- [Overview](#overview)                             
- [Prerequisites](#prerequisites)                          
- [Setup Guide](#setup-guide)                      
- [File Descriptions](#file-descriptions)                         
- [Experiments](#experiments)
- [Prompts](#prompts)
- [Results](#results)                                    
- [Discussion](#discussion)                                      
- [Contact](#contact)
+# Table of Contents
+
+1. [Overview](#overview)
+2. [Prerequisites](#prerequisites)
+3. [Setup Guide](#setup-guide)  
+    3.1 [Installation](#installation)  
+    3.2 [Reproduction](#reproduction)
+4. [File Description](#file-description)  
+    4.1 [Script Files](#script-files)  
+    4.2 [Build Files](#build-files)  
+    4.3 [Evaluate Files](#evaluate-files)  
+    4.4 [Result Folders](#result-folders)  
+    4.5 [Prompts](#prompts)
+5. [Baseline Models](#baseline-models)
+6. [Results](#results)  
+    6.1 [Accuracy Comparison](#accuracy-comparison)  
+    6.2 [BLEU Score Comparison](#bleu-score-comparison)
+7. [Contact](#contact)
+
+This structure will help users easily navigate through your project documentation and code files. Let me know if you'd like to adjust or add anything!
 
 ## Overview
 
