@@ -30,19 +30,51 @@ To reproduce the results of this project, you can clone the repository and insta
 git clone https://github.com/hillysegal1/ActiveRAG
 pip install -r requirements.txt
 ```
+## **Script Files**
+The scripts are used for running and evaluating the ActiveRAG model, VanillaRAG, Chain of Thought (COT), and the LLM's GPT 4.0 Turbo and GPT 4.0-mini models.
+
+#### **Run Files (Model Execution)**
+These files are used to run the models:
+- `run.py`: Runs the **ActiveRAG** model.
+- `Vanila_run.py`: Runs the **VanillaRAG** model.
+- `COT_run.py`: Runs the **COT** model.
+- `API_run.py`: Runs **LLM models** according to the selected model in the code.
+
+#### **Build Files (Result Preparation)**
+These files build CSV files with model results, which are then used to calculate Accuracy or BLEU scores.
+
+**For Accuracy:**
+- `build.py`: General build script for accuracy.
+- `API_build.py`: Build script for **LLM** model.
+- `COT_build.py`: Build script for **COT** model.
+- `vanila_build.py`: Build script for **VanillaRAG** model.
+
+**For BLEU:**
+- `build_bleu.py`: General build script for BLEU score.
+- `API_build_bleu.py`: Build script for **LLM** model.
+- `COT_build_bleu.py`: Build script for **COT** model.
+- `vanila_build_bleu.py`: Build script for **VanillaRAG** model.
+
+#### **Evaluate Files (Result Calculation)**
+These files are used to calculate the accuracy or BLEU scores.
+
+**For Accuracy:**
+- `evaluate.py`: General evaluation script for accuracy.
+- `API_evaluate.py`: Accuracy evaluation for ** LLM** model.
+- `COT_evaluate.py`: Accuracy evaluation for **COT** model.
+- `vanila_evaluate.py`: Accuracy evaluation for **VanillaRAG** model.
+
+**For BLEU:**
+- `evaluate_bleu.py`: General evaluation script for BLEU score.
+- `API_evaluate_bleu.py`: BLEU evaluation for **LLM** model.
+- `COT_evaluate_bleu.py`: BLEU evaluation for **COT** model.
+- `vanila_evaluate_bleu.py`: BLEU evaluation for **VanillaRAG** model.
 
 ### Reproduction
 You can reproduce the results from our paper using the following command:
 ```bash
 python -m logs.eval --dataset nq --topk 5
 ```
-
-## File Descriptions
-
-1. data - contains all the datasats: nq, popqa, triviaqa, webq.
-2. src - ACTIVERAG source files: the Associate agent's original prompt can be found in src/prompt.py.
-3. logs/log - contains JSON files documenting the detailed performance of the original ACTIVERAG on various datasets and retrieval settings (e.g., top-5 and top-10)
-4. log_1 & log_2 - contain JSON files documenting the performance of ACTIVERAG with modified prompt 1 and prompt 2 respectively (can be found in......) on the triviaqa and nq datasets.
 
 ## Experiments
 Models Used
