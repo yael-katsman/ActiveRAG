@@ -36,6 +36,31 @@ You can reproduce the results from our paper using the following command:
 ```bash
 python -m logs.eval --dataset nq --topk 5
 ```
+We also provide the full request code, you can re-request for further exploration.
+
+First, set your own api-key in agent file:
+
+```python
+openai.api_key = 'sk-<your-api-key>'
+```
+
+Then, run the following script:
+
+```bash
+python -m scripts.run --dataset nq --topk 5
+```
+Analyzing log files:
+
+```bash
+python -m scripts.build --dataset nq --topk 5
+```
+
+Evaluate:
+
+```bash
+python -m scripts.evaluate --dataset nq --topk 5
+```
+
 ## **File description**
 ### **Script Files**
 The scripts are used for running and evaluating the ActiveRAG model, VanillaRAG, Chain of Thought (COT), and the LLM's GPT 4.0 Turbo and GPT 4.0-mini models.
