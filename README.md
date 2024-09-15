@@ -144,7 +144,7 @@ Our experiments focused on evaluating ACTIVERAG’s performance in Top-5 and Top
 | Modified Prompt 1  | 64.6                  | 69.8                   | 94.8                        | 96                           |
 | Modified Prompt 2  | 65.4                  | 68                     | 95.2                        | 95.6                         |
 
-Table 1 shows the accuracy of the ACTIVERAG with the Associated agent, using the original and modified prompts. Modified Prompt 1, which emphasized deeper contextual understanding, improved accuracy in the Top-10 setting on both NQ and TriviaQA, suggesting better integration of contextual knowledge. However, it slightly reduced accuracy in the Top-5 setting. On the other hannd, Modified Prompt 2, with a collaborative expert-based approach, showed moderate improvements on TriviaQA but no gains on NQ.
+Table 1 shows the accuracy of the ACTIVERAG with the Associated agent, using the original and modified prompts. Modified Prompt 1, which emphasized deeper contextual understanding, improved accuracy in the Top-10 setting on both NQ and TriviaQA, suggesting better integration of contextual knowledge. However, it slightly reduced accuracy in the Top-5 setting. On the other hand, Modified Prompt 2, with a collaborative expert-based approach, showed moderate improvements on TriviaQA but no gains on NQ.
 
 **Table 2**:
 | Prompt       | NQ Top-5 BLEU | NQ Top-10 BLEU | TriviaQA Top-5 BLEU | TriviaQA Top-10 BLEU |
