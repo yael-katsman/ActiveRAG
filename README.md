@@ -35,7 +35,7 @@ You can reproduce the results from our paper using the following command:
 ```bash
 python -m logs.eval --dataset nq --topk 5
 ```
-## **File description **
+## **File description**
 ### **Script Files**
 The scripts are used for running and evaluating the ActiveRAG model, VanillaRAG, Chain of Thought (COT), and the LLM's GPT 4.0 Turbo and GPT 4.0-mini models.
 
