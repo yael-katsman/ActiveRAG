@@ -19,7 +19,6 @@
     6.2 [BLEU Score Comparison](#bleu-score-comparison)
 7. [Contact](#contact)
 
-This structure will help users easily navigate through your project documentation and code files. Let me know if you'd like to adjust or add anything!
 
 ## Overview
 
