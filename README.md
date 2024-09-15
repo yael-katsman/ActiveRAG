@@ -38,11 +38,7 @@ python -m logs.eval --dataset nq --topk 5
 ```
 We also provide the full request code, you can re-request for further exploration.
 
-First, set your own api-key in agent file:
-
-```python
-openai.api_key = 'sk-<your-api-key>'
-```
+First, you will be asked to enter your openai api key. 
 
 Then, run the following script:
 
@@ -60,6 +56,7 @@ Evaluate:
 ```bash
 python -m scripts.evaluate --dataset nq --topk 5
 ```
+To change the model or the evaluation metrics, run the scripts according to the file description below. 
 
 ## **File description**
 ### **Script Files**
