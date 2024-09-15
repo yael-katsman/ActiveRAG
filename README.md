@@ -113,7 +113,8 @@ These folders contain the log files generated from running the models.
 - **api_4**: Files created from running the **GPT 4.0-turbo** model.
 - **api_4_mini**: Files created from running the **GPT 4.0-mini** model.
 
-
+### **Prompts**
+The prompts used for *ActiveRAG* can be found in the *SRC* folder.
 
 ## Baseline Models
 Our project used several baseline models to evaluate performance:
