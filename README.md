@@ -155,7 +155,7 @@ Table 2 compares ACTIVERAG's (with the Associate agent) BLEU scores for the orig
 | GPT-4 Turbo      | 65.8                   | 93.8                         |
 | ACTIVERAG (w. Associate Agent)       | 69.8                   | 96.0                         |
 
-Table 3 compares the best accuracy results of baseline models with those of ACTIVERAG's with the Associate Agent, with the highest accuracy achieved using Prompt 1. ACTIVERAG outperformed all baseline models on both NQ and TriviaQA, achieving top accuracy scores of 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, it showed substantial improvements, particularly in handling complex, knowledge-intensive tasks. Although GPT-4 Turbo performed well, ACTIVERAG achieved superior results.
+Table 3 compares the best accuracy results of baseline models with those of ACTIVERAG (with the Associate agent), with the highest accuracy achieved using Prompt 1. ACTIVERAG outperformed all baseline models on both NQ and TriviaQA, achieving top accuracy scores of 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, it showed substantial improvements, particularly in handling complex, knowledge-intensive tasks. Although GPT-4 Turbo performed well, ACTIVERAG achieved superior results.
 
 **Table 4**:
 | Model            | Best BLEU (NQ) | Best BLEU (TriviaQA) |
@@ -166,7 +166,7 @@ Table 3 compares the best accuracy results of baseline models with those of ACTI
 | GPT-4 Turbo      | 0.187          | 0.443                 |
 | ACTIVERAG (w. Associate Agent)      | 0.32           | 0.36                  |
 
-Table 4 compares the best BLEU scores of baseline models with those of ACTIVERAG's (with the Associate agent), with the best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. The table shows that the ACTIVERAG achieved BLEU scores of 0.32 on NQ and 0.36 on TriviaQA, outperforming all other models on NQ, including GPT-4 Turbo (0.187). Although Vanilla RAG achieved a higher BLEU score on TriviaQA (0.46), ACTIVERAG's performance was still competitive and significantly better than CoT and GPT-4.0 Mini. These results highlight the effectiveness of the targeted prompt modifications, demonstrating superior response quality and alignment with reference answers, especially on NQ.
+Table 4 compares the best BLEU scores of baseline models with those of ACTIVERAG (with the Associate agent), with the best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. The table shows that the ACTIVERAG achieved BLEU scores of 0.32 on NQ and 0.36 on TriviaQA, outperforming all other models on NQ, including GPT-4 Turbo (0.187). Although Vanilla RAG achieved a higher BLEU score on TriviaQA (0.46), ACTIVERAG's performance was still competitive and significantly better than CoT and GPT-4.0 Mini. These results highlight the effectiveness of the targeted prompt modifications, demonstrating superior response quality and alignment with reference answers, especially on NQ.
 
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
