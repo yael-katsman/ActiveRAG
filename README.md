@@ -15,7 +15,7 @@
 
 ACTIVERAG is an innovative framework designed to enhance LLMs by shifting from passive knowledge acquisition to an active learning approach. Unlike conventional RAG models, ACTIVERAG dynamically integrates external knowledge with the model’s existing understanding through a multi-agent system. This system includes the Anchoring agent, which grounds information in relevant contexts; the Logician, which maintains logical coherence; the Cognition agent, which aligns new data with the model’s existing knowledge structures; and the Associate agent, which links new information with prior knowledge to enhance reasoning. 
 
-Our project focuses on enhancing the Associate agent within ACTIVERAG by employing prompt engineering techniques such as iterative refinement, chain of thought prompting, and role assignment. We developed two modified prompts and tested these enhancements on datasets like Natural Questions (NQ) and TriviaQA. 
+Our project focuses on enhancing the Associate agent within ACTIVERAG by employing prompt engineering techniques such as iterative refinement, chain of thought prompting, and role assignment. We developed two modified prompts and tested these enhancements on the Natural Questions (NQ) and TriviaQA datasets.
 
 
 ## Prerequisites
@@ -108,7 +108,7 @@ Our experiments focused on evaluating ACTIVERAG’s performance in Top-5 and Top
 | Modified Prompt 1  | 64.6                  | 69.8                   | 94.8                        | 96                           |
 | Modified Prompt 2  | 65.4                  | 68                     | 95.2                        | 95.6                         |
 
-Table 1 shows the accuracy of the Associate agent in ACTIVERAG using the original and modified prompts. It can be seen that Modified Prompt 1 improved NQ Top-10 accuracy from 68% to 69.8% but slightly reduced NQ Top-5 accuracy. On TriviaQA, it enhanced Top-10 accuracy to 96% with a minor drop in Top-5 accuracy. Modified Prompt 2 showed stable performance, with a slight increase in TriviaQA Top-5 accuracy but no significant changes elsewhere.
+Table 1 shows the accuracy of the Associate agent in ACTIVERAG using the original and modified prompts. The results from this table indicate that Modified Prompt 1 enhances the model's ability to integrate contextual knowledge, particularly in Top-10 settings, with improved accuracy on both NQ and TriviaQA. However, this improvement is accompanied by a slight reduction in performance in the Top-5 setting, suggesting a trade-off between broader contextual understanding and more immediate, higher-ranked retrieval effectiveness. Modified Prompt 2 displayed consistent performance with slight gains on TriviaQA, showing that its impact was more stable but less pronounced across both datasets.
 
 **Table 2**:
 | Prompt       | NQ Top-5 BLEU | NQ Top-10 BLEU | TriviaQA Top-5 BLEU | TriviaQA Top-10 BLEU |
