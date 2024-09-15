@@ -13,9 +13,10 @@
 
 ## Overview
 
-ActiveRAG is an innovative Retrieval-Augmented Generation (RAG) framework that introduces an active learning mechanism to enhance the model’s understanding of external knowledge. Unlike traditional RAG systems that passively retrieve and integrate information, ActiveRAG uses Knowledge Construction to associate new information with previously acquired knowledge. This allows the model to refine and calibrate its internal understanding, improving reasoning and response quality.
+ACTIVERAG is an innovative framework designed to enhance LLMs by shifting from passive knowledge acquisition to an active learning approach. Unlike conventional RAG models, ACTIVERAG dynamically integrates external knowledge with the model’s existing understanding through a multi-agent system. This system includes the Anchoring agent, which grounds information in relevant contexts; the Logician, which maintains logical coherence; the Cognition agent, which aligns new data with the model’s existing knowledge structures; and the Associate agent, which links new information with prior knowledge to enhance reasoning. 
 
-Our project specifically focuses on enhancing the Associate agent within the ActiveRAG framework to boost performance in knowledge-intensive tasks. We created two modifications of the Associate agent's original prompt  and evaluated our approach on datasets such as Natural Questions (NQ) and TriviaQA, using prompt engineering techniques like contextual extraction and multi-perspective reasoning to further improve model output.
+Our project focuses on enhancing the Associate agent within ACTIVERAG by employing prompt engineering techniques such as iterative refinement, chain of thought prompting, and role assignment. We developed two modified prompts and tested these enhancements on datasets like Natural Questions (NQ) and TriviaQA. 
+
 
 ## Prerequisites
 To use ActiveRAG, you will need the following dependencies installed on your machine:
@@ -89,17 +90,25 @@ These folders contain the log files generated from running the models.
 
 
 
-## Experiments
-Models Used
-1. ActiveRAG: Enhanced with multi-agent system, focusing on the Associate agent.
-2. Vanilla RAG: Baseline retrieval-augmented generation.
-3. Chain-of-Thought (CoT): Step-by-step reasoning to improve comprehension.
-4. GPT-4.0 mini: Lightweight LLM for efficient inference.
-5. GPT-4 Turbo: High-performance LLM used for comparison.
+## Baseline Models
+Our project used several baseline models to evaluate performance:
+1. Vanilla RAG: A standard RAG model that retrieves relevant passages and generates responses.
+2.	Chain-of-Thought (CoT): A reasoning approach that prompts models to generate step-by-step explanations.
+3.	GPT-4.0 Mini Model: A budget-friendly, multimodal variant of GPT-4 designed for smaller tasks, focusing on cost-efficiency and speed, primarily used in our experiments.
+4.	GPT-4 Turbo: A high-performance variant of GPT-4 that offers superior accuracy and output quality, used for additional evaluations in scenarios where accuracy is critical.
+
 
 ## Results
-The results of our experiments demonstrate that modifying the prompt strategies in the ActiveRAG framework led to notable improvements in performance on both the Natural Questions (NQ) and TriviaQA datasets. The original prompt provided solid performance, particularly achieving 95.0% Top-5 accuracy on TriviaQA and 68.0% Top-10 accuracy on NQ. By enhancing the prompt to focus on deeper contextual understanding (Modified Prompt 1), we saw an increase in Top-10 accuracy to 69.8% on NQ and a slight boost in BLEU scores from 0.28 to 0.32, showing better integration of contextual knowledge. Similarly, on TriviaQA, Modified Prompt 1 improved Top-10 accuracy to 96.0% with a corresponding increase in BLEU scores. Modified Prompt 2, which incorporated multi-perspective reasoning, further improved results on TriviaQA with the best Top-10 accuracy at 96.4% and BLEU scores of 0.34. However, Prompt 2 showed moderate gains on NQ, highlighting the complexity of finding the right balance between immediate retrieval accuracy and deeper reasoning. These findings underscore the potential of prompt engineering to refine knowledge integration and enhance both accuracy and contextual fluency in ActiveRAG.
+Our experiments focused on evaluating ACTIVERAG’s performance in Top-5 and Top-10 settings, where the model generates responses using the top 5 or top 10 passages retrieved by an external ranking model. 
+**Table 1**: 
+| Model/Prompt       | NQ Top-5 Accuracy (%) | NQ Top-10 Accuracy (%) | TriviaQA Top-5 Accuracy (%) | TriviaQA Top-10 Accuracy (%) |
+|--------------------|-----------------------|------------------------|-----------------------------|-------------------------------|
+| Original Prompt    | 66.8                  | 68                     | 95                          | 95.4                         |
+| Modified Prompt 1  | 64.6                  | 69.8                   | 94.8                        | 96                           |
+| Modified Prompt 2  | 65.4                  | 68                     | 95.2                        | 95.6                         |
 
+Table 1 compares the accuracy of the Associate agent in ACTIVERAG, using the original and modified prompts in Top-K settings on the NQ and TriviaQA datasets. 
+Modified Prompt 1 improved accuracy in the NQ Top-10 setting, showing better integration of contextual knowledge, while on TriviaQA, it slightly enhanced accuracy in the Top-10 setting, demonstrating trade-offs between precision and broader contextual integration.
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
 
