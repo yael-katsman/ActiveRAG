@@ -135,7 +135,7 @@ Our experiments focused on evaluating ACTIVERAG’s performance in Top-5 and Top
 | Modified Prompt 1  | 64.6                  | 69.8                   | 94.8                        | 96                           |
 | Modified Prompt 2  | 65.4                  | 68                     | 95.2                        | 95.6                         |
 
-Table 1 shows the accuracy of the Associate agent in ACTIVERAG using the original and modified prompts. Modified Prompt 1, which emphasized deeper contextual understanding, improved accuracy in the Top-10 setting on both NQ and TriviaQA, suggesting better integration of contextual knowledge. However, it slightly reduced accuracy in the Top-5 setting. Modified Prompt 2, with a collaborative expert-based approach, showed moderate improvements on TriviaQA but only minor gains on NQ, indicating its impact is more stable but less effective when fewer documents are retrieved.
+Table 1 shows the accuracy of the ACTIVERAG with the Associated agent, using the original and modified prompts. Modified Prompt 1, which emphasized deeper contextual understanding, improved accuracy in the Top-10 setting on both NQ and TriviaQA, suggesting better integration of contextual knowledge. However, it slightly reduced accuracy in the Top-5 setting. On the other hannd, Modified Prompt 2, with a collaborative expert-based approach, showed moderate improvements on TriviaQA but no gains on NQ.
 
 **Table 2**:
 | Prompt       | NQ Top-5 BLEU | NQ Top-10 BLEU | TriviaQA Top-5 BLEU | TriviaQA Top-10 BLEU |
@@ -144,7 +144,7 @@ Table 1 shows the accuracy of the Associate agent in ACTIVERAG using the origina
 | Modified Prompt 1  | 0.31           | 0.32           | 0.34                | 0.34                  |
 | Modified Prompt 2  | 0.31           | 0.31           | 0.36                | 0.35                  |
 
-Table 2 compares the Associate agent's BLEU scores for the original and modified prompts. As is shown in the table, Modified Prompt 1 consistently improved BLEU scores across both NQ and TriviaQA, demonstrating better contextual integration and response fluency. Modified Prompt 2 achieved the highest BLEU scores on TriviaQA, particularly in the Top-5 setting (0.36), but did not maintain the same level of improvement on NQ, highlighting that its benefits were more dataset-specific. This indicates that while both prompts enhanced language quality, their effectiveness varied depending on the context.
+Table 2 compares ACTIVERAG's (with the Associate agent) BLEU scores for the original and modified prompts. As shown in the table, Modified Prompt 1 consistently improved BLEU scores across both NQ and TriviaQA, demonstrating better contextual integration and response fluency. Modified Prompt 2 achieved the highest BLEU scores on TriviaQA, particularly in the Top-5 setting (0.36), but did not maintain the same level of improvement on NQ, highlighting that its benefits were more dataset-specific. This indicates that while both prompts enhanced language quality, their effectiveness varied depending on the context.
 
 **Table 3**:
 | Model            | Best Accuracy (NQ) (%) | Best Accuracy (TriviaQA) (%) |
@@ -153,9 +153,9 @@ Table 2 compares the Associate agent's BLEU scores for the original and modified
 | CoT              | 55.2                   | 90.6                         |
 | GPT-4.0 Mini     | 55.4                   | 88.0                         |
 | GPT-4 Turbo      | 65.8                   | 93.8                         |
-| ACTIVERAG        | 69.8                   | 96.0                         |
+| ACTIVERAG (w. Associate Agent)       | 69.8                   | 96.0                         |
 
-Table 3 compares the best accuracy results of baseline models with those of the Associate agent in ACTIVERAG, with the highest accuracy achieved using Prompt 1. The Associate agent outperformed all baseline models on both NQ and TriviaQA, achieving top accuracy scores of 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, it showed substantial improvements, particularly in handling complex, knowledge-intensive tasks. Although GPT-4 Turbo performed well, the Associate agent’s active integration strategies allowed it to achieve comparable, and in some instances, superior results.
+Table 3 compares the best accuracy results of baseline models with those of ACTIVERAG's with the Associate Agent, with the highest accuracy achieved using Prompt 1. ACTIVERAG outperformed all baseline models on both NQ and TriviaQA, achieving top accuracy scores of 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, it showed substantial improvements, particularly in handling complex, knowledge-intensive tasks. Although GPT-4 Turbo performed well, ACTIVERAG achieved superior results.
 
 **Table 4**:
 | Model            | Best BLEU (NQ) | Best BLEU (TriviaQA) |
@@ -164,9 +164,9 @@ Table 3 compares the best accuracy results of baseline models with those of the 
 | CoT              | 0.12           | 0.20                  |
 | GPT-4.0 Mini     | 0.167          | 0.354                 |
 | GPT-4 Turbo      | 0.187          | 0.443                 |
-| ACTIVERAG        | 0.32           | 0.36                  |
+| ACTIVERAG (w. Associate Agent)      | 0.32           | 0.36                  |
 
-Table 4 compares the best BLEU scores of baseline models with those of the Associate agent in ACTIVERAG, with the best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. The table shows that the Associate agent in ACTIVERAG achieved BLEU scores of 0.32 on NQ and 0.36 on TriviaQA, outperforming all other models on NQ, including GPT-4 Turbo (0.187). Although Vanilla RAG achieved a higher BLEU score on TriviaQA (0.46), ACTIVERAG’s performance was still competitive and significantly better than CoT and GPT-4.0 Mini. These results highlight the effectiveness of the agent's targeted prompt modifications, demonstrating superior response quality and alignment with reference answers, especially on NQ.
+Table 4 compares the best BLEU scores of baseline models with those of ACTIVERAG's (with the Associate agent), with the best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. The table shows that the ACTIVERAG achieved BLEU scores of 0.32 on NQ and 0.36 on TriviaQA, outperforming all other models on NQ, including GPT-4 Turbo (0.187). Although Vanilla RAG achieved a higher BLEU score on TriviaQA (0.46), ACTIVERAG's performance was still competitive and significantly better than CoT and GPT-4.0 Mini. These results highlight the effectiveness of the targeted prompt modifications, demonstrating superior response quality and alignment with reference answers, especially on NQ.
 
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at [ronshahar@campus.technion.ac.il], [hillysegal@campus.technion.ac.il], [yael-k@campus.technion.ac.il].
