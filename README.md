@@ -128,7 +128,7 @@ Table 2 compares the Associate agent's BLEU scores for the original and modified
 | GPT-4 Turbo      | 65.8                   | 93.8                         |
 | ACTIVERAG        | 69.8                   | 96.0                         |
 
-Table 3 compares the best accuracy results for baseline models and ACTIVERAG, with ACTIVERAG’s best performance achieved using Prompt 1. It can be seen that ACTIVERAG outperformed all baseline models on both NQ and TriviaQA, achieving the highest accuracy with 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, ACTIVERAG demonstrated substantial improvements, particularly in handling complex knowledge-intensive tasks. While GPT-4 Turbo performed strongly, ACTIVERAG’s active integration strategies allowed it to achieve comparable, and in some cases, superior results, highlighting the effectiveness of its multi-agent approach.
+Table 3 compares the best accuracy results of baseline models with those of the Associate agent in ACTIVERAG, where ACTIVERAG’s highest accuracy was achieved using Prompt 1. It can be seen that ACTIVERAG outperformed all baseline models on both NQ and TriviaQA, achieving the highest accuracy with 69.8% on NQ and 96.0% on TriviaQA. Compared to Vanilla RAG and CoT, ACTIVERAG demonstrated substantial improvements, particularly in handling complex knowledge-intensive tasks. While GPT-4 Turbo performed strongly, ACTIVERAG’s active integration strategies allowed it to achieve comparable, and in some cases, superior results, highlighting the effectiveness of its multi-agent approach.
 
 **Table 4**:
 | Model            | Best BLEU (NQ) | Best BLEU (TriviaQA) |
@@ -139,7 +139,7 @@ Table 3 compares the best accuracy results for baseline models and ACTIVERAG, wi
 | GPT-4 Turbo      | 0.187          | 0.443                 |
 | ACTIVERAG        | 0.32           | 0.36                  |
 
-Table 4 compares the best BLEU scores for baseline models and ACTIVERAG, with ACTIVERAG’s best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. As shown in the table, ACTIVERAG achieved higher BLEU scores compared to traditional baselines like Vanilla RAG and CoT, demonstrating enhanced response quality and alignment with reference answers. While GPT-4 Turbo maintained the highest BLEU scores overall, ACTIVERAG’s targeted prompt modifications allowed it to perform competitively.
+Table 4 compares the best BLEU scores for baseline models with those of the Associate agent in ACTIVERAG, with the best performance achieved using Prompt 1 for NQ and Prompt 2 for TriviaQA. As shown in the table, ACTIVERAG achieved higher BLEU scores compared to traditional baselines like Vanilla RAG and CoT, demonstrating enhanced response quality and alignment with reference answers. While GPT-4 Turbo maintained the highest BLEU scores overall, ACTIVERAG’s targeted prompt modifications allowed it to perform competitively.
 
 
 ## Contact
