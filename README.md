@@ -30,6 +30,11 @@ To reproduce the results of this project, you can clone the repository and insta
 git clone https://github.com/hillysegal1/ActiveRAG
 pip install -r requirements.txt
 ```
+### Reproduction
+You can reproduce the results from our paper using the following command:
+```bash
+python -m logs.eval --dataset nq --topk 5
+```
 ## **Script Files**
 The scripts are used for running and evaluating the ActiveRAG model, VanillaRAG, Chain of Thought (COT), and the LLM's GPT 4.0 Turbo and GPT 4.0-mini models.
 
@@ -60,7 +65,7 @@ These files are used to calculate the accuracy or BLEU scores.
 
 **For Accuracy:**
 - `evaluate.py`: General evaluation script for accuracy.
-- `API_evaluate.py`: Accuracy evaluation for ** LLM** model.
+- `API_evaluate.py`: Accuracy evaluation for **LLM** model.
 - `COT_evaluate.py`: Accuracy evaluation for **COT** model.
 - `vanila_evaluate.py`: Accuracy evaluation for **VanillaRAG** model.
 
@@ -70,11 +75,7 @@ These files are used to calculate the accuracy or BLEU scores.
 - `COT_evaluate_bleu.py`: BLEU evaluation for **COT** model.
 - `vanila_evaluate_bleu.py`: BLEU evaluation for **VanillaRAG** model.
 
-### Reproduction
-You can reproduce the results from our paper using the following command:
-```bash
-python -m logs.eval --dataset nq --topk 5
-```
+
 
 ## Experiments
 Models Used
