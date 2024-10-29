@@ -56,7 +56,10 @@ def extract_agent_data(file_path):
             output = preprocess_text(data[key][f'{key}_output'])
             embedding = get_embedding(output)
             bleu_score = calculate_bleu(true_answer, output)
-            agent_correctness = data.get(f"{key}_correctness", "Unknown")
+            #agent_correctness = data.get(f"{key}_correctness", "Unknown")
+            # Use fallback for correctness
+            correctness_key = f"{key}_correctness"
+            agent_correctness = data.get(key, {}).get(correctness_key, "False").strip().lower() == "true"
             agent_data[key] = {
                 'embedding': embedding,
                 'bleu_score': bleu_score,
@@ -166,7 +169,7 @@ if __name__ == "__main__":
     all_test_results = []
     with torch.no_grad():
         for embeddings, scores, target, agent_data, filename in test_loader:
-            print(f"Processing Filename: {filename[0]}")
+            
 
             output, weights = model(embeddings, scores)
             test_loss = criterion(output, target)
@@ -184,7 +187,7 @@ if __name__ == "__main__":
                 'chosen_agent': closest_agent,
                 'output': chosen_agent_output,
                 'bleu_score': chosen_agent_bleu,
-                'correctness': chosen_agent_correctness,
+                'correctness': str(chosen_agent_correctness.item() if isinstance(chosen_agent_correctness, torch.Tensor) else chosen_agent_correctness),  # Convert tensor to scalar
                 'weights': weights.cpu().numpy().tolist()
             }
 
