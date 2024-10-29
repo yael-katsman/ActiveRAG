@@ -1,0 +1,3002 @@
+[
+    {
+        "filename": "417.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate gilbert sullivan operetta subtitled witches curse indeed ruddigore operetta also known witch curse well known work gilbert sullivan featuring storyline centered around curse placed baronets ruddigore answer ruddigore"
+        ],
+        "bleu_score": 0.011908226236406779,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22276996076107025,
+                0.1929500699043274,
+                0.1788538098335266,
+                0.19173260033130646,
+                0.16984321177005768
+            ]
+        ]
+    },
+    {
+        "filename": "442.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process katharine hepburn second oscar movie guess coming dinner 1967 film directed stanley kramer addressed issue interracial marriage featured outstanding cast including spencer tracy sidney poitier hepburn performance film earned academy award best actress marking second oscar win illustrious career answer guess coming dinner"
+        ],
+        "bleu_score": 0.008561866771314383,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20767875015735626,
+                0.19106484949588776,
+                0.17127065360546112,
+                0.18822716176509857,
+                0.18422360718250275
+            ]
+        ]
+    },
+    {
+        "filename": "15.json",
+        "chosen_agent": "associate",
+        "output": [
+            "gunfight ok corral took place town tombstone arizona 1881 event famous example real life western shootout generally regarded famous shootout history american wild west gunfight involved lawmen wyatt earp virgil earp morgan earp doc holliday group outlaws known cowboys shootout resulted deaths billy clanton mclaury brothers virgil morgan doc holliday wounded given information gunfight ok corral took place tombstone arizona answer tombstone"
+        ],
+        "bleu_score": 0.0050615410611162615,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18679676949977875,
+                0.18920981884002686,
+                0.18470712006092072,
+                0.1641651690006256,
+                0.19160105288028717
+            ]
+        ]
+    },
+    {
+        "filename": "371.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate effectively explains concept heaven divided parts various religious traditions enhance understanding question let delve basic advanced pieces information related topic basic knowledge various religious traditions including christianity islam judaism hinduism buddhism notion heaven often divided parts levels example christianity references multiple levels heaven third heaven mentioned new testament similarly islam descriptions different levels paradise offering varying degrees bliss rewards advanced knowledge hinduism concept heaven svarga divided different levels level corresponding accumulation good karma performance righteous deeds additionally theosophy presents idea summerland devachan different levels states existence afterlife associated specific spiritual growth experiences furthermore divisions heaven different religious traditions reflect belief different levels spiritual attainment righteousness allowing notion individuals experience varying degrees bliss closeness divine based actions beliefs life answer various religious traditions notion heaven divided parts accommodate different levels spiritual attainment righteousness divisions reflect belief varying degrees bliss rewards based individuals actions beliefs life"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18097808957099915,
+                0.16550685465335846,
+                0.18435771763324738,
+                0.19086770713329315,
+                0.17461910843849182
+            ]
+        ]
+    },
+    {
+        "filename": "393.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 morecambe wise christmas special 1978 compilation programme broadcast bbc1 christmas night direct competition duo brand new show shown time thames television 2 former prime minister appeared morecambe wise christmas special 1978 margaret thatcher 3 margaret thatcher prime minister united kingdom 1979 1990 answer margaret thatcher"
+        ],
+        "bleu_score": 0.006065997938636506,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23874126374721527,
+                0.2012694627046585,
+                0.20011882483959198,
+                0.18971587717533112,
+                0.20373758673667908
+            ]
+        ]
+    },
+    {
+        "filename": "12.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 mark lamarr amanda de cadenet terry christian well known tv presenters 2 channel 4 british television channel known producing variety tv shows 3 show featured mark lamarr amanda de cadenet terry christian presenters likely popular well known show answer tv show channel 4 featured mark lamarr amanda de cadenet terry christian presenters word"
+        ],
+        "bleu_score": 0.005514743143838301,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20261868834495544,
+                0.2024921178817749,
+                0.19830812513828278,
+                0.19492675364017487,
+                0.204509437084198
+            ]
+        ]
+    },
+    {
+        "filename": "451.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process percy spencer american engineer working raytheon 1940s building magnetrons radar sets working magnetrons noticed candy bar pocket melted leading experiment popcorn kernels popped placed near magnetron accidental discovery specific heating effect high power microwave beam led spencer invention microwave oven expertise radar tube design work combat radar equipment military raytheon contributed understanding microwave radiation potential applications development radar technology world war ii played crucial role spencer accidental discovery based observations experiments spencer patented microwave oven 1945 first microwave oven called radarange demonstrated raytheon 1947 answer microwave oven invented 1940s percy spencer american self taught engineer howland maine building magnetrons radar sets"
+        ],
+        "bleu_score": 0.0078388766337488,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1944197565317154,
+                0.1834770143032074,
+                0.18142063915729523,
+                0.21875421702861786,
+                0.1954781711101532
+            ]
+        ]
+    },
+    {
+        "filename": "497.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides comprehensive understanding specific setup rules technical details snooker table enhanced reasoning process enhance reasoning process important note red balls initially set triangular formation known pack beginning snooker game colored balls strategically placed respective spots around table understanding dimensions markings snooker table baulk line pockets essential comprehending game dynamics strategies additionally knowledge rules scoring system including sequence potting red colored balls points associated colored ball crucial complete understanding game answer beginning game 15 red balls 6 colored balls 1 cue ball making total 22 balls snooker table red balls set triangular pack colored balls strategically placed around table understanding specific setup rules technical details snooker table essential comprehensive understanding game"
+        ],
+        "bleu_score": 0.002995195794524073,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20128262042999268,
+                0.17079418897628784,
+                0.18841218948364258,
+                0.1883411407470703,
+                0.1847120225429535
+            ]
+        ]
+    },
+    {
+        "filename": "281.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 church st anne bells shandon housed located city cork ireland specifically district shandon 2 bells shandon famous housed church st anne historical significance cork ireland 3 therefore based association bells shandon church st anne cork ireland inferred church st anne located city cork answer cork"
+        ],
+        "bleu_score": 0.007213727908218376,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20765089988708496,
+                0.19145052134990692,
+                0.1767812818288803,
+                0.19505050778388977,
+                0.18558934330940247
+            ]
+        ]
+    },
+    {
+        "filename": "264.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process enhanced using retrieved knowledge hurling gaelic athletic sport played 15 players team players occupying various positions goalkeeper full backs half backs midfielders half forwards full forwards game primary objective score driving ball goals putting ball bar worth noting hurling three thousand years old considered world fastest field game additionally variations game teams 7 11 players played different parts world answer 15 players field hurling team"
+        ],
+        "bleu_score": 0.004740784076857388,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23224753141403198,
+                0.1748061180114746,
+                0.18573635816574097,
+                0.1900012344121933,
+                0.19546908140182495
+            ]
+        ]
+    },
+    {
+        "filename": "188.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 basutoland established british crown colony 1884 later annexed britain 1868 2 1966 basutoland gained independence britain became sovereign state 3 gaining independence basutoland renamed kingdom lesotho answer lesotho"
+        ],
+        "bleu_score": 0.011303083972869978,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19831237196922302,
+                0.19107253849506378,
+                0.19769184291362762,
+                0.1711578518152237,
+                0.18759500980377197
+            ]
+        ]
+    },
+    {
+        "filename": "158.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides comprehensive understanding novel author enhanced reasoning process wasp factory debut novel scottish writer iain banks published 1984 novel gained critical acclaim listed one top 100 books 20th century iain banks sadly passed away 2013 leaving behind legacy influential thought provoking literature novel success impact literary culture solidify significance literary world answer iain banks"
+        ],
+        "bleu_score": 0.01110742161092293,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20765407383441925,
+                0.16676294803619385,
+                0.1767619401216507,
+                0.1790751814842224,
+                0.17738157510757446
+            ]
+        ]
+    },
+    {
+        "filename": "50.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process la gazza ladra italian title translates thieving magpie english translation commonly used rossini opera english speaking countries information supported fact thieving magpie standard english translation title widely recognized opera community therefore concluded title rossini opera la gazza ladra usually translated english thieving magpie answer title rossini opera la gazza ladra usually translated english thieving magpie"
+        ],
+        "bleu_score": 0.02735499137960194,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.25329622626304626,
+                0.1851460188627243,
+                0.2136101871728897,
+                0.19896218180656433,
+                0.23157623410224915
+            ]
+        ]
+    },
+    {
+        "filename": "443.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate correctly identifies united states declaration war spain sinking uss maine 1898 deepen understanding question important note sinking uss maine havana harbor cuba led increased tensions united states spain united states government many americans believed sinking result spanish sabotage although exact cause remains uncertain event ultimately led outbreak spanish american war addition important understand broader context spanish american war fueled desire cuban independence spanish rule united states expansionist ambitions war resulted united states emerging global power acquiring territories puerto rico guam philippines answer sinking uss maine united states declared war spain"
+        ],
+        "bleu_score": 0.004269301659322756,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19557277858257294,
+                0.17405450344085693,
+                0.17694124579429626,
+                0.21380531787872314,
+                0.18113696575164795
+            ]
+        ]
+    },
+    {
+        "filename": "70.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 john forsythe regular tv series charlie angels voice charlie townsend 2 character charlie never seen screen communicated angels speakerphone answer john forsythe regular tv series charlie angels never seen"
+        ],
+        "bleu_score": 0.02428706324042873,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20124152302742004,
+                0.19500556588172913,
+                0.16326355934143066,
+                0.17849963903427124,
+                0.17695005238056183
+            ]
+        ]
+    },
+    {
+        "filename": "411.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge fragrant essential oil obtained chiefly damask rose known rose oil rose otto extracted process steam distillation crushed rose petals resulting valuable oil used perfumery aromatherapy skincare products production technique originated persia spread arabia india eastern europe damask roses rosa damascena trigintipetala used bulgaria iran germany rosa centifolia parts world extraction process yield rose otto rose absolute steam distillation solvent extraction respectively due high cost yield potential dilution essential oils rose oil remains popular perfumery despite price answer name fragrant essential oil obtained chiefly damask rose rose oil rose otto"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21689561009407043,
+                0.1979558914899826,
+                0.21818946301937103,
+                0.2094600349664688,
+                0.23292848467826843
+            ]
+        ]
+    },
+    {
+        "filename": "27.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 arthurian legend excalibur legendary sword king arthur 2 king arthur mortally wounded battle camlann instructed sir bedivere throw excalibur back lake 3 sir bedivere initially disobeyed king command twice eventually threw excalibur back lake instructed answer sir bedivere threw excalibur back lake arthurian legend"
+        ],
+        "bleu_score": 0.007598236665982756,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22903838753700256,
+                0.20311902463436127,
+                0.23458002507686615,
+                0.18234510719776154,
+                0.19174598157405853
+            ]
+        ]
+    },
+    {
+        "filename": "290.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process based associateal knowledge know ub iwerks first drew mickey mouse 1928 walt disney provided voice mickey mouse early years additionally advanced information walt disney recorded mickey dialogue spring summer 1941 last time replaced sound effects artist jimmy macdonald furthermore important note walt disney initially provided voice mickey mouse transitions voice actors character years wayne allwine eventually taking role death 2009 answer ub iwerks first drew mickey mouse 1928 walt disney first supplied voice character early years recording mickey dialogue spring summer 1941 last time replaced jimmy macdonald"
+        ],
+        "bleu_score": 0.007580336102618728,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18669666349887848,
+                0.164631187915802,
+                0.17098838090896606,
+                0.17384664714336395,
+                0.16242988407611847
+            ]
+        ]
+    },
+    {
+        "filename": "246.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 charlotte edwards former professional cricketer 2 captain england women cricket team 3 played women big bash league england 4 recognized contributions cricket sport receiving b e based consolidated knowledge evident charlotte edwards closely associated sport cricket extensive career professional cricketer leadership role captain england women cricket team solidify connection sport answer charlotte edwards associated sport cricket"
+        ],
+        "bleu_score": 0.017121960029749788,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19994327425956726,
+                0.20074479281902313,
+                0.18801993131637573,
+                0.1877538412809372,
+                0.17564964294433594
+            ]
+        ]
+    },
+    {
+        "filename": "484.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 arthur balfour served british prime minister 1902 1905 2 next british prime minister balfour sir henry campbell bannerman served 1905 1908 answer sir henry campbell bannerman"
+        ],
+        "bleu_score": 0.08055259301867158,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23985600471496582,
+                0.22815361618995667,
+                0.2233668863773346,
+                0.19210517406463623,
+                0.19937866926193237
+            ]
+        ]
+    },
+    {
+        "filename": "333.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 deerstalker hat traditionally worn rural areas hunting typically appropriate urban settings 2 despite popular association deerstalker hat sherlock holmes due illustrations sidney paget artists depicting holmes wearing hat london well actor william gillette portrayal holmes deerstalker hat inverness cape 3 deerstalker hat explicitly described arthur conan doyle stories became popular perception holmes visual representations answer deerstalker hat"
+        ],
+        "bleu_score": 0.010319955954462896,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21604043245315552,
+                0.1883026659488678,
+                0.18608498573303223,
+                0.17756834626197815,
+                0.19210761785507202
+            ]
+        ]
+    },
+    {
+        "filename": "370.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process tigris river flows parallel euphrates river rivers originate eastern turkey flow syria iraq eventually join shatt al arab irregular nature euphrates river problems droughts summer flooding winter influenced regulation water dams reservoirs additionally tributaries euphrates sajur balikh khabur rivers syria contribute water flow understanding interconnectedness river systems impact tributaries main river flow crucial determining parallel flow tigris river euphrates answer tigris river"
+        ],
+        "bleu_score": 0.0101763017496334,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21084710955619812,
+                0.17568811774253845,
+                0.21735861897468567,
+                0.17911627888679504,
+                0.19536836445331573
+            ]
+        ]
+    },
+    {
+        "filename": "259.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge enhance causal reasoning logical inference abilities 1 1306 robert bruce scottish king sought refuge rathlin island northern ireland coast due ongoing wars scottish independence england island provided natural defenses difficult land making strategic sanctuary robert bruce 2 rathlin castle located island belonged irish bissett family later came possession macdonnells antrim ownership control castle island played crucial role providing refuge robert bruce 3 historical context rathlin island hiding place association st columba highlights significance refuge individuals seeking safety tumultuous times answer robert bruce"
+        ],
+        "bleu_score": 0.008561559364804024,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18955856561660767,
+                0.19547568261623383,
+                0.19164258241653442,
+                0.17621299624443054,
+                0.17229503393173218
+            ]
+        ]
+    },
+    {
+        "filename": "464.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 term gurdwara commonly associated sikhism place worship sikhs 2 gurdwaras considered sikh equivalent temple serve place congregational worship community gatherings practice kirtan devotional singing 3 word gurdwara means doorway guru punjabi emphasizing importance guru granth sahib holy scripture sikhism places worship answer temple place worship known gurdwara associated sikhism"
+        ],
+        "bleu_score": 0.006761934185665956,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2225499451160431,
+                0.20613060891628265,
+                0.19766725599765778,
+                0.2145451307296753,
+                0.21231819689273834
+            ]
+        ]
+    },
+    {
+        "filename": "47.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process cocktail party family reunion written eliot renowned playwright poet information consistent across multiple reliable sources contradictory information therefore safe conclude eliot author plays answer eliot"
+        ],
+        "bleu_score": 0.009565665109256835,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22316570580005646,
+                0.17572268843650818,
+                0.166121244430542,
+                0.17522691190242767,
+                0.19939549267292023
+            ]
+        ]
+    },
+    {
+        "filename": "291.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 us television show sopranos tony soprano regularly visits psychiatrist deal personal mental issues 2 name tony soprano psychiatrist dr jennifer melfi portrayed actress lorraine bracco 3 dr melfi plays significant role show providing therapy tony soprano helping navigate personal criminal life 4 character dr melfi central storyline becomes intertwined tony soprano life struggles criminal activities answer dr jennifer melfi"
+        ],
+        "bleu_score": 0.022258417963215767,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20168069005012512,
+                0.18685272336006165,
+                0.19599002599716187,
+                0.1763623207807541,
+                0.18140143156051636
+            ]
+        ]
+    },
+    {
+        "filename": "257.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 colonial power indonesia 350 years would european nation long history colonial rule region 2 dutch east india company one earliest european powers establish presence indonesia early 17th century 3 dutch east india company eventually came control dutch government netherlands became colonial power indonesia 4 netherlands maintained control indonesia 350 years officially ceding control december 1949 answer colonial power indonesia 350 years officially ceding control december 1949 netherlands"
+        ],
+        "bleu_score": 0.0064607976858558226,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20112395286560059,
+                0.20629087090492249,
+                0.20342005789279938,
+                0.18598996102809906,
+                0.1893775463104248
+            ]
+        ]
+    },
+    {
+        "filename": "36.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 zoophobia defined irrational fear dislike non human animals causing distress dysfunction individual everyday life 2 specifically refers fear dangerous threatening animals wild dogs big cats bears venomous snakes 3 zoophobia falls category specific phobias significantly impact individual well answer zoophobia fear animals particularly dangerous threatening ones wild dogs big cats bears venomous snakes specific phobia cause distress dysfunction individual everyday life"
+        ],
+        "bleu_score": 0.011617913513412558,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.16817745566368103,
+                0.15757949650287628,
+                0.16410145163536072,
+                0.16674911975860596,
+                0.1625404804944992
+            ]
+        ]
+    },
+    {
+        "filename": "355.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 incident involving shooting gas balloon belarusian air force took place 12 september 1995 gordon bennett international balloon race 2 race prestigious gordon bennett trophy awarded winner gas balloon race 3 shooting gas balloon resulted tragic deaths two american citizens 4 history gordon bennett cup gas balloon races provides context understanding significance incident answer belarusian air force shot gas balloon killing two americans race gordon bennett trophy"
+        ],
+        "bleu_score": 0.025736227805033953,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19789503514766693,
+                0.20584240555763245,
+                0.18531908094882965,
+                0.1688162386417389,
+                0.18854612112045288
+            ]
+        ]
+    },
+    {
+        "filename": "43.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 monument london refers monument great fire london doric column commemorating great fire london 2 monument situated near northern end london bridge junction monument street fish street hill city london 3 served monument station named monument great fire london served district circle lines 4 monument also principal station underground section tyne wear metro system 5 therefore monument located city london nearest thoroughfare monument street answer monument located near monument street city london"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19114911556243896,
+                0.1812094897031784,
+                0.18303251266479492,
+                0.17942211031913757,
+                0.17856553196907043
+            ]
+        ]
+    },
+    {
+        "filename": "323.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process retrieved knowledge 1 18th century capital russia moved moscow st petersburg tsar peter great 1712 marking significant shift country political cultural center 2 move deliberate effort modernize westernize russia st petersburg founded peter great designed window west 3 brief period alexandrovskaya sloboda served capital russia tsar ivan terrible 16th century highlights historical significance moscow traditional capital russia 4 relocation ukrainian ssr capital kharkiv kiev 1934 demonstrates impact capital relocations eastern european countries political cultural dynamics answer st petersburg"
+        ],
+        "bleu_score": 0.017225602959831995,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19256381690502167,
+                0.170892596244812,
+                0.16382946074008942,
+                0.16541163623332977,
+                0.16342024505138397
+            ]
+        ]
+    },
+    {
+        "filename": "245.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate pop group reached number one uk charts sad sweet dreamer october 1974 sweet sensation song soaring soul ballad heavily influenced stylistics became first hit written david parton co produced tony hatch parton song also reached 14 u billboard hot 100 following spring charted similarly canada information provides associateal knowledge pop group hit song additionally passages mention sweet dreams eurythmics artists also songs titled sweet dreams achieved commercial success uk internationally advanced information deepens understanding pop music landscape 1970s 1980s providing context success sweet sensation sad sweet dreamer uk charts answer sweet sensation"
+        ],
+        "bleu_score": 0.0072178870923904756,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20282405614852905,
+                0.19417883455753326,
+                0.18698233366012573,
+                0.19425036013126373,
+                0.18571129441261292
+            ]
+        ]
+    },
+    {
+        "filename": "425.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process song getting know show tune 1951 rodgers hammerstein musical king first sung gertrude lawrence original broadway production later marni nixon dubbed deborah kerr 1956 film adaptation song performed anna british schoolteacher hired governess forms warm relationship children wives king siam addition association king getting know used title works 1999 film 1995 album mulgrew miller 2005 film science fiction short story david marusek furthermore official theme song titled getting know recorded billy crawford based information getting know well known show tune king also used title films albums short stories showcasing versatility enduring popularity answer getting know song film king"
+        ],
+        "bleu_score": 0.003946187397416399,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20601557195186615,
+                0.18366104364395142,
+                0.1901959627866745,
+                0.1717642843723297,
+                0.18327182531356812
+            ]
+        ]
+    },
+    {
+        "filename": "404.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge role caligula 1976 uk tv series claudius played actor john hurt information based knowledge nicholas amer portrayed caligula 1976 tv series claudius rick parets played role 1979 film caligula additionally emlyn williams cast caligula never completed 1937 film claudius samuel barnett portrayed caligula 2010 bbc radio adaptation claudius demonstrates various actors taken role caligula different adaptations story answer john hurt"
+        ],
+        "bleu_score": 0.010036785986031593,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2194489985704422,
+                0.18803052604198456,
+                0.18538348376750946,
+                0.1899503767490387,
+                0.17665696144104004
+            ]
+        ]
+    },
+    {
+        "filename": "106.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 autobiography dreams father published 1995 barack obama us politician 2 information consistent across multiple sources widely accepted accurate 3 therefore confidently concluded author autobiography dreams father barack obama answer barack obama"
+        ],
+        "bleu_score": 0.019212629873321292,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20993748307228088,
+                0.18574221432209015,
+                0.18036220967769623,
+                0.17940381169319153,
+                0.1834954172372818
+            ]
+        ]
+    },
+    {
+        "filename": "163.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced reasoning process 1 graca machel widow president samora machel mozambique later married nelson mandela former president south africa 2 widow samora machel wife nelson mandela graca machel played significant roles mozambican south african politics humanitarian efforts 3 marriages two prominent political figures influenced advocacy women children rights international humanitarian work 4 therefore based marriage nelson mandela graca machel wife nelson mandela answer nelson mandela"
+        ],
+        "bleu_score": 0.010036785986031593,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2078426629304886,
+                0.17436712980270386,
+                0.18441227078437805,
+                0.1824459433555603,
+                0.198212131857872
+            ]
+        ]
+    },
+    {
+        "filename": "186.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 word barber derived latin word barba means beard 2 ancient rome barbers responsible cutting hair also shaving grooming beards reflecting association latin word barba 3 term barber evolved occupational title variations different languages barbieri italian barbero spanish barbeiro portuguese barbier french 4 australia term barber used popular title men hairdressers hairdresser official term profession 5 historically hairdressers considered barbers distinction barbering cosmetology emerged 20th century answer word barber latin meaning beard reflecting historical association grooming maintaining beards addition cutting hair"
+        ],
+        "bleu_score": 0.005000474026233823,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.24433499574661255,
+                0.18931418657302856,
+                0.2151879221200943,
+                0.20927926898002625,
+                0.2123972624540329
+            ]
+        ]
+    },
+    {
+        "filename": "195.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 aconcagua located south america specifically mendoza province argentina 2 aconcagua highest mountain outside asia summit elevation 6 962 meters sea level 3 andes mountain range longest mountain range world runs along western coast south america 4 aconcagua part andes mountain range 5 nearest higher peak aconcagua tirich mir hindu kush located asia 6 aconcagua one seven summits highest mountains seven continents 7 therefore aconcagua highest mountain andes mountain range highest mountain outside asia answer aconcagua highest mountain andes mountain range highest mountain outside asia"
+        ],
+        "bleu_score": 0.00962874351869303,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20246891677379608,
+                0.20406939089298248,
+                0.18336503207683563,
+                0.21155089139938354,
+                0.20074810087680817
+            ]
+        ]
+    },
+    {
+        "filename": "318.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process operation felix codename proposed german invasion gibraltar british overseas territory world war ii however also included potential invasion portugal occupation madeira azores amendment operation operation felix heinrich intention withdrawing german troops ussr capture gibraltar operation ultimately postponed modified abandoned due spanish dictator francisco franco intransigence answer gibraltar"
+        ],
+        "bleu_score": 0.0070947372291694415,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19222018122673035,
+                0.18523220717906952,
+                0.19814203679561615,
+                0.1773216873407364,
+                0.20023836195468903
+            ]
+        ]
+    },
+    {
+        "filename": "126.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process name captain james kirk star trek initially stood unspecified middle initial however later revealed expanded universe writer david gerrold stands tiberius middle name addition middle name added depth character provided insight background family history answer stands tiberius"
+        ],
+        "bleu_score": 0.007313425995364251,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22820113599300385,
+                0.19516420364379883,
+                0.1755691021680832,
+                0.1701173335313797,
+                0.16713844239711761
+            ]
+        ]
+    },
+    {
+        "filename": "341.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 metro pictures took goldwyn pictures louis b mayer pictures form mgm 2 mgm adopted former goldwyn mascot leo lion mascot 3 goldwyn corporate motto ars gratia artis used metro goldwyn pictures logo later adopted mgm answer mgm adopted former goldwyn corporate motto ars gratia artis along mascot leo lion"
+        ],
+        "bleu_score": 0.02369695807350934,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21127519011497498,
+                0.18787910044193268,
+                0.18655693531036377,
+                0.1907898336648941,
+                0.19702355563640594
+            ]
+        ]
+    },
+    {
+        "filename": "337.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process effective communication theory three modes persuasion comprising logos ethos pathos conceived ancient greek philosopher aristotle work rhetoric theory outlines three essential elements persuasive communication logos logical appeal ethos ethical appeal pathos emotional appeal aristotle posited speaker must utilize modes effectively persuade audience enhanced knowledge three modes persuasion theory fundamental concept field rhetoric communication influencing persuasive strategies various disciplines aristotle work rhetoric lasting impact study persuasion communication theories still widely referenced applied modern contexts contemporary research psychology communication continues explore expand upon aristotle concepts demonstrating enduring relevance influence work answer aristotle"
+        ],
+        "bleu_score": 0.0043087595354752385,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2023243010044098,
+                0.18058323860168457,
+                0.16715842485427856,
+                0.15842625498771667,
+                0.16047897934913635
+            ]
+        ]
+    },
+    {
+        "filename": "414.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 poopdeck pappy character popeye comic strip known grumpy protective nature well involvement various adventures encounters characters 2 poopdeck pappy father popeye sailor man well known fictional character popeye series 3 based established relationship poopdeck pappy popeye inferred poopdeck pappy father popeye sailor man answer poopdeck pappy father popeye sailor man"
+        ],
+        "bleu_score": 0.023280524479693518,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21693481504917145,
+                0.18496392667293549,
+                0.18353089690208435,
+                0.18884140253067017,
+                0.1712946891784668
+            ]
+        ]
+    },
+    {
+        "filename": "95.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 arthur thistlewood british radical activist conspirator cato street conspiracy 1820 planned assassinate british cabinet dinner plot uncovered authorities 2 thistlewood co conspirators including george edwards police spy apprehended raid loft marylebone area london 3 thistlewood convicted treason role conspiracy along several co conspirators publicly hanged decapitated outside newgate prison 1 may 1820 4 thistlewood involved spa fields riots 1816 motivated anger six acts peterloo massacre economic depression political repression time answer failed conspiracy led arthur thistlewood 1820 cato street conspiracy planned assassinate british cabinet"
+        ],
+        "bleu_score": 0.00765745787522202,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21023620665073395,
+                0.1830684244632721,
+                0.1913173943758011,
+                0.21326495707035065,
+                0.19286735355854034
+            ]
+        ]
+    },
+    {
+        "filename": "209.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate correctly identifies location 2014 commonwealth games rugby sevens tournament glasgow scotland knowledge retrieved provides specific details tournament including venue ibrox stadium outcome final match enhanced reasoning process 2014 commonwealth games held glasgow scotland rugby sevens tournament took place ibrox stadium tournament consisted preliminaries 26 july classification matches quarterfinals semifinals medal matches following day south africa emerged victors defeating reigning champions new zealand final answer 2014 commonwealth games rugby sevens tournament held ibrox stadium glasgow scotland"
+        ],
+        "bleu_score": 0.008629074566896214,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21782658994197845,
+                0.21673211455345154,
+                0.19246472418308258,
+                0.21030111610889435,
+                0.19196295738220215
+            ]
+        ]
+    },
+    {
+        "filename": "138.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 isoprene natural monomer used production synthetic rubbers neoprene polymerized stereospecifically produce styrene butadiene polymers 2 butyl alkyl group part many organic compounds used production synthetic rubbers plastics materials 3 nitrile organic compound containing cyano group c n used production synthetic rubbers like nbr acrylonitrile butadiene rubber materials answer substances types organic compounds commonly used production synthetic rubbers plastics materials"
+        ],
+        "bleu_score": 0.006790186827102368,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2142309695482254,
+                0.17573201656341553,
+                0.179754376411438,
+                0.2092667669057846,
+                0.20317508280277252
+            ]
+        ]
+    },
+    {
+        "filename": "263.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 latin phrase e pluribus unum traditional motto united states appearing great seal along latin phrases 2 considered de facto motto united states 1956 replaced god trust official motto 3 motto appears united states coins currency symbolizing unity states 4 first used u coinage 1795 significant part american symbolism heritage 5 phrase represents idea unity diversity reflecting formation united states many different states backgrounds answer united states"
+        ],
+        "bleu_score": 0.012058111009995943,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19635486602783203,
+                0.17091313004493713,
+                0.18694816529750824,
+                0.18594805896282196,
+                0.17583100497722626
+            ]
+        ]
+    },
+    {
+        "filename": "131.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides additional context historical significance lang park rugby league information help update language model knowledge prevent factual errors enhanced reasoning process langtree park home stadium st helens rugby league football club professional rugby league club st helens merseyside england 2012 st helens rugby league football club played matches langtree park additional knowledge lang park historical significance rugby league provides context different stadium relevance sport however change fact st helens rugby league football club played langtree park 2012 answer st helens rugby league football club"
+        ],
+        "bleu_score": 0.00765745787522202,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21197395026683807,
+                0.21712279319763184,
+                0.20483970642089844,
+                0.17348788678646088,
+                0.1834767907857895
+            ]
+        ]
+    },
+    {
+        "filename": "139.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge enhance causal reasoning logical inference abilities admiral sir miles messery fictional character literature films better known admiral horatio nelson horatio nelson real life british naval officer known leadership napoleonic wars strategic brilliance naval victories battle trafalgar made prominent figure literature films depicting naval history warfare based knowledge infer admiral sir miles messery fictional representation admiral horatio nelson character better known latter historical name literature films answer admiral horatio nelson"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22392943501472473,
+                0.20094583928585052,
+                0.21066761016845703,
+                0.2063508927822113,
+                0.1895134150981903
+            ]
+        ]
+    },
+    {
+        "filename": "31.json",
+        "chosen_agent": "associate",
+        "output": [
+            "river flows cologne rhine river river crossed several bridges including hohenzollern bridge cologne rodenkirchen bridge additionally multiple railway lines transportation systems west rhine railway cologne freight bypass railway cologne duisburg railway rhine ruhr bahn cologne stadtbahn play significant role city transportation infrastructure vologne river tributary moselle river located vosges department france substantial flow rate"
+        ],
+        "bleu_score": 0.012032901521760684,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19987398386001587,
+                0.1718917340040207,
+                0.189456507563591,
+                0.16377763450145721,
+                0.17620861530303955
+            ]
+        ]
+    },
+    {
+        "filename": "310.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge first robbery known jesse james responsible davies county savings association gallatin missouri jesse shot killed cashier captain john sheets took place 1869 event significant understanding criminal activities jesse james involvement post civil war era robbery marked beginning series criminal activities attributed jesse james gang shedding light challenges faced law enforcement addressing organized crime time answer 1869"
+        ],
+        "bleu_score": 0.0050615410611162615,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20020604133605957,
+                0.15846607089042664,
+                0.17875050008296967,
+                0.16408415138721466,
+                0.15107567608356476
+            ]
+        ]
+    },
+    {
+        "filename": "277.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process nychthemeron period 24 consecutive hours used avoid ambiguity term day term originates ancient greek used astronomy calendar studies additionally metonic cycle mentioned period almost exact 19 years nearly common multiple solar year synodic lunar month metonic cycle used astronomy calendar studies close 19 tropical years used convert lunar solar calendars metonic dial covers 235 months five rotations rotational lightcurves krethon obtained photometric observations demonstrating application metonic cycle astronomical studies answer nychthemeron period 24 consecutive hours"
+        ],
+        "bleu_score": 0.004123736633351873,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20032447576522827,
+                0.2006102055311203,
+                0.189942866563797,
+                0.19021399319171906,
+                0.18022195994853973
+            ]
+        ]
+    },
+    {
+        "filename": "474.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 helen keller taught communicate teacher anne sullivan used methods spelling words keller hand finger spelling 2 anne sullivan innovative teaching methods helped keller develop ability hear people speech reading lips hands become proficient using braille sign language 3 initially sullivan used strict schedule teaching methods later adapted approach teaching vocabulary based keller interests 4 keller sullivan advocacy efforts led increased funding donations perkins school blind 5 keller developed sixty home signs taught communicate finger spelling 6 anne sullivan also gave speech lessons keller based methods learned alexander graham bell answer anne sullivan taught helen keller communicate"
+        ],
+        "bleu_score": 0.006828036943201795,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.15263527631759644,
+                0.16109560430049896,
+                0.16000597178936005,
+                0.13609953224658966,
+                0.14733080565929413
+            ]
+        ]
+    },
+    {
+        "filename": "469.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process provided accurate correctly identifies oscar wilde writer convicted sodomy sentenced hard labor however retrieved knowledge persecution writers soviet union historical context censorship suppression free speech directly relate specific case oscar wilde enhanced reasoning process 1 writer convicted sodomy sentenced hard labor oscar wilde prominent irish writer known plays novels essays 2 1895 wilde convicted gross indecency sodomy sentenced two years hard labor significant impact life career answer oscar wilde"
+        ],
+        "bleu_score": 0.009395345631585733,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2011384814977646,
+                0.18390463292598724,
+                0.17194320261478424,
+                0.17729607224464417,
+                0.18323203921318054
+            ]
+        ]
+    },
+    {
+        "filename": "123.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process p mccoy highly accomplished jockey known achieving 4000th winner horse racing towcester racecourse holds significance mccoy career reached remarkable milestone information crucial understanding historical context significance towcester racecourse mccoy career answer p mccoy rode 4000th winner towcester racecourse"
+        ],
+        "bleu_score": 0.0071638813215387015,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.205098956823349,
+                0.19495552778244019,
+                0.19171762466430664,
+                0.17177119851112366,
+                0.19082343578338623
+            ]
+        ]
+    },
+    {
+        "filename": "180.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 truax field air national guard base also known truax field located dane county regional airport wisconsin united states 2 airport categorized small hub primary commercial service facility second busiest eight commercial airports wisconsin 3 truax field served 1 6 million passengers 2006 served several airlines including americanconnection american eagle delta delta connection frontier airlines united united express 4 based information clear truax field international airport located state wisconsin answer wisconsin"
+        ],
+        "bleu_score": 0.018549969482683185,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18278248608112335,
+                0.18284568190574646,
+                0.16970893740653992,
+                0.17549677193164825,
+                0.17232808470726013
+            ]
+        ]
+    },
+    {
+        "filename": "389.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 researcher well known experimenting lsd indicating strong interest psychedelic substances 2 researcher associated harvard suggesting connection academia research 3 researcher likely prominent figure field psychology neuroscience given nature experiments lsd retrieved knowledge albert hofmann swiss scientist first synthesized discovered psychedelic effects lsd dr timothy leary lecturer psychology harvard university conducted experiments lsd psilocybin advocating use psychological research alfred matthew hubbard dr ronald sandison also played significant roles promoting pioneering use lsd various purposes answer based enhanced reasoning process retrieved knowledge well known harvard researcher experimented lsd dr timothy leary"
+        ],
+        "bleu_score": 0.007358427300813425,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.17578697204589844,
+                0.17512041330337524,
+                0.1816602349281311,
+                0.17184871435165405,
+                0.17246374487876892
+            ]
+        ]
+    },
+    {
+        "filename": "457.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 long narrow island east coast russia russky island located eug\u00e9nie archipelago peter great gulf east sea primorsky krai russia largest island primorsky krai quarter area saperny peninsula forms much north east island closest part mainland 2 russky island situated east coast russia specifically east sea largest island region answer russky island"
+        ],
+        "bleu_score": 0.005514743143838301,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23086659610271454,
+                0.18893863260746002,
+                0.2089669108390808,
+                0.1983773410320282,
+                0.21693909168243408
+            ]
+        ]
+    },
+    {
+        "filename": "409.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process consolidating information model causal reasoning logical inference abilities improved model learn character fitz tv series cracker portrayed robbie coltrane original uk series robert pastorelli american remake understanding allows model make logical inferences different portrayals character different versions tv series additionally model associate character fitz actors played role enhancing ability make causal connections characters respective actors tv series answer robbie coltrane played part fitz original uk series tv show cracker"
+        ],
+        "bleu_score": 0.01013962232303694,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22880864143371582,
+                0.21152783930301666,
+                0.20686516165733337,
+                0.19413204491138458,
+                0.1891137808561325
+            ]
+        ]
+    },
+    {
+        "filename": "207.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 gladiator famously led slave revolt rome spartacus thracian gladiator led major slave uprising roman republic 73 71 bc 2 information contradicts previously mentioned passages jack gladstone leading demerara slave rebellion 1823 batavian leader civilis revolt ad 69 directly related gladiator leading slave revolt rome 3 additionally successful slave rebellion history 18th century haitian revolution led toussaint louverture jean jacques dessalines providing additional context famous historic slave rebellions answer spartacus"
+        ],
+        "bleu_score": 0.004358632673529301,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20695112645626068,
+                0.20456287264823914,
+                0.2027003914117813,
+                0.18034355342388153,
+                0.20047226548194885
+            ]
+        ]
+    },
+    {
+        "filename": "217.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge enhances understanding cultural impact various media adaptations catchphrase sufferin succotash characters associated understanding references helps analyze significance widespread recognition catchphrase association specific cartoon characters enhanced reasoning process 1 catchphrase sufferin succotash commonly associated cartoon character sylvester cat looney tunes series 2 catchphrase often used sylvester frustrated exasperated 3 cultural impact catchphrase evident references various media including television game shows poetry cartoons like feed kitty directed chuck jones answer sylvester cat"
+        ],
+        "bleu_score": 0.004309369973332364,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22093449532985687,
+                0.18125465512275696,
+                0.18483655154705048,
+                0.1809263974428177,
+                0.1873071938753128
+            ]
+        ]
+    },
+    {
+        "filename": "256.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process enhance reasoning process incorporate retrieved knowledge provide deeper understanding final battle king arthur significance arthurian legend 1 battle camlann traditionally believed final battle king arthur mortally wounded battle mentioned various medieval welsh texts often associated end king arthur reign 2 according legend king arthur fought nephew mordred battle camlann said battle king arthur received fatal wound leading ultimate demise 3 battle camlann considered culmination arthurian legend marking end king arthur reign disbandment knights round table event significant implications overall narrative arthurian legend 4 additionally versions legend believed king arthur taken mystical island avalon battle camlann said recover wounds adds layer mystery ambiguity fate king arthur different accounts exist regarding ultimate destiny answer final battle king arthur mortally wounded battle camlann battle marks end king arthur reign pivotal event arthurian legend leading various interpretations arthur ultimate fate including possibility wounds healed return"
+        ],
+        "bleu_score": 0.00291980997504315,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21005071699619293,
+                0.19561438262462616,
+                0.19772173464298248,
+                0.19723571836948395,
+                0.20021255314350128
+            ]
+        ]
+    },
+    {
+        "filename": "129.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate let enhance reasoning process using retrieved knowledge help model better understand question enhanced reasoning process 1 first sequel win best picture oscar must film sequel previous movie 2 film must best picture oscar prestigious award best overall film year 3 understanding historical context significant achievements film industry happened one night performing clean sweep academy awards david selznick producing consecutive best picture oscar winners films like marty lost weekend achieving recognition academy awards cannes film festival provide insight significance first sequel win best picture oscar answer first sequel win best picture oscar godfather part ii 1974"
+        ],
+        "bleu_score": 0.014341956454994096,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2036498486995697,
+                0.18519169092178345,
+                0.17817285656929016,
+                0.17846298217773438,
+                0.19155162572860718
+            ]
+        ]
+    },
+    {
+        "filename": "33.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 watergate scandal involved president richard nixon administration involvement illegal activities including cover break democratic national committee headquarters 2 nixon resigned presidency 1974 due watergate scandal 3 nixon resignation successor president gerald ford controversially granted nixon full pardon crimes may committed presidency 4 pardon controversial many people believed nixon held accountable actions watergate scandal retrieved knowledge president gerald ford controversially granted nixon full pardon watergate scandal highly debated criticized decision answer president gerald ford controversially granted nixon full pardon watergate scandal"
+        ],
+        "bleu_score": 0.018914506976965822,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19978362321853638,
+                0.1645897775888443,
+                0.1777891218662262,
+                0.2027628868818283,
+                0.18765048682689667
+            ]
+        ]
+    },
+    {
+        "filename": "351.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process instrument sized according terms 0 00 000 grand auditorium dreadnought guitar terms refer different body sizes styles acoustic guitars grand auditorium dreadnought specific body styles guitars grand auditorium slightly wider deeper grand concert dreadnought known large size volume size scale length guitar well materials used construction also contribute sound overall performance additionally model numbers guitars 18 45 martin dreadnought guitars indicate level decorative ornamentation instrument understanding associateal advanced details guitar construction body styles deepen comprehension instrument sizing terminology answer acoustic guitars"
+        ],
+        "bleu_score": 0.004655151129858484,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20347851514816284,
+                0.18285658955574036,
+                0.16539783775806427,
+                0.14770659804344177,
+                0.17385490238666534
+            ]
+        ]
+    },
+    {
+        "filename": "326.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 victoria regal name capital seychelles british columbia canada australian state 2 victoria capital city seychelles largest city main island mah\u00e9 3 victoria british columbia canada named queen victoria united kingdom 4 victoria also capital city australian state victoria answer victoria"
+        ],
+        "bleu_score": 0.008030195177965396,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19328780472278595,
+                0.19863411784172058,
+                0.18306471407413483,
+                0.16881422698497772,
+                0.18094860017299652
+            ]
+        ]
+    },
+    {
+        "filename": "379.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge icosahedron polyhedron 20 equilateral triangular faces 30 edges 12 vertices geometric shape characterized regularity symmetry making well defined polyhedron geometry 20 faces icosahedron identical equilateral triangles contributing overall symmetry aesthetic appeal answer icosahedron 20 faces"
+        ],
+        "bleu_score": 0.0071638813215387015,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19508850574493408,
+                0.1767592579126358,
+                0.1845448762178421,
+                0.171392560005188,
+                0.16849060356616974
+            ]
+        ]
+    },
+    {
+        "filename": "343.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate contain errors providing language model relevant background knowledge better understand question provide informed response enhanced reasoning process using retrieved knowledge 8th president united states served 1837 1841 time edward clark eighth governor texas beginning american civil war horatio king postmaster general united states james buchanan understanding political social climate period provides context presidency answer 8th president united states 1837 1841 martin van buren"
+        ],
+        "bleu_score": 0.030558056542002346,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21594464778900146,
+                0.18583142757415771,
+                0.17653080821037292,
+                0.19750721752643585,
+                0.17976868152618408
+            ]
+        ]
+    },
+    {
+        "filename": "490.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate enhance understanding question delve knowledge different types weirs weirs structures built across open channel control flow water types mentioned question labyrinth broad crested sharp crested piano keys compound variations weirs used different purposes flow measurement sediment control water level regulation answer weirs"
+        ],
+        "bleu_score": 0.007736519969200231,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.16283786296844482,
+                0.17066040635108948,
+                0.16023889183998108,
+                0.1536102592945099,
+                0.1592501550912857
+            ]
+        ]
+    },
+    {
+        "filename": "265.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 festival britain london south bank major event 1951 one key buildings royal festival hall 2 hugh casson director architecture 1951 festival britain played significant role design royal festival hall 3 therefore famous london building completed 1951 design hugh casson royal festival hall central part festival britain answer royal festival hall"
+        ],
+        "bleu_score": 0.02501655160296057,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18759465217590332,
+                0.17019964754581451,
+                0.150677889585495,
+                0.15821148455142975,
+                0.16477800905704498
+            ]
+        ]
+    },
+    {
+        "filename": "51.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 snowball character george orwell book animal farm depicted pig story 2 pigs animal farm represent ruling class snowball one leaders animal rebellion along napoleon 3 snowball character embodies ideals russian revolutionary leon trotsky key figure early soviet union 4 therefore based portrayal snowball book role story accurate say snowball pig george orwell book animal farm answer snowball pig george orwell book animal farm"
+        ],
+        "bleu_score": 0.005567639258619494,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20595958828926086,
+                0.2041364312171936,
+                0.18254072964191437,
+                0.20495687425136566,
+                0.19419658184051514
+            ]
+        ]
+    },
+    {
+        "filename": "80.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 tybalt character romeo juliet play william shakespeare known hot headed aggressive nature well fierce loyalty family 2 reference reynard fox character tibert tybalt prince cats provides insight potential origins tybalt name significance play 3 connection four humours main characters play sheds light interpretation tybalt choleric nature influencing role key antagonist 4 portrayal tybalt jovial troublemaker 1968 film version pitiful character certain productions highlights diverse representations character adding depth role story answer romeo juliet"
+        ],
+        "bleu_score": 0.011099213838044639,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20941480994224548,
+                0.1677374392747879,
+                0.17191803455352783,
+                0.17042362689971924,
+                0.1789655089378357
+            ]
+        ]
+    },
+    {
+        "filename": "140.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 forest arden real forest located england known association william shakespeare play like 2 name arden derived brythonic word ardu meaning highland 3 forest arden bounded roman roads prehistoric salt track encompassed area corresponding north western half traditional county warwick 4 historical geographical significance forest arden closely tied county warwickshire england answer warwickshire"
+        ],
+        "bleu_score": 0.013627220716613877,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1955638974905014,
+                0.18622073531150818,
+                0.19015255570411682,
+                0.180940181016922,
+                0.1714903563261032
+            ]
+        ]
+    },
+    {
+        "filename": "177.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate comprehensive enhance understanding question important note author patrick brian meticulously researched historical nautical aspects napoleonic era adding depth authenticity novels additionally character stephen maturin portrayed complex multifaceted individual medical expertise intelligence playing crucial role series answer patrick brian wrote napoleonic war novels featuring stephen maturin"
+        ],
+        "bleu_score": 0.007337132036182038,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20559827983379364,
+                0.18475686013698578,
+                0.2001584768295288,
+                0.19516877830028534,
+                0.19033612310886383
+            ]
+        ]
+    },
+    {
+        "filename": "238.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 final unfinished novel charles dickens mystery edwin drood left unfinished due death 2 information contradicts model existing knowledge may need updated prevent factual errors alleviate model illusions answer title final unfinished novel charles dickens mystery edwin drood"
+        ],
+        "bleu_score": 0.01671220805237124,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22349467873573303,
+                0.188940167427063,
+                0.19464045763015747,
+                0.18321070075035095,
+                0.18391281366348267
+            ]
+        ]
+    },
+    {
+        "filename": "243.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced reasoning process 1 italian cookery popular dish called gnocchi di semolino soft dumplings made semolina flour 2 gnocchi typically made mixing semolina flour water forming dough shaping small dumplings 3 dumplings cooked boiling frying often served various sauces toppings 4 name given soft dumplings made semolina wheat flour italian cookery gnocchi di semolino answer gnocchi di semolino"
+        ],
+        "bleu_score": 0.005277645918110919,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.24689042568206787,
+                0.2290923297405243,
+                0.20934800803661346,
+                0.21337418258190155,
+                0.22637641429901123
+            ]
+        ]
+    },
+    {
+        "filename": "302.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge albums sentimental journey goodnight vienna bad boy old wave vertical man released 1970 1999 sentimental journey album ringo starr released 1970 received fair reviews sold 500 000 copies us within first two weeks goodnight vienna another album ringo starr released 1974 bad boy released 1978 old wave released 1983 vertical man released 1998 albums mark significant points ringo starr solo career showcasing musical evolution impact industry answer ringo starr"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21831856667995453,
+                0.18178308010101318,
+                0.1846691071987152,
+                0.20191563665866852,
+                0.17309077084064484
+            ]
+        ]
+    },
+    {
+        "filename": "168.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge deepen understanding question 1 drupe type fruit develops single carpel mostly flowers superior ovaries 2 characterized fleshy outer part exocarp surrounding hard lignified shell endocarp seed inside 3 fruits like raspberries composed small individual drupes individual termed drupelet 4 term drupaceous used fruits general structure texture drupe without necessarily meeting full definition answer drupe type fruit develops single carpel characterized fleshy outer part surrounding hard shell seed inside examples drupes include peaches plums cherries olives mangoes"
+        ],
+        "bleu_score": 0.005650346101207478,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1928919553756714,
+                0.18327949941158295,
+                0.20261186361312866,
+                0.18591313064098358,
+                0.1799740344285965
+            ]
+        ]
+    },
+    {
+        "filename": "456.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge novel treasure island long john silver parrot named captain flint long john silver cunning opportunistic pirate quartermaster notorious captain flint uses parrot another means gaining trust telling exciting stories parrot buccaneer history parrot captain flint holds significance relationship long john silver legacy captain flint adding depth character story answer captain flint"
+        ],
+        "bleu_score": 0.011459081050471769,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22204984724521637,
+                0.1718587875366211,
+                0.1977238655090332,
+                0.18625140190124512,
+                0.19954079389572144
+            ]
+        ]
+    },
+    {
+        "filename": "465.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process 1 rockford files popular tv series aired 1974 1980 starring james garner main character jim rockford 2 noah beery jr played supporting role jim rockford father retired truck driver nicknamed rocky often becomes involved son cases 3 noah beery jr best known portrayal rocky rockford files appeared television series movies answer noah beery jr played role rockford father rocky tv series rockford files"
+        ],
+        "bleu_score": 0.019243911834091253,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18589305877685547,
+                0.1790206879377365,
+                0.18248188495635986,
+                0.18066081404685974,
+                0.17477630078792572
+            ]
+        ]
+    },
+    {
+        "filename": "431.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge year hirohito died 1989 marking end reign emperor japan year exxon valdez oil tanker ran aground prince william sound alaska causing major environmental disaster additionally san francisco experienced worst earthquake since 1906 1989 known loma prieta earthquake earthquake caused significant damage city infrastructure associateal knowledge 1906 san francisco earthquake 1989 loma prieta earthquake provides historical context understanding impact seismic events city advanced information deepens understanding highlighting specific consequences earthquakes environmental impact exxon valdez oil spill infrastructure damage caused loma prieta earthquake answer 1989"
+        ],
+        "bleu_score": 0.003726839807201766,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19141662120819092,
+                0.16336572170257568,
+                0.15951836109161377,
+                0.16861777007579803,
+                0.163334921002388
+            ]
+        ]
+    },
+    {
+        "filename": "55.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 1983 film terms endearment starred shirley maclaine debra winger 2 terms endearment 5 oscars academy awards 1984 including best picture best director best actress shirley maclaine best supporting actor jack nicholson best adapted screenplay 3 additionally film also best supporting actress oscar debra winger answer terms endearment"
+        ],
+        "bleu_score": 0.007724551620034282,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2315686047077179,
+                0.21105018258094788,
+                0.20218981802463531,
+                0.19907130300998688,
+                0.2188139706850052
+            ]
+        ]
+    },
+    {
+        "filename": "361.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process 1 mercury music prize prestigious award given best album united kingdom ireland 2 pj harvey second mercury music prize 2011 album let england shake making first artist win mercury prize twice 3 album let england shake received universal critical acclaim dealt themes war english history showcasing pj harvey unique impactful storytelling 4 following win album entered uk albums chart number 24 saw significant increase sales demonstrating public response album 5 album also certified gold united kingdom received several awards nominations solidifying impact music industry 6 overall pj harvey received 6 awards 29 nominations highlighting consistent excellence music industry answer pj harvey"
+        ],
+        "bleu_score": 0.006591683260935473,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20232601463794708,
+                0.18190796673297882,
+                0.19219200313091278,
+                0.1789674460887909,
+                0.20404966175556183
+            ]
+        ]
+    },
+    {
+        "filename": "53.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge chesil beach barrier beach located southwest coast dorset county england stretches west bay isle portland composed shingle pebbles graded size beach separated land behind body brackish water called fleet chesil beach forms part jurassic coast provides shelter prevailing winds waves town weymouth village chiswell additionally setting novel chesil beach ian mcewan shortlisted booker prize later adapted british drama film knowledge chesil beach located southwest coast dorset county forming part jurassic coast providing shelter nearby towns villages enhances model understanding geographical significance mention novel film based chesil beach also provides cultural literary context allowing model make logical inferences broader impact answer dorset"
+        ],
+        "bleu_score": 0.004192418719202793,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1983700394630432,
+                0.17591790854930878,
+                0.18573208153247833,
+                0.18081547319889069,
+                0.18907541036605835
+            ]
+        ]
+    },
+    {
+        "filename": "384.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process extinct species man discovered indonesia 2003 commonly known hobbit due small stature fact found island flores nickname derived j r r tolkien fictional characters hobbits also known small size literary reference hobbits resonates diminutive stature homo floresiensis making fitting memorable nickname species answer literary nickname given extinct species man homo floresiensis hobbit nickname draws parallel small stature species fictional characters created j r r tolkien known hobbits"
+        ],
+        "bleu_score": 0.006012449720133031,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19377084076404572,
+                0.19559280574321747,
+                0.19006188213825226,
+                0.20351313054561615,
+                0.18647104501724243
+            ]
+        ]
+    },
+    {
+        "filename": "103.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge jonny wilkinson known versatility adaptability rugby played fly half england 2011 world cup fly half typically wore number 10 shirt traditionally associated position indicates jonny wilkinson likely wore number 10 shirt england 2011 world cup answer 10"
+        ],
+        "bleu_score": 0.006883858510498897,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19029317796230316,
+                0.19042536616325378,
+                0.2161240577697754,
+                0.1836748868227005,
+                0.18057261407375336
+            ]
+        ]
+    },
+    {
+        "filename": "64.json",
+        "chosen_agent": "logician",
+        "output": [
+            "london statue angel christian charity commonly known eros due historical renaming continued popular usage original name statue initial controversy subsequent renaming angel christian charity result widespread recognition new name statue continued referred eros public demonstrates influence public perception historical usage recognition naming public monuments answer eros"
+        ],
+        "bleu_score": 0.0065056119086392495,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21107541024684906,
+                0.2111813724040985,
+                0.17419451475143433,
+                0.19622750580310822,
+                0.21393434703350067
+            ]
+        ]
+    },
+    {
+        "filename": "324.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "oroville dam located california us situated feather river sierra nevada foothills dam plays crucial role california state water project providing water supply hydroelectricity generation flood control water quality improvement sacramento san joaquin river delta additionally oroville dam experienced emergency damage evacuation spillway butte county highlighting importance effective management safety measures large scale infrastructure projects answer california"
+        ],
+        "bleu_score": 0.015324176389595512,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19836626946926117,
+                0.16748082637786865,
+                0.180088609457016,
+                0.16418331861495972,
+                0.1547367125749588
+            ]
+        ]
+    },
+    {
+        "filename": "162.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 astana capital kazakhstan 2 2019 capital officially renamed nur sultan answer kazakhstan"
+        ],
+        "bleu_score": 0.017910634987255415,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21530912816524506,
+                0.20345255732536316,
+                0.20676404237747192,
+                0.19926606118679047,
+                0.20269282162189484
+            ]
+        ]
+    },
+    {
+        "filename": "283.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides comprehensive understanding nintendo gaming consoles release wii u enhanced reasoning process wii u announced successor wii 2011 marking beginning eighth generation video game consoles introduced new features hd graphics support innovative wii u gamepad gamepad featured 6 2 inch touch screen allowed asymmetric gameplay tv play enabling games played without needing tv set additionally wii u maintained backward compatibility wii virtual console titles discontinued support gamecube discs controllers answer letter u added wii nintendo 2011 naming next generation gaming console wii u"
+        ],
+        "bleu_score": 0.007736242196061547,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1909382939338684,
+                0.17288175225257874,
+                0.18158911168575287,
+                0.167056143283844,
+                0.17889724671840668
+            ]
+        ]
+    },
+    {
+        "filename": "67.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 event known cooper hill cheese rolling wake 2 takes place spring bank holiday cooper hill near gloucester england 3 participants world take part event 4 large round cheese rolled steep slope hill participants chase often tumbling falling answer wheel cheese chased cooper hill gloucestershire traditional race known cooper hill cheese rolling wake takes place every spring bank holiday"
+        ],
+        "bleu_score": 0.004863687509482329,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20854368805885315,
+                0.18317200243473053,
+                0.18431644141674042,
+                0.17367349565029144,
+                0.1694236546754837
+            ]
+        ]
+    },
+    {
+        "filename": "485.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 john hannah ken stott actors known work film television 2 actors portrayed character rebus fictional detective created scottish author ian rankin television series rebus answer rebus"
+        ],
+        "bleu_score": 0.011908226236406779,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20471645891666412,
+                0.18239977955818176,
+                0.19005721807479858,
+                0.1666879504919052,
+                0.19123929738998413
+            ]
+        ]
+    },
+    {
+        "filename": "386.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process painting monarch glen created sir edwin landseer british artist known animal paintings painting depicts majestic stag scottish highland landscape become iconic symbol scotland sir edwin landseer renowned ability capture natural beauty character animals artwork monarch glen prime example skill regard answer sir edwin landseer"
+        ],
+        "bleu_score": 0.02655656397237471,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21579858660697937,
+                0.22076845169067383,
+                0.1892724633216858,
+                0.18220774829387665,
+                0.1826443374156952
+            ]
+        ]
+    },
+    {
+        "filename": "100.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 american legal tv drama comedy aired 2004 2008 spin practice boston legal 2 boston legal followed exploits attorneys crane poole schmidt answer boston legal"
+        ],
+        "bleu_score": 0.058531836522676656,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22102360427379608,
+                0.20493799448013306,
+                0.18535080552101135,
+                0.18771536648273468,
+                0.20419001579284668
+            ]
+        ]
+    },
+    {
+        "filename": "220.json",
+        "chosen_agent": "logician",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides comprehensive understanding pritzker prize significance field architecture incorporating knowledge language model improve causal reasoning logical inference abilities related architecture design enhanced reasoning process pritzker prize prestigious award field architecture established 1979 jay pritzker wife cindy awarded annually honor living architects whose built work demonstrates exceptional talent vision commitment prize recognizes architects made significant contributions humanity built environment architectural creations knowledge equips language model deeper understanding criteria impact pritzker prize allowing make informed judgments predictions architectural excellence influence society answer pritzker prize awarded excellence field architecture recognizing architects demonstrated exceptional talent vision commitment making significant contributions humanity built environment architectural work"
+        ],
+        "bleu_score": 0.009772467247387265,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21155135333538055,
+                0.20451989769935608,
+                0.18596133589744568,
+                0.1915905475616455,
+                0.20189958810806274
+            ]
+        ]
+    },
+    {
+        "filename": "69.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate provides comprehensive understanding assassination spencer perceval retrieved knowledge deepens understanding historical significance context event enhanced reasoning process using retrieved knowledge spencer perceval british prime minister assassinated killed may 11 1812 john bellingham merchant held personal grudge government assassination took place lobby house commons making significant unprecedented event british history act assassinating political figures including prime ministers began used political symbolism propaganda reflecting broader context power struggles political unrest time answer spencer perceval"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22941316664218903,
+                0.18071146309375763,
+                0.18917779624462128,
+                0.17984655499458313,
+                0.18336303532123566
+            ]
+        ]
+    },
+    {
+        "filename": "38.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 sir walter eliot character jane austen novel persuasion sixth last completed novel jane austen 2 central character persuasion anne elliot daughter sir walter eliot narrative authority transferred character almost completely 3 anne elliot portrayed independent spirit regaining self confidence given second chance find happiness different austenian heroines 4 jane austen novels critique dependence women marriage social standing economic security often fewer children compared reality time answer persuasion"
+        ],
+        "bleu_score": 0.005183316987044375,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23157773911952972,
+                0.1766786277294159,
+                0.18101389706134796,
+                0.17790979146957397,
+                0.19071216881275177
+            ]
+        ]
+    },
+    {
+        "filename": "305.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 song everybody wants rule world released 1985 single commercial success reaching top charts multiple countries 2 tears fears british pop rock band group responsible hit song 3 song known catchy melody thought provoking lyrics widely acclaimed music critics fans alike 4 success everybody wants rule world contributed tears fears prominence 1980s music scene answer tears fears"
+        ],
+        "bleu_score": 0.006753332889744029,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20573565363883972,
+                0.19127076864242554,
+                0.17610740661621094,
+                0.18330784142017365,
+                0.20830416679382324
+            ]
+        ]
+    },
+    {
+        "filename": "108.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate let enhance reasoning process using retrieved knowledge help model better understand question knowledge enhanced inference process no\u00ebl coward prominent english actor playwright composer known contributions popular music passed away 1973 age 73 cause death heart attack given strong association british culture lifelong connection england evident died england answer noel coward died england"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18761783838272095,
+                0.17371247708797455,
+                0.1835354119539261,
+                0.1793183535337448,
+                0.1535167247056961
+            ]
+        ]
+    },
+    {
+        "filename": "266.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 film released 1969 based stage musical 2 directorial debut richard attenborough means first film directed 3 however information contradicts previous knowledge stating oh lovely war attenborough directorial debut 4 correct film marked directorial debut richard attenborough oh lovely war released 1969 based stage musical answer oh lovely war"
+        ],
+        "bleu_score": 0.013543446170600756,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2054383009672165,
+                0.18338347971439362,
+                0.1825975924730301,
+                0.17561429738998413,
+                0.2137114703655243
+            ]
+        ]
+    },
+    {
+        "filename": "438.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 amal alamuddin human rights lawyer became engaged actor george clooney april 2014 2 information supported reliable sources widely known 3 updating language model knowledge information prevent factual errors alleviate model illusions answer amal alamuddin became engaged actor george clooney april 2014"
+        ],
+        "bleu_score": 0.013909114299634878,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18915583193302155,
+                0.19217988848686218,
+                0.2107188105583191,
+                0.19619794189929962,
+                0.17028479278087616
+            ]
+        ]
+    },
+    {
+        "filename": "272.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced reasoning process 1 david used one stone kill goliath hitting center forehead 2 well aimed shot caused goliath fall ground david cut head 3 use single stone david sling directly led goliath defeat subsequent decapitation answer david used one five stones kill goliath hitting center forehead causing defeat"
+        ],
+        "bleu_score": 0.007983302249662896,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23848888278007507,
+                0.18015028536319733,
+                0.18815097212791443,
+                0.21317052841186523,
+                0.1893312782049179
+            ]
+        ]
+    },
+    {
+        "filename": "251.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 rodent rears young called kittens nest called drey squirrel specifically tree squirrel 2 squirrels build nests called dreys trees using twigs dry leaves grass use rear young 3 dreys provide protection shelter young squirrels adult squirrels care nurture kittens nests 4 young squirrels called kittens similar young cats rely parents food protection drey answer squirrel"
+        ],
+        "bleu_score": 0.006848091906520474,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1925988793373108,
+                0.17253725230693817,
+                0.16569752991199493,
+                0.15121689438819885,
+                0.1582535058259964
+            ]
+        ]
+    },
+    {
+        "filename": "231.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 novelist born bombay 1865 would indian subcontinent 2 considering significance indian literature nobel prize winners important note rabindranath tagore bengali writer india nobel prize literature 1913 making first asian nobel laureate 3 given time frame novelist fits criteria rudyard kipling born bombay 1865 awarded nobel prize literature 1907 answer rudyard kipling"
+        ],
+        "bleu_score": 0.011280369308819071,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20409612357616425,
+                0.18671156466007233,
+                0.17783427238464355,
+                0.19362561404705048,
+                0.2118053436279297
+            ]
+        ]
+    },
+    {
+        "filename": "331.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate provides good understanding character skullion adaptation porterhouse blue television associateal knowledge gives basic understanding character adaptation advanced information delves deeper character origins significance within context novel enhanced reasoning process using retrieved knowledge channel 4 1987 adaptation tom sharpe novel porterhouse blue character skullion head porter played david jason adaptation four episode series brought life satirical look cambridge life struggle tradition reform portrayed novel answer david jason"
+        ],
+        "bleu_score": 0.00964132457460483,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20590823888778687,
+                0.18239502608776093,
+                0.19590675830841064,
+                0.20316950976848602,
+                0.20300593972206116
+            ]
+        ]
+    },
+    {
+        "filename": "221.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process agreement passport controls abolished 22 eu 4 non eu states schengen agreement agreement signed 1985 near town schengen luxembourg initially included belgium france luxembourg netherlands west germany aimed gradually abolish common border controls since expanded include 22 eu member states 4 non eu states schengen agreement allows free movement people within schengen area removal internal border checks also established common rules controlling external borders agreement significant implications travel border control within europe answer schengen agreement"
+        ],
+        "bleu_score": 0.004168514908224489,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2156422734260559,
+                0.19262363016605377,
+                0.17708687484264374,
+                0.19144248962402344,
+                0.17353756725788116
+            ]
+        ]
+    },
+    {
+        "filename": "54.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 uk television duo known providing voices children programs likely well known uk 2 engie benjy children program duo providing voices main characters likely popular among children parents 3 anthony mcpartlin declan donnelly also known ant dec famous uk television duo known providing voices children programs 4 first series engie benjy declan donnelly voiced title role engie benjy anthony mcpartlin provided vocal effects dog jollop third series anthony mcpartlin also voiced character trucker troy engie benjy cousin 5 therefore confirmed ant dec provide voices main characters children program engie benjy answer ant dec"
+        ],
+        "bleu_score": 0.007912446530607214,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1823495775461197,
+                0.18160831928253174,
+                0.19110196828842163,
+                0.1903284639120102,
+                0.18320663273334503
+            ]
+        ]
+    },
+    {
+        "filename": "60.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 field marshal freidrich paulus commander german 6th army world war ii 2 german 6th army surrounded besieged soviet red army battle stalingrad 3 historical records confirm field marshal freidrich paulus surrendered soviet forces stalingrad january 1943 answer stalingrad"
+        ],
+        "bleu_score": 0.006883858510498897,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20808570086956024,
+                0.1806773841381073,
+                0.20337529480457306,
+                0.18457967042922974,
+                0.18911372125148773
+            ]
+        ]
+    },
+    {
+        "filename": "144.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 film back future part iii character marty mcfly portrayed michael j fox travels back year 1885 wild west 2 filmmakers built 1885 hill valley scratch filmed western scenes location monument valley well jamestown california red hills ranch near sonora california 3 train scenes filmed railtown 1897 state historic park jamestown 4 film part back future franchise follows adventures marty mcfly dr emmett l brown use delorean time machine time travel different periods history hill valley california answer michael j fox travels back year 1885 wild west 1990 film back future part iii"
+        ],
+        "bleu_score": 0.003403878707626291,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1843959242105484,
+                0.17273446917533875,
+                0.18731963634490967,
+                0.17729142308235168,
+                0.19407610595226288
+            ]
+        ]
+    },
+    {
+        "filename": "234.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 maxwell montes mountain massif planet venus known rugged complex terrain 2 home highest point surface venus reaching elevation 11 kilometers 7 miles planet average surface elevation 3 makes maxwell montes highest mountain range venus location planet highest peak 4 therefore highest point surface venus located maxwell montes answer highest point surface venus located maxwell montes"
+        ],
+        "bleu_score": 0.012107054044241096,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20440436899662018,
+                0.19001127779483795,
+                0.2020120769739151,
+                0.2307790219783783,
+                0.17747074365615845
+            ]
+        ]
+    },
+    {
+        "filename": "29.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 analgesic drug type medication used relieve pain 2 analgesics include non narcotic analgesics mild pain narcotic analgesics severe pain providing comprehensive understanding different types analgesics uses 3 adjuvant analgesics also called atypical analgesics drugs cns actions used along analgesics modulate modify action opioids used pain especially neuropathic origin 4 term painkiller colloquial term analgesic drugs encompassing non narcotic narcotic analgesics well adjuvant analgesics answer painkiller"
+        ],
+        "bleu_score": 0.01301672913330308,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23736612498760223,
+                0.20027899742126465,
+                0.20349326729774475,
+                0.20909260213375092,
+                0.20363055169582367
+            ]
+        ]
+    },
+    {
+        "filename": "261.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 identification isolation nucleic acids precursor identifying dna attributed friedrich miescher albrecht kossel 2 friedrich miescher swiss biochemist first identified isolated nucleic acids nuclei white blood cells 1869 naming substance nuclein 3 albrecht kossel later isolated non protein component nuclein nucleic acid identified five primary nucleobases advancing understanding nucleic acids 4 combined work laid associate later discovery dna genetic material answer friedrich miescher albrecht kossel"
+        ],
+        "bleu_score": 0.009769461826156303,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20018278062343597,
+                0.1936878263950348,
+                0.19148823618888855,
+                0.16964322328567505,
+                0.17926232516765594
+            ]
+        ]
+    },
+    {
+        "filename": "375.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process film nine five released 1980 character doralee rhodes key role film dolly parton actress singer starred doralee rhodes 1980 film nine five additionally actresses mcqueen degarmo nixon portrayed character various stage productions tours 9 5 musical answer dolly parton"
+        ],
+        "bleu_score": 0.016360464757048186,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2011631727218628,
+                0.1602194756269455,
+                0.17974545061588287,
+                0.16050900518894196,
+                0.1662355661392212
+            ]
+        ]
+    },
+    {
+        "filename": "169.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 david garrick prominent figure 18th century british theater known contributions actor playwright theatre manager producer 2 born february 19 1717 early life upbringing played significant role shaping career 3 garrick birthplace town hereford england spent formative years pursuing career performing arts answer hereford"
+        ],
+        "bleu_score": 0.0128995453929512,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19879746437072754,
+                0.1821577548980713,
+                0.17832200229167938,
+                0.1883600354194641,
+                0.18243353068828583
+            ]
+        ]
+    },
+    {
+        "filename": "25.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge deepen understanding question 1 may 1989 democratic elections held panama guillermo endara elected president however results annulled existing government led manuel noriega 2 united states government supported endara campaign objected annulment election results providing 10 million endara campaign 3 opposition alliance panama supported foreign election observers certified endara electoral victory despite attempts fraud noriega regime 4 u reinforced canal zone garrison increased pressure noriega leading eventual invasion panama december 1989 5 invasion endara sworn president u military installation panama electoral tribunal later invalidated annulment election results confirming victory opposition candidates answer democratic elections held panama may 1989 guillermo endara elected president results annulled existing government led manuel noriega united states government supported endara campaign objected annulment election results leading series events eventually resulted invalidation annulment confirmation victory opposition candidates"
+        ],
+        "bleu_score": 0.0031046773448852863,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2026265263557434,
+                0.1712978184223175,
+                0.1774841994047165,
+                0.19710077345371246,
+                0.17660091817378998
+            ]
+        ]
+    },
+    {
+        "filename": "59.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 1657 offer become king england made oliver cromwell prominent military political leader english civil war 2 cromwell however turned offer instead chose remain lord protector commonwealth england position held since 1653 execution king charles answer oliver cromwell"
+        ],
+        "bleu_score": 0.021356300183583258,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20709004998207092,
+                0.19046546518802643,
+                0.1856551468372345,
+                0.20324286818504333,
+                0.17756003141403198
+            ]
+        ]
+    },
+    {
+        "filename": "76.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 previous reasoning process identified john f kennedy youngest person become president usa age 44 2 however retrieved knowledge provides contradictory information stating louis fox became president age 33 theodore roosevelt assumed office age 42 making youngest president u history 3 therefore based updated knowledge theodore roosevelt youngest person become president usa age 42 answer theodore roosevelt"
+        ],
+        "bleu_score": 0.011927505288132717,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.18804924190044403,
+                0.1810150146484375,
+                0.18680235743522644,
+                0.1414758861064911,
+                0.17543940246105194
+            ]
+        ]
+    },
+    {
+        "filename": "208.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge year question significant various historical events al capone notorious american gangster died 1947 marking end era organized crime princess elizabeth married philip mountbatten year signifying momentous occasion british royal family additionally india gained independence british rule 1947 pivotal moment country history culmination years struggle self governance answer 1947"
+        ],
+        "bleu_score": 0.0056860862169080505,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2084839791059494,
+                0.17105607688426971,
+                0.17887993156909943,
+                0.16020452976226807,
+                0.16381819546222687
+            ]
+        ]
+    },
+    {
+        "filename": "6.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge esch sur alzette canton south west luxembourg local council commune provides additional context administrative geographical significance within country enhanced reasoning process 1 esch sur alzette canton south west luxembourg serves administrative center 2 second largest city luxembourg luxembourg city 3 therefore second largest town city luxembourg esch sur alzette answer luxembourg"
+        ],
+        "bleu_score": 0.007257810139713513,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19478876888751984,
+                0.17489613592624664,
+                0.16534894704818726,
+                0.18677616119384766,
+                0.1813736855983734
+            ]
+        ]
+    },
+    {
+        "filename": "199.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 pile rocks marks hiking trail commonly known cairn 2 cairns traditionally used trail markers navigation backwoods trails rather ornamental 3 hikers rely cairns navigate areas trail may well defined answer cairn"
+        ],
+        "bleu_score": 0.011294940008761084,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19540998339653015,
+                0.18082274496555328,
+                0.19305086135864258,
+                0.1827078014612198,
+                0.1818220466375351
+            ]
+        ]
+    },
+    {
+        "filename": "495.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process june 1971 neville bonner became first indigenous australian become member parliament australia appointment senate marked significant moment australian political history filled casual vacancy caused resignation liberal senator queensland event milestone recognizing representation indigenous australians australian parliament answer neville bonner"
+        ],
+        "bleu_score": 0.014783348734456997,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2377360612154007,
+                0.20397275686264038,
+                0.19978947937488556,
+                0.19318895041942596,
+                0.21605823934078217
+            ]
+        ]
+    },
+    {
+        "filename": "143.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process adele laurie blue adkins known professionally adele british pop singer songwriter born 1988 full name includes surname adkins family name therefore surname adkins answer adkins"
+        ],
+        "bleu_score": 0.011713183580694267,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19324277341365814,
+                0.1978762298822403,
+                0.19307880103588104,
+                0.17207811772823334,
+                0.1629829704761505
+            ]
+        ]
+    },
+    {
+        "filename": "160.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge half dome prominent granite dome located yosemite national park california popular destination rock climbers due iconic rock formation challenging climbing routes regular northwest face route half dome first climbed 1957 considered classic climb mecca rock climbers around world however rock half dome known loose major rockfall 2015 altered certain pitches climb highlighting potential hazards associated climbing iconic formation answer yosemite national park"
+        ],
+        "bleu_score": 0.03328837218742591,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19051788747310638,
+                0.17784856259822845,
+                0.1834697276353836,
+                0.18735404312610626,
+                0.18256719410419464
+            ]
+        ]
+    },
+    {
+        "filename": "136.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process surname title character anne green gables shirley novel written lucy maud montgomery tells story anne shirley 11 year old orphan girl mistakenly sent live middle aged siblings matthew marilla cuthbert fictional town avonlea prince edward island character anne shirley featured various adaptations including television series films additionally actress dawn day portrayed anne shirley 1934 film adaptation changed stage name anne shirley making film story anne green gables considered classic children novel since mid twentieth century answer shirley"
+        ],
+        "bleu_score": 0.004079981195306543,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22718699276447296,
+                0.2113703191280365,
+                0.190450981259346,
+                0.1790589988231659,
+                0.17035016417503357
+            ]
+        ]
+    },
+    {
+        "filename": "279.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 movie murder orient express released 1974 2017 2 movie swedish actress named ingrid bergman played role greta ohlsson old swedish missionary 3 ingrid bergman best supporting actress oscar performance murder orient express 4 director sidney lumet offered bergman important part princess dragomiroff felt could win oscar insisted playing much smaller role greta ohlsson 5 ingrid bergman decision play greta ohlsson subsequent oscar win significant context film casting career answer ingrid bergman"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20050083100795746,
+                0.19313909113407135,
+                0.2008010447025299,
+                0.17400939762592316,
+                0.20189079642295837
+            ]
+        ]
+    },
+    {
+        "filename": "214.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge original oktoberfest celebrated munich germany originated wedding festival bavarian crown prince ludwig 1810 since become largest beer festival world festival features variety beer tents major breweries rides food attracts millions visitors around globe oktoberfest also inspired similar celebrations cities maifest cincinnati ohio oktoberfest zinzinnati well creation oktoberfest blumenau brazil additionally historisches oktoberfest organized 2010 commemorate 200th anniversary festival answer munich"
+        ],
+        "bleu_score": 0.010036785986031593,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20343825221061707,
+                0.1968735307455063,
+                0.21538202464580536,
+                0.19591344892978668,
+                0.17939919233322144
+            ]
+        ]
+    },
+    {
+        "filename": "127.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 anabasis historical work written ancient greek author xenophon 2 contradictory statements authorship anabasis mentions arrian nicomedia saint john perse potential authors 3 xenophon student socrates contemporary plato aristotle 4 anabasis firsthand account xenophon experiences greek mercenary fighting persia 5 work considered classic ancient greek literature studied historical literary significance answer anabasis written xenophon ancient greek author"
+        ],
+        "bleu_score": 0.005131423326712104,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22119858860969543,
+                0.22192047536373138,
+                0.20078343152999878,
+                0.2038203626871109,
+                0.21404503285884857
+            ]
+        ]
+    },
+    {
+        "filename": "237.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 half dome granite dome located yosemite national park california usa specifically northwestern end little yosemite valley 2 half dome granodiorite type granodiorite found region near half dome yosemite national park indicating geological composition area 3 hiking top half dome popular activity permits required use trail showing cause effect relationship visitor behavior park regulations answer based enhanced reasoning process half dome found yosemite national park"
+        ],
+        "bleu_score": 0.03279507474073416,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20872189104557037,
+                0.17239463329315186,
+                0.17387524247169495,
+                0.17410720884799957,
+                0.17354963719844818
+            ]
+        ]
+    },
+    {
+        "filename": "119.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 frugivores animals primarily feed raw fruits succulent fruit like vegetables roots shoots nuts seeds 2 herbivores omnivores preference fruit food type 3 approximately 20 mammalian herbivores also consume fruit making frugivory common among mammals 4 abundance nutritional composition fruits crucial frugivores highly dependent 5 frugivores play significant role ecosystem either benefiting fruit producing plants seed dispersal hindering plants digesting seeds along fruits 6 fruit producing plant frugivore species benefit fruit eating behavior interaction called mutualism answer frugivore feeds raw fruits succulent fruit like vegetables roots shoots nuts seeds"
+        ],
+        "bleu_score": 0.004768426274246802,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19254808127880096,
+                0.1760265827178955,
+                0.1891617774963379,
+                0.18285949528217316,
+                0.19543413817882538
+            ]
+        ]
+    },
+    {
+        "filename": "63.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 mme de pompadour mme du barry associated french monarchy 18th century 2 mme de pompadour indeed mistress king louis xv france 3 mme du barry also mistress king louis xv succeeded mme de pompadour official royal mistress latter death 4 therefore mme de pompadour mme du barry associated king louis xv france answer mme de pompadour mme du barry associated king louis xv france"
+        ],
+        "bleu_score": 0.020101050554780966,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.23050829768180847,
+                0.18676739931106567,
+                0.18814757466316223,
+                0.19551190733909607,
+                0.21275335550308228
+            ]
+        ]
+    },
+    {
+        "filename": "284.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge gateway arch also known gateway west prominent monument located st louis missouri symbol westward expansion united states holds historical cultural significance arch part jefferson national expansion memorial major tourist attraction featuring unique tram system takes visitors observation room top additionally museum westward expansion situated beneath arch provides insights st louis role expansion settling american west answer st louis missouri"
+        ],
+        "bleu_score": 0.026077137575450753,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1920243501663208,
+                0.15919698774814606,
+                0.17575788497924805,
+                0.16655007004737854,
+                0.16059061884880066
+            ]
+        ]
+    },
+    {
+        "filename": "30.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 naming convention moons uranus based characters works william shakespeare 2 specifically moons uranus named shakespearian characters titania oberon ariel umbriel miranda 3 naming convention reflects historical literary influences naming celestial bodies showcasing intersection science literature mythology answer moons uranus named shakespearian characters"
+        ],
+        "bleu_score": 0.0065056119086392495,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22491593658924103,
+                0.18949520587921143,
+                0.18579906225204468,
+                0.1699165403842926,
+                0.17100578546524048
+            ]
+        ]
+    },
+    {
+        "filename": "66.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate enhance understanding question important note parts mentioned cantle skirt flap pommel typically associated saddle sword cantle back part saddle skirt part covers horse back flap side piece pommel front part saddle parts essential construction function saddle answer article parts called cantle skirt flap pommel saddle"
+        ],
+        "bleu_score": 0.014538712629728428,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19452348351478577,
+                0.1982528418302536,
+                0.19692890346050262,
+                0.15277834236621857,
+                0.1853148341178894
+            ]
+        ]
+    },
+    {
+        "filename": "118.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 chatham dockyard historical naval dockyard england established mid 16th century queen elizabeth played significant role providing ships royal navy 2 closure 1984 dockyard divided sections repurposed commercial residential leisure developments others transferred chatham historic dockyard trust preservation visitor attraction 3 dockyard historical significance transformation visitor centre essential understanding location specific english county answer chatham dockyard closed 1984 visitor centre located kent england"
+        ],
+        "bleu_score": 0.010957511214911102,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20463968813419342,
+                0.1701841801404953,
+                0.18513132631778717,
+                0.1771288365125656,
+                0.1864527314901352
+            ]
+        ]
+    },
+    {
+        "filename": "52.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate provides good understanding concept albatross golf rarity scoring system golf background knowledge helps model better understand question provide accurate answer enhanced reasoning process using retrieved knowledge albatross golf also known double eagle achieved player completes hole 3 strokes par rare impressive feat golf players achieving major tournaments comparison golfer number strokes respective par score essential understand significance scoring albatross answer albatross 3 strokes par given hole"
+        ],
+        "bleu_score": 0.004624392108240828,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2182648926973343,
+                0.1883622109889984,
+                0.20077605545520782,
+                0.20627474784851074,
+                0.18975730240345
+            ]
+        ]
+    },
+    {
+        "filename": "90.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge enhance causal reasoning logical inference abilities 1 vehicle registration plates cambodia follow specific format international vehicle registration code kh followed hyphen combination numbers letters unique code helps identify vehicles registered cambodia international travel 2 cambodia vehicle registration legal requirement vehicles must display registration plates times registration process involves obtaining approval documents completing necessary business registration vehicle 3 cambodia airways example go process obtaining approval documents completing business registration cambodia operate legally within country answer international vehicle registration cambodia kh xxxxx x represents combination numbers letters legal requirement vehicles traveling internationally"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2187105417251587,
+                0.23157870769500732,
+                0.20346617698669434,
+                0.2111092358827591,
+                0.20858559012413025
+            ]
+        ]
+    },
+    {
+        "filename": "65.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1936 summer olympic games held berlin germany declared open adolf hitler chancellor germany time information supported historical records state speech president german olympic committee games declared open adolf hitler proclaim open olympic games berlin celebrating eleventh olympiad modern era answer adolf hitler"
+        ],
+        "bleu_score": 0.013909114299634878,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2116149514913559,
+                0.19296523928642273,
+                0.19036820530891418,
+                0.196932852268219,
+                0.19617246091365814
+            ]
+        ]
+    },
+    {
+        "filename": "9.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge grand national historic challenging steeplechase horse race held annually aintree racecourse liverpool england considered ultimate test horse courage stamina due demanding course obstacles red rum legendary racehorse known exceptional jumping ability durability completed 100 races without falling achieved unprecedented success winning grand national three times 1973 1974 1977 also finished second 1975 1976 victories remarkable record time 9 minutes 1 9 seconds 1973 overcame significant challenges including inflammatory bone disorder threatened career answer red rum grand national years 1973 1974 1977"
+        ],
+        "bleu_score": 0.014965329369758813,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20620569586753845,
+                0.173370823264122,
+                0.19448743760585785,
+                0.1672074794769287,
+                0.1593182384967804
+            ]
+        ]
+    },
+    {
+        "filename": "79.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 wwii state religion japan shintoism closely associated government emperor 2 meiji restoration shintoism officially established state religion 3 however end world war ii current constitution drafted shintoism disestablished state religion 4 1946 occupation japan united states drafted article 20 constitution japan mandated separation religious organizations state ensured religious freedom 5 result shintoism longer state religion japan wwii answer shintoism"
+        ],
+        "bleu_score": 0.005860126941340088,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20990629494190216,
+                0.18257920444011688,
+                0.19798186421394348,
+                0.18376736342906952,
+                0.20263995230197906
+            ]
+        ]
+    },
+    {
+        "filename": "441.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 suez canal located egypt constructed 1859 1869 provide direct route watercraft north atlantic northern indian oceans 2 canal connects mediterranean sea red sea serving tidal strait pours red sea water mediterranean 3 bitter lakes part canal initially blocked migration red sea species mediterranean salinity equalized migration barriers removed allowing plants animals red sea colonize eastern mediterranean answer suez canal connects mediterranean sea red sea"
+        ],
+        "bleu_score": 0.009769461826156303,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21460887789726257,
+                0.17049449682235718,
+                0.17300793528556824,
+                0.17359116673469543,
+                0.191511332988739
+            ]
+        ]
+    },
+    {
+        "filename": "28.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 car manufacturer headquarters martorell near barcelona seat martorell home seat corporate headquarters automobile factory seat ibiza arona audi a1 manufactured 2 seat spanish automobile manufacturer 3 headquarters located martorell near barcelona spain answer seat"
+        ],
+        "bleu_score": 0.007469938459592591,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.20433595776557922,
+                0.18891358375549316,
+                0.1671997457742691,
+                0.16872067749500275,
+                0.18729974329471588
+            ]
+        ]
+    },
+    {
+        "filename": "191.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process appears accurate enhance model understanding provide additional information current australian prime minister scott morrison scott morrison office since august 24 2018 winning leadership liberal party previously served treasurer australia member parliament since 2007 leader liberal party became prime minister malcolm turnbull resigned understanding scott morrison background political career help model better comprehend current role prime minister australia answer scott morrison"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22692683339118958,
+                0.20648957788944244,
+                0.1936587691307068,
+                0.18145060539245605,
+                0.1877024620771408
+            ]
+        ]
+    },
+    {
+        "filename": "253.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process main international cricket competitions test matches one day international odi matches twenty20 matches test cricket involves 10 teams overseen icc test championship odi cricket played full members icc top six associate affiliate members additionally icc organizes competitions cricket world cup icc t20 world cup icc champions trophy icc also maintains test rankings odi rankings t20 rankings countries play forms cricket icc world odi xi represents talented odi cricketers playing international cricket time icc odi championship ranking scheme overlaid regular odi match schedule understanding structure organization competitions model improve causal reasoning logical inference abilities recognizing relationships different cricket formats teams involved governing body icc knowledge help model make informed predictions draw logical conclusions cricket related events outcomes additionally information ranking systems selection talented players enhance model ability analyze evaluate performance within sport answer main international cricket competitions test matches odi t20"
+        ],
+        "bleu_score": 0.005920794065968167,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.2094809114933014,
+                0.20542676746845245,
+                0.1874677687883377,
+                0.19332270324230194,
+                0.23009102046489716
+            ]
+        ]
+    },
+    {
+        "filename": "444.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate provides good understanding question retrieved knowledge triumph tr7 jaguar xjs including production manufacturing locations technical specifications historical significance helps model understand context cars produced enhanced reasoning process triumph tr7 jaguar xjs iconic cars produced 1970s triumph tr7 manufactured british leyland jaguar xjs produced jaguar cars division british leyland time cars known unique designs performance capabilities contributing popularity era answer british leyland"
+        ],
+        "bleu_score": 0.010319955954462896,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19438154995441437,
+                0.17824062705039978,
+                0.1883297711610794,
+                0.16382740437984467,
+                0.1659764051437378
+            ]
+        ]
+    },
+    {
+        "filename": "88.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 title lord tweedsmuir created 1935 author unionist politician john buchan served governor general canada 1935 death 1940 2 john buchan scottish writer politician became lord tweedsmuir 3 therefore writer politician became lord tweedsmuir john buchan answer john buchan"
+        ],
+        "bleu_score": 0.020906812277560218,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22352425754070282,
+                0.21833962202072144,
+                0.24140621721744537,
+                0.19329634308815002,
+                0.2155819982290268
+            ]
+        ]
+    },
+    {
+        "filename": "335.json",
+        "chosen_agent": "associate",
+        "output": [
+            "group people drove 1959 chevrolet hearse license plate ecto 1 ghostbusters fictional group paranormal investigators eliminators movie ghostbusters ecto 1 also known ectomobile modified 1959 cadillac miller meteor combination coach used ghostbusters films originally planned black changed white better visibility vehicle faced licensing issues leading considerations alternate car design currently original ecto 1 sitting sony pictures backlot undergoing full restoration answer ghostbusters drove 1959 chevrolet hearse license plate ecto 1"
+        ],
+        "bleu_score": 0.00456847385554301,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.1976460963487625,
+                0.21341222524642944,
+                0.1837705820798874,
+                0.18115970492362976,
+                0.18570499122142792
+            ]
+        ]
+    },
+    {
+        "filename": "1.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process calculate five ninths three fifths multiply two fractions together 5 9 3 5 5 3 9 5 15 45 simplify fraction 15 45 1 3 calculation shows five ninths three fifths equal 1 3 answer five ninths three fifths 1 3"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.22406858205795288,
+                0.17368637025356293,
+                0.19590167701244354,
+                0.20347610116004944,
+                0.2218586802482605
+            ]
+        ]
+    },
+    {
+        "filename": "141.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge update language model knowledge prevent factual errors alleviate model illusions 1 first try recall tv comedy shows characters named mclaren blanco warren 2 cannot recall search online tv comedies characters named mclaren blanco warren 3 upon research found superstore tv comedy features characters named mclaren blanco warren retrieved knowledge tv comedy superstore features characters named mclaren blanco warren answer tv comedy characters mclaren blanco warren superstore"
+        ],
+        "bleu_score": 0,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.19435587525367737,
+                0.19023281335830688,
+                0.1891559660434723,
+                0.19678492844104767,
+                0.17762787640094757
+            ]
+        ]
+    },
+    {
+        "filename": "446.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 surrealist movement cultural artistic movement began 1920s deeply influenced political social events 2 spanish civil war took place 1936 1939 significant impact political ideologies individuals involved artistic movements 3 salvador dal\u00ed prominent figure surrealist movement known controversial views actions 4 1934 salvador dal\u00ed expelled surrealist movement due political views odds movement principles 5 given timing spanish civil war dal\u00ed expulsion likely views war may conflicted prevailing ideologies within surrealist movement contributed expulsion retrieved knowledge spanish civil war deeply divided political intellectual figures leading expulsions various organizations war also led shift political ideologies individuals moving away communism others facing difficulties due marxist ideas additionally war caused fear dilemma among leaders leading policies neutrality non intervention answer salvador dal\u00ed expelled surrealist movement due views spanish civil war conflicted prevailing ideologies within movement time"
+        ],
+        "bleu_score": 0.005246451172775439,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.17332346737384796,
+                0.18452006578445435,
+                0.16532079875469208,
+                0.17874577641487122,
+                0.1888539046049118
+            ]
+        ]
+    },
+    {
+        "filename": "239.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process retrieved knowledge 1 song kiss 1 hit 70s performed band exile 2 exile band known success late 1970s particularly album mixed emotions hit song kiss 3 song kiss reached top charts 1978 coinciding expansion american top 40 four hours 1 song kiss exile answer exile"
+        ],
+        "bleu_score": 0.006277466950757328,
+        "correctness": [
+            "Unknown"
+        ],
+        "weights": [
+            [
+                0.21569472551345825,
+                0.1892876774072647,
+                0.20201362669467926,
+                0.20795780420303345,
+                0.20054446160793304
+            ]
+        ]
+    }
+]

@@ -17,7 +17,6 @@ nltk.download("stopwords")
 nltk.download("punkt")
 
 # Initialize BERT model and tokenizer
-# Note: Use the `cache_dir` parameter if you encounter issues with the model downloading
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 model = AutoModel.from_pretrained("bert-base-uncased")
 
@@ -34,7 +33,7 @@ def get_embedding(text):
     inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
     with torch.no_grad():
         outputs = model(**inputs)
-    return outputs.last_hidden_state[:, 0, :].squeeze().numpy()  # Ensure 768-dim
+    return outputs.last_hidden_state[:, 0, :].squeeze().numpy().tolist()  # Convert to list
 
 def calculate_bleu(reference, candidate):
     """Calculate BLEU score between reference and candidate texts."""
@@ -57,7 +56,13 @@ def extract_agent_data(file_path):
             output = preprocess_text(data[key][f'{key}_output'])
             embedding = get_embedding(output)
             bleu_score = calculate_bleu(true_answer, output)
-            agent_data[key] = {'embedding': embedding, 'bleu_score': bleu_score}
+            agent_correctness = data.get(f"{key}_correctness", "Unknown")
+            agent_data[key] = {
+                'embedding': embedding,
+                'bleu_score': bleu_score,
+                'output': output,
+                'correctness': agent_correctness
+            }
 
     target_embedding = get_embedding(' '.join(true_answer))
     return agent_data, target_embedding
@@ -66,6 +71,7 @@ class AgentDataset(Dataset):
     """Custom dataset to load agent data and target embeddings."""
     def __init__(self, json_files):
         self.data = [extract_agent_data(file) for file in json_files]
+        self.filenames = json_files
 
     def __len__(self):
         return len(self.data)
@@ -74,12 +80,14 @@ class AgentDataset(Dataset):
         agent_data, target = self.data[idx]
         embeddings = np.array([agent_data[a]['embedding'] for a in agent_data])
         bleu_scores = np.array([[agent_data[a]['bleu_score']] for a in agent_data])
+        filename = self.filenames[idx]
 
         return (
             torch.tensor(embeddings, dtype=torch.float32),
             torch.tensor(bleu_scores, dtype=torch.float32),
             torch.tensor(target, dtype=torch.float32),
-            agent_data
+            agent_data,
+            filename
         )
 
 class AgentWeightingModel(nn.Module):
@@ -102,8 +110,8 @@ class AgentWeightingModel(nn.Module):
         return weighted_embeddings.sum(dim=1), weights
 
 def find_closest_agent(agent_embeddings, point_in_space):
-    """Ensure embeddings are of the same shape and find the closest agent."""
-    point_in_space = point_in_space.reshape(1, -1)  # Ensure 2D shape
+    """Find the closest agent based on cosine similarity."""
+    point_in_space = point_in_space.reshape(1, -1)
 
     similarities = {
         agent: cosine_similarity(embedding.reshape(1, -1)[:, :768], point_in_space)[0][0]
@@ -113,63 +121,80 @@ def find_closest_agent(agent_embeddings, point_in_space):
     closest_agent = max(similarities, key=similarities.get)
     return closest_agent, similarities
 
-# Load all JSON files from the specified directory
-json_dir = "logs/triviaqa/top10"
-all_files = [os.path.join(json_dir, f) for f in os.listdir(json_dir) if f.endswith('.json')]
+# Main execution
+if __name__ == "__main__":
+    import argparse
 
-# Split the dataset into 80% train and 20% test
-train_size = int(0.8 * len(all_files))
-test_size = len(all_files) - train_size
-train_files, test_files = random_split(all_files, [train_size, test_size])
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, required=True, help='Dataset name (e.g., triviaqa)')
+    parser.add_argument('--topk', type=int, required=True, help='Top K value (e.g., 10)')
+    args = parser.parse_args()
 
-# Create DataLoaders
-train_loader = DataLoader(AgentDataset(train_files), batch_size=2, shuffle=True)
-test_loader = DataLoader(AgentDataset(test_files), batch_size=1, shuffle=False)
+    # Load all JSON files from the specified directory
+    json_dir = f"logs/{args.dataset}/top{args.topk}"
+    all_files = [os.path.join(json_dir, f) for f in os.listdir(json_dir) if f.endswith('.json')]
 
-# Initialize model, loss function, and optimizer
-model = AgentWeightingModel()
-criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+    # Split the dataset into 70% train and 30% test
+    train_size = int(0.7 * len(all_files))
+    test_size = len(all_files) - train_size
+    train_files, test_files = random_split(all_files, [train_size, test_size])
 
-# Training loop
-for epoch in range(10):
-    model.train()
-    for embeddings, scores, target, agent_data in train_loader:
-        # Forward pass to get output and weights
-        output, weights = model(embeddings, scores)
-        loss = criterion(output, target)
+    # Create DataLoaders
+    train_loader = DataLoader(AgentDataset(train_files), batch_size=2, shuffle=True)
+    test_loader = DataLoader(AgentDataset(test_files), batch_size=1, shuffle=False)
 
-        # Backward pass and optimization
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+    # Initialize model, loss function, and optimizer
+    model = AgentWeightingModel()
+    criterion = nn.MSELoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-        # Find the closest agent during training
-        agent_embeddings = {agent: data['embedding'] for agent, data in agent_data.items()}
-        closest_agent, similarities = find_closest_agent(agent_embeddings, output[0].detach().numpy())
+    # Training loop
+    for epoch in range(10):
+        model.train()
+        for embeddings, scores, target, agent_data, filename in train_loader:
+            output, weights = model(embeddings, scores)
+            loss = criterion(output, target)
 
-        # Print training results
-        agents = list(agent_data.keys())
-        print(f"Training - Epoch [{epoch + 1}/10], Loss: {loss.item():.4f}")
-        print(f"Closest Agent: {closest_agent}, Similarities: {similarities}")
-        for i, agent in enumerate(agents):
-            print(f"Weight for {agent}: {weights[0, i].item():.4f}")
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-# Testing loop
-model.eval()
-with torch.no_grad():
-    for embeddings, scores, target, agent_data in test_loader:
-        # Forward pass to get output and weights
-        output, weights = model(embeddings, scores)
-        test_loss = criterion(output, target)
+        print(f"Epoch [{epoch + 1}/10], Loss: {loss.item():.4f}")
 
-        # Find the closest agent during testing
-        agent_embeddings = {agent: data['embedding'] for agent, data in agent_data.items()}
-        closest_agent, similarities = find_closest_agent(agent_embeddings, output[0].detach().numpy())
+    # Testing loop
+    model.eval()
+    all_test_results = []
+    with torch.no_grad():
+        for embeddings, scores, target, agent_data, filename in test_loader:
+            print(f"Processing Filename: {filename[0]}")
 
-        # Print test results
-        agents = list(agent_data.keys())
-        print(f"Test - Closest Agent: {closest_agent}, Similarities: {similarities}")
-        print(f'Test Loss: {test_loss.item():.4f}')
-        for i, agent in enumerate(agents):
-            print(f"Weight for {agent}: {weights[0, i].item():.4f}")
+            output, weights = model(embeddings, scores)
+            test_loss = criterion(output, target)
+
+            agent_embeddings = {agent: np.array(data['embedding']) for agent, data in agent_data.items()}
+            closest_agent, similarities = find_closest_agent(agent_embeddings, output[0].cpu().numpy())
+
+            chosen_agent_output = agent_data[closest_agent]['output']
+            chosen_agent_bleu = agent_data[closest_agent]['bleu_score']
+            chosen_agent_bleu = chosen_agent_bleu.item() if isinstance(chosen_agent_bleu, torch.Tensor) else chosen_agent_bleu
+            chosen_agent_correctness = agent_data[closest_agent]['correctness']
+
+            result = {
+                'filename': os.path.basename(filename[0]),
+                'chosen_agent': closest_agent,
+                'output': chosen_agent_output,
+                'bleu_score': chosen_agent_bleu,
+                'correctness': chosen_agent_correctness,
+                'weights': weights.cpu().numpy().tolist()
+            }
+
+            all_test_results.append(result)
+
+    output_dir = os.path.join("Model_Answers", f"{args.dataset}/top{args.topk}")
+    os.makedirs(output_dir, exist_ok=True)
+    output_file_path = os.path.join(output_dir, f'top{args.topk}.json')
+
+    with open(output_file_path, 'w') as outfile:
+        json.dump(all_test_results, outfile, indent=4)
+
+    print(f"All test results saved in: {output_file_path}")
