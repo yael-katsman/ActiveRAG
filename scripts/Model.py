@@ -11,6 +11,7 @@ from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import torch.nn as nn
 import torch.optim as optim
 from sklearn.metrics.pairwise import cosine_similarity
+from collections import Counter
 
 # Download necessary NLTK data
 nltk.download("stopwords")
@@ -123,6 +124,38 @@ def find_closest_agent(agent_embeddings, point_in_space):
 
     closest_agent = max(similarities, key=similarities.get)
     return closest_agent, similarities
+def calc_accuracy(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)  # Corrected from json.load(file_path) to json.load(f)
+
+    # Count entries with correctness marked as "True"
+    correct_count = sum(1 for entry in data if entry['correctness'] == "True")
+    total_count = len(data)
+
+    # Calculate accuracy as a percentage
+    accuracy = (correct_count / total_count) * 100 if total_count > 0 else 0
+    return accuracy
+def calc_average_bleu_score(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+
+    # Extract and sum the BLEU scores
+    total_bleu_score = sum(entry['bleu_score'] for entry in data)
+    total_count = len(data)
+
+    # Calculate the average BLEU score
+    average_bleu_score = total_bleu_score / total_count if total_count > 0 else 0
+    return average_bleu_score
+def get_agent_histogram(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+
+    # Extract the chosen_agent from each entry
+    agent_counts = Counter(entry['chosen_agent'] for entry in data)
+
+    # Convert the Counter object to a dictionary
+    agent_histogram = dict(agent_counts)
+    return agent_histogram
 
 # Main execution
 if __name__ == "__main__":
@@ -201,3 +234,21 @@ if __name__ == "__main__":
         json.dump(all_test_results, outfile, indent=4)
 
     print(f"All test results saved in: {output_file_path}")
+    accuracy = calc_accuracy(output_file_path)
+    print(f"Accuracy: {accuracy:.2f}%")
+    average_bleu_score = calc_average_bleu_score(output_file_path)
+    print(f"Average BLEU Score: {average_bleu_score:.4f}")
+    agent_histogram = get_agent_histogram(output_file_path)
+    print("Agent Histogram:", agent_histogram)
+
+    # Save the summary results in a new JSON file
+    summary_file_path = os.path.join(output_dir, 'summary_metrics.json')
+    summary_data = {
+        "accuracy": f"{accuracy:.2f}%",
+        "average_bleu_score": average_bleu_score,
+        "agent_histogram": agent_histogram
+    }
+    with open(summary_file_path, 'w') as summary_file:
+        json.dump(summary_data, summary_file, indent=4)
+
+    print(f"Summary metrics saved in: {summary_file_path}")

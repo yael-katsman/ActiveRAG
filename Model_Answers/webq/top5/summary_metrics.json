@@ -1,0 +1,11 @@
+{
+    "accuracy": "63.33%",
+    "average_bleu_score": 0.01068357796032644,
+    "agent_histogram": {
+        "cognition": 37,
+        "associate": 31,
+        "cot": 28,
+        "anchoring": 42,
+        "logician": 12
+    }
+}

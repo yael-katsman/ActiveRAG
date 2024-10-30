@@ -1,0 +1,2702 @@
+[
+    {
+        "filename": "13.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced reasoning process 1 gerard kennedy specific individual 2 based retrieved knowledge inferred gerard kennedy politician former minister education ontario provincial government well candidate leadership federal liberal party 3 given political career involvement government reasonable infer gerard kennedy occupation field politics public service answer gerard kennedy occupation politician public servant served minister education ontario provincial government candidate leadership federal liberal party"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2453574389219284,
+                0.19653044641017914,
+                0.20078900456428528,
+                0.18308962881565094,
+                0.18782144784927368
+            ]
+        ]
+    },
+    {
+        "filename": "5.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge determine father john king england need consider historical lineage english monarchy king john also known john lackland son king henry ii eleanor aquitaine henry ii significant figure english history known conflicts thomas becket role angevin empire eleanor aquitaine powerful influential queen known political acumen involvement affairs kingdom additionally understanding family dynamics potential heirs throne john gloucester john eltham provide context succession king john relationship father king henry ii answer father john king england king henry ii"
+        ],
+        "bleu_score": 0.017023441199099387,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21562717854976654,
+                0.16492919623851776,
+                0.21516665816307068,
+                0.14319954812526703,
+                0.16721248626708984
+            ]
+        ]
+    },
+    {
+        "filename": "45.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 movie lol laughing loud originally french film released 2008 2 screenwriter original french film lol laughing loud lisa azuelos answer screenwriter lol laughing loud lisa azuelos"
+        ],
+        "bleu_score": 0.0211187082675828,
+        "correctness": "True",
+        "weights": [
+            [
+                0.253972589969635,
+                0.2690383195877075,
+                0.1757522076368332,
+                0.17286837100982666,
+                0.18217352032661438
+            ]
+        ]
+    },
+    {
+        "filename": "62.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate provides good understanding film housefull 2 production enhance reasoning process delve background producer sajid nadiadwala contributions indian film industry sajid nadiadwala renowned producer director bollywood known successful films collaborations top actors directors production company nadiadwala grandson entertainment involved producing several blockbuster films solidifying reputation industry answer sajid nadiadwala"
+        ],
+        "bleu_score": 0.012670762492928651,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3200948238372803,
+                0.15728598833084106,
+                0.2016424834728241,
+                0.17350754141807556,
+                0.14917945861816406
+            ]
+        ]
+    },
+    {
+        "filename": "11.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process film entity directed sidney j furie 1982 american supernatural horror film starring barbara hershey single mother los angeles raped tormented invisible assailant contradicts information films similar titles different plots therefore correct director entity sidney j furie answer sidney j furie"
+        ],
+        "bleu_score": 0.008030195177965396,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31225913763046265,
+                0.20914089679718018,
+                0.19753840565681458,
+                0.15833839774131775,
+                0.19472448527812958
+            ]
+        ]
+    },
+    {
+        "filename": "127.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 candy 1968 film based novel terry southern mason hoffenberg 2 screenplay candy written buck henry terry southern answer screenwriter candy buck henry terry southern"
+        ],
+        "bleu_score": 0.03186953749532743,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2349560558795929,
+                0.23953156173229218,
+                0.1836245357990265,
+                0.18608345091342926,
+                0.17950116097927094
+            ]
+        ]
+    },
+    {
+        "filename": "232.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate enhance understanding question use retrieved knowledge deepen model comprehension enhanced reasoning process state art title used various works across different artistic mediums collection short fiction iain banks scottish writer known culture series additionally state art also title album released hip hop producer chris presto douglas however context literature state art commonly associated science fiction short story iain banks first published 1991 answer author state art context literature iain banks"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.22587592899799347,
+                0.19824324548244476,
+                0.16998401284217834,
+                0.14250926673412323,
+                0.16074180603027344
+            ]
+        ]
+    },
+    {
+        "filename": "123.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find director challenge start searching movie challenge looking director name credits online database film challenge directed john frankenheimer 1982 features scott glenn toshir\u014d mifune contradicts information one passages mentioned director kent moran george mccowan cast mary kate ashley olsen therefore correct director challenge john frankenheimer answer director challenge john frankenheimer"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2798019051551819,
+                0.16194863617420197,
+                0.251790851354599,
+                0.13480836153030396,
+                0.18204613029956818
+            ]
+        ]
+    },
+    {
+        "filename": "376.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find director movie fox search movie reliable database website like imdb wikipedia information identify director movie according retrieved knowledge mark rydell directed 1967 american drama film fox screenplay written lewis john carlino howard koch loosely based 1923 novella title h lawrence film marked rydell feature film directorial debut answer director fox mark rydell"
+        ],
+        "bleu_score": 0.011459081050471769,
+        "correctness": "True",
+        "weights": [
+            [
+                0.265850305557251,
+                0.23656056821346283,
+                0.17901219427585602,
+                0.215177521109581,
+                0.21313855051994324
+            ]
+        ]
+    },
+    {
+        "filename": "192.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 christine horror novel american writer stephen king published 1983 2 stephen king prolific author known work horror supernatural fiction genre 3 book adapted film 30th anniversary edition indicating enduring popularity impact answer author christine american writer stephen king"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.23408988118171692,
+                0.1832544207572937,
+                0.19667890667915344,
+                0.19631080329418182,
+                0.1590646505355835
+            ]
+        ]
+    },
+    {
+        "filename": "66.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "conflicting information passages related director film first passage states film written directed john ward second passage states written directed narrated tom shadyac conflicting information could update model knowledge prevent factual errors clarifying two different films titled different directors one directed onir directed tom shadyac answer director film onir"
+        ],
+        "bleu_score": 0.013384295025391575,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31897035241127014,
+                0.16401417553424835,
+                0.19701552391052246,
+                0.15184935927391052,
+                0.1967635601758957
+            ]
+        ]
+    },
+    {
+        "filename": "360.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process hamilton capital british overseas territory bermuda contradicts model existing knowledge information adding information would update model knowledge prevent factual errors answer hamilton capital bermuda"
+        ],
+        "bleu_score": 0.011713183580694267,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3505014181137085,
+                0.14289507269859314,
+                0.14476008713245392,
+                0.10117657482624054,
+                0.15473392605781555
+            ]
+        ]
+    },
+    {
+        "filename": "180.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 dedication 2007 american romantic comedy drama film 2 director dedication justin theroux answer justin theroux"
+        ],
+        "bleu_score": 0.03265830837077511,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25558871030807495,
+                0.18707020580768585,
+                0.16542191803455353,
+                0.16176359355449677,
+                0.20333079993724823
+            ]
+        ]
+    },
+    {
+        "filename": "152.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge update language model knowledge prevent factual errors alleviate model illusions based retrieved knowledge multiple films similar titles desire desires directed different directors accurately determine director movie desires need consider specific year country film release information match corresponding director retrieved knowledge answer director desires rolf hansen 1952 german drama film"
+        ],
+        "bleu_score": 0.011835014947996634,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24680238962173462,
+                0.18921825289726257,
+                0.17814835906028748,
+                0.1366295963525772,
+                0.18954911828041077
+            ]
+        ]
+    },
+    {
+        "filename": "301.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 klass 2007 estonian film directed ilmar raag 2 screenwriter klass philip klass bill skarsg\u00e5rd rather american screenwriter novelist 3 david klass american screenwriter novelist known character based thrillers adults stories teenagers crisis answer david klass"
+        ],
+        "bleu_score": 0.015782280286300628,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2623729407787323,
+                0.19725461304187775,
+                0.19861900806427002,
+                0.14269034564495087,
+                0.20356492698192596
+            ]
+        ]
+    },
+    {
+        "filename": "281.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process tokyo capital japan confirmed reliable sources information added language model training data prevent model illusions ensure accurate outputs answer tokyo capital japan"
+        ],
+        "bleu_score": 0.010477009940175953,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3386969268321991,
+                0.15507866442203522,
+                0.16202180087566376,
+                0.1794758439064026,
+                0.20607693493366241
+            ]
+        ]
+    },
+    {
+        "filename": "6.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find director movie photo search movie reliable database website imdb wikipedia located movie look director name credits movie information retrieved knowledge indicates film photo written directed hossein shahabi answer director photo hossein shahabi"
+        ],
+        "bleu_score": 0.01693542154518793,
+        "correctness": "True",
+        "weights": [
+            [
+                0.27838265895843506,
+                0.2135368287563324,
+                0.20834866166114807,
+                0.15564297139644623,
+                0.23043185472488403
+            ]
+        ]
+    },
+    {
+        "filename": "93.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides additional context background information related term prototype different media forms help language model better understand question enhanced reasoning process find screenwriter 2016 fantasy tv movie prototype directed juan carlos fresnadillo research film credits look information movie online help us identify individual responsible writing screenplay answer screenwriter 2016 fantasy tv movie prototype john brancato"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.22858399152755737,
+                0.17517459392547607,
+                0.14899688959121704,
+                0.14831170439720154,
+                0.16709209978580475
+            ]
+        ]
+    },
+    {
+        "filename": "162.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 career 1939 drama film directed leigh jason starring anne shirley edward ellis screenplay written dalton trumbo bert granet 2 previous inference process based incorrect information correct screenwriters career dalton trumbo bert granet 3 therefore screenwriter career dalton trumbo bert granet answer dalton trumbo bert granet"
+        ],
+        "bleu_score": 0.018242712043158964,
+        "correctness": "True",
+        "weights": [
+            [
+                0.27158617973327637,
+                0.18893621861934662,
+                0.1625692993402481,
+                0.21363990008831024,
+                0.18927697837352753
+            ]
+        ]
+    },
+    {
+        "filename": "130.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process 1 heath known expertise computer programming technology 2 often talks coding software development 3 however based retrieved knowledge heath occupation actually professional footballer playing defender connah quay nomads 4 new information contradicts previous inference occupation software developer computer programmer answer heath occupation professional footballer playing defender connah quay nomads"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.20132741332054138,
+                0.149725079536438,
+                0.16158755123615265,
+                0.1215469166636467,
+                0.16265985369682312
+            ]
+        ]
+    },
+    {
+        "filename": "435.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process find producer campaign start looking movie reliable database website like imdb information identify producer movie retrieved knowledge campaign 2012 american political satire comedy film directed jay roach written shawn harwell chris henchy stars ferrell zach galifianakis film co production everyman pictures warner bros pictures enhanced reasoning process based retrieved knowledge know campaign co production everyman pictures warner bros pictures since jay roach director film likely also served producer answer producer campaign jay roach"
+        ],
+        "bleu_score": 0.0133696793474756,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2952366769313812,
+                0.2003721296787262,
+                0.20093436539173126,
+                0.176814004778862,
+                0.19408680498600006
+            ]
+        ]
+    },
+    {
+        "filename": "433.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 composer song hero mariah carey 2 mariah carey well known singer songwriter released many popular songs including hero 3 mariah carey credited composer hero song official credits music databases 4 additionally compositions title hero different composers anton\u00edn dvo\u0159\u00e1k john poli palmer gian carlo menotti ryosuke imai showcasing diverse artistic interpretations styles associated concept hero 5 understanding thematic elements compositions energetic triumphant nature dvo\u0159\u00e1k hero song lyrical content ryosuke imai hero help making logical inferences emotional narrative intentions composers answer composer hero mariah carey"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2189425379037857,
+                0.1740460842847824,
+                0.1691339612007141,
+                0.15153156220912933,
+                0.1648026555776596
+            ]
+        ]
+    },
+    {
+        "filename": "166.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 three days never novel written tim powers known works science fiction fantasy genres 2 novel explores concept secret history supernatural causes involvement historical figures occult activities 3 three days never chapbook containing nine sonnets written one main characters published subterranean press given away collectors edition novel 4 novel published 2006 part tim powers body work often involves elements time travel supernatural occurrences 5 tim powers also known novel anubis gates connects time travel rivers showcasing expertise blending historical fantastical elements answer author three days never tim powers"
+        ],
+        "bleu_score": 0.007430870490936264,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2305498570203781,
+                0.16644741594791412,
+                0.1661623865365982,
+                0.13791336119174957,
+                0.18262481689453125
+            ]
+        ]
+    },
+    {
+        "filename": "74.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process taitung county located taiwan taitung city county seat housing taitung county government taitung county council populous subdivision taitung county one major cities east coast island current magistrate taitung county rao ching ling kuomintang therefore based information confirmed taitung city indeed capital taitung county answer capital taitung county taitung city"
+        ],
+        "bleu_score": 0.012237885095536926,
+        "correctness": "True",
+        "weights": [
+            [
+                0.29031166434288025,
+                0.195499449968338,
+                0.2098579853773117,
+                0.17479462921619415,
+                0.19957035779953003
+            ]
+        ]
+    },
+    {
+        "filename": "10.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 vision roderick poem written sir walter scott published 1811 inspired peninsular war aimed raise funds portugal 2 sir walter scott author poem scottish historical novelist poet playwright historian known works ivanhoe rob roy waverley 3 poem based legendary consultation oracle last visigothic king spain roderic around 711 recounted gin\u00e9s p\u00e9rez de hita understanding historical contextual background poem model causal reasoning logical inference abilities enhanced allowing deeper understanding inspiration purpose behind work answer author vision roderick sir walter scott"
+        ],
+        "bleu_score": 0.015842097098520767,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21089176833629608,
+                0.1794481873512268,
+                0.16284014284610748,
+                0.15968260169029236,
+                0.1829899698495865
+            ]
+        ]
+    },
+    {
+        "filename": "375.json",
+        "chosen_agent": "logician",
+        "output": [
+            "reasoning process accurate retrieved knowledge enhance language model causal reasoning logical inference abilities providing specific details film understanding different directors production years genres associated film model make precise inferences characteristics attributes movie answer based enhanced reasoning process screenwriter movie rob spera"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2914676070213318,
+                0.16749180853366852,
+                0.16402773559093475,
+                0.18465787172317505,
+                0.18317213654518127
+            ]
+        ]
+    },
+    {
+        "filename": "473.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process melbourne village civil parish east riding yorkshire england also well known city australia model existing knowledge melbourne australia correct conflicting information melbourne england could lead factual errors therefore important verify location melbourne prevent model illusions answer melbourne australia"
+        ],
+        "bleu_score": 0,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2804728150367737,
+                0.1803814172744751,
+                0.1832943856716156,
+                0.15369978547096252,
+                0.18063822388648987
+            ]
+        ]
+    },
+    {
+        "filename": "405.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process knowledge film pariah directors provides clear understanding directorial history film recognizing pariah 2011 american drama film directed dee rees establish causal relationship film director understanding allows language model make logical inferences directorial credits film answer director pariah dee rees"
+        ],
+        "bleu_score": 0.014783348734456997,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3390299081802368,
+                0.15229274332523346,
+                0.1663462072610855,
+                0.17954035103321075,
+                0.21938030421733856
+            ]
+        ]
+    },
+    {
+        "filename": "61.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate let enhance reasoning process using retrieved knowledge deepen understanding question enhanced reasoning process 1 alexandre marie colin french painter engraver born 1798 known historical genre subjects 2 based information infer alexandre marie colin likely born france given french nationality common practice artists born home country answer alexandre marie colin born paris france"
+        ],
+        "bleu_score": 0.006658366187184962,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24850039184093475,
+                0.19653387367725372,
+                0.178934708237648,
+                0.179815411567688,
+                0.15176044404506683
+            ]
+        ]
+    },
+    {
+        "filename": "466.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 book ball novel 2 multiple authors last name ball including edward ball margaret elizabeth ball 3 however based context question likely author ball refers specific novel last name author 4 therefore relevant author ball irving wallace previously mentioned answer irving wallace"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.20661555230617523,
+                0.15809771418571472,
+                0.17125515639781952,
+                0.1694025993347168,
+                0.17187654972076416
+            ]
+        ]
+    },
+    {
+        "filename": "230.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate enhance understanding question important note listen song musical dreamgirls composer song henry krieger information deepens understanding question providing specific details composition creator answer henry krieger"
+        ],
+        "bleu_score": 0.0211187082675828,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31309351325035095,
+                0.1615069955587387,
+                0.1800907999277115,
+                0.12780505418777466,
+                0.15969699621200562
+            ]
+        ]
+    },
+    {
+        "filename": "219.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge update language model knowledge prevent factual errors alleviate model illusions 1 love story refer various forms media including animated short film novel album french romantic drama film 2 forms love story may belong different genres animation literature music film respectively 3 therefore genre love story vary depending specific form media represents answer genre love story vary depending specific form media represents example animated short film may fall animation genre novel may belong romance genre album may categorized pop romantic music french romantic drama film may classified romance drama genre"
+        ],
+        "bleu_score": 0.008583562685557052,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25252944231033325,
+                0.21136635541915894,
+                0.19557814300060272,
+                0.14606203138828278,
+                0.18703724443912506
+            ]
+        ]
+    },
+    {
+        "filename": "102.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process matteo pivotto italian professional football player football popular sport italy given information likely matteo pivotto plays football answer matteo pivotto plays football"
+        ],
+        "bleu_score": 0.010477009940175953,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28848761320114136,
+                0.19993199408054352,
+                0.15291741490364075,
+                0.14855094254016876,
+                0.15490823984146118
+            ]
+        ]
+    },
+    {
+        "filename": "97.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process better understand question important note interview context refers 2014 american political satire comedy film film co produced directed seth rogen played leading role movie well answer producer interview seth rogen"
+        ],
+        "bleu_score": 0.018282569091432797,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28792011737823486,
+                0.22328969836235046,
+                0.20198199152946472,
+                0.14676402509212494,
+                0.19956128299236298
+            ]
+        ]
+    },
+    {
+        "filename": "189.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 lol laughing loud 2008 french film directed lisa azuelos 2 lisa azuelos french director known work film industry answer director lol laughing loud lisa azuelos"
+        ],
+        "bleu_score": 0.02047885429293855,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25236010551452637,
+                0.18182389438152313,
+                0.15936033427715302,
+                0.1605442315340042,
+                0.20005987584590912
+            ]
+        ]
+    },
+    {
+        "filename": "237.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 derek ingram hill english anglican priest known work pastor administrator historian south east england particularly city canterbury cathedral 2 anglican priest derek ingram hill occupation involved pastoral care religious leadership historical research within context anglican church 3 role priest would included conducting religious services providing spiritual guidance engaging community outreach support answer derek ingram hill occupation english anglican priest involving pastoral care religious leadership historical research within context anglican church"
+        ],
+        "bleu_score": 0.004358632673529301,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2287556231021881,
+                0.2172415852546692,
+                0.18462097644805908,
+                0.19657446444034576,
+                0.1603022962808609
+            ]
+        ]
+    },
+    {
+        "filename": "325.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 summer novel written sarah dessen first published 1996 first novel also basis film deal 2 novels title authors allen drury andrew greig well children book tony johnston david french answer sarah dessen"
+        ],
+        "bleu_score": 0.017360570848147464,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31684330105781555,
+                0.17928965389728546,
+                0.22160787880420685,
+                0.17619024217128754,
+                0.16955752670764923
+            ]
+        ]
+    },
+    {
+        "filename": "144.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process find director movie va first search movie va look information director answer director movie va pushkar gayathri"
+        ],
+        "bleu_score": 0,
+        "correctness": "True",
+        "weights": [
+            [
+                0.29936856031417847,
+                0.24295014142990112,
+                0.19340361654758453,
+                0.14116449654102325,
+                0.1837230920791626
+            ]
+        ]
+    },
+    {
+        "filename": "279.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process 1 commonwealth independent states cis intergovernmental organization 10 post soviet republics single country capital 2 cis single capital loose alliance independent states capital city 3 member countries cis include russia ukraine belarus kazakhstan others capital city answer commonwealth independent states cis single capital group independent states capital city"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.21183571219444275,
+                0.1561441272497177,
+                0.18414364755153656,
+                0.1841709166765213,
+                0.14547251164913177
+            ]
+        ]
+    },
+    {
+        "filename": "380.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process ewen fernandez french athlete known participation inline speed skating inline speed skating sport athletes race inline skates similar rollerblades track road fernandez competed various international competitions achieved success sport based information evident ewen fernandez plays inline speed skating sport answer ewen fernandez plays inline speed skating"
+        ],
+        "bleu_score": 0.013137209862130366,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25095435976982117,
+                0.17580679059028625,
+                0.15370666980743408,
+                0.15656079351902008,
+                0.17265380918979645
+            ]
+        ]
+    },
+    {
+        "filename": "411.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process novel pianoplayers written anthony burgess first published 1986 draws heavily burgess memories father pub piano player story narrated ellen henshaw prostitute later becomes madam father billy plays piano cinema accompanying silent movies additionally music albums similar titles piano player ramsey lewis released 1970 piano player maksim mrvica released 2003 important note piano teacher novel austrian nobel prize winner elfriede jelinek first published 1983 different work altogether considering different contexts model improve causal reasoning logical inference abilities understanding various interpretations uses term pianoplayers learn differentiate novel music albums forms artistic expression related piano playing enhance model ability make logical connections inferences based specific context term used additionally model develop deeper understanding cultural historical significance piano playing different contexts enhancing causal reasoning capabilities answer author novel pianoplayers anthony burgess"
+        ],
+        "bleu_score": 0.005429599906191865,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2256861925125122,
+                0.16944396495819092,
+                0.17224852740764618,
+                0.13325612246990204,
+                0.14108659327030182
+            ]
+        ]
+    },
+    {
+        "filename": "16.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided contains inaccuracies screenwriter movie weight actually chung ji young robbie robertson song weight performed band written robbie robertson separate entity movie enhanced reasoning process using retrieved knowledge movie weight written directed chung ji young prominent south korean filmmaker known impactful storytelling thought provoking narratives film delves complexities human nature societal issues showcasing chung ji young skillful screenwriting directorial abilities answer screenwriter weight chung ji young"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.24372157454490662,
+                0.3744630813598633,
+                0.1768202930688858,
+                0.18205803632736206,
+                0.1484730988740921
+            ]
+        ]
+    },
+    {
+        "filename": "285.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides additional context different works related theme listening various forms media enhanced reasoning process find director movie listening search movie reliable database website imdb wikipedia important note works similar titles 2003 short film directed kenneth branagh 2006 movie directed italian director giacomo martelli however specific movie question listening 2014 science fiction thriller film searching 2014 movie listening identify director movie answer director movie listening khalil sullins"
+        ],
+        "bleu_score": 0.009395345631585733,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2606799900531769,
+                0.19982323050498962,
+                0.17696422338485718,
+                0.19176548719406128,
+                0.1721668243408203
+            ]
+        ]
+    },
+    {
+        "filename": "269.json",
+        "chosen_agent": "logician",
+        "output": [
+            "reasoning process accurate provides good associate enhancing language model causal reasoning logical inference abilities incorporating retrieved knowledge model gain deeper understanding context motivations behind creation corporation documentary well issues addresses enhanced reasoning process understanding background purpose corporation model develop nuanced understanding complexities involved corporate behavior globalization impact society also learn recognize relationships societal issues strategies change inspired real life case studies interviews corporate insiders enable model make informed reasoned judgments effects corporate behavior society world large answer director corporation mark achbar"
+        ],
+        "bleu_score": 0.008339270226528028,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31712308526039124,
+                0.1638282835483551,
+                0.15454456210136414,
+                0.1442105621099472,
+                0.17174634337425232
+            ]
+        ]
+    },
+    {
+        "filename": "453.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 voice could refer book poem song form literature art 2 voice thomas hardy poem voice susan elderkin novel 3 eimear quinn known song titled voice dean koontz novel title 4 identify author voice specific details work question necessary type work poem novel song additional context answer author voice depends specific work question poem thomas hardy novel susan elderkin song eimear quinn novel dean koontz without specific details possible determine author"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2034054398536682,
+                0.19058437645435333,
+                0.1822715848684311,
+                0.15012188255786896,
+                0.1898525208234787
+            ]
+        ]
+    },
+    {
+        "filename": "231.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 usr sainte rose sports club team associated various athletes participating track field events high jump triple jump possibly football 2 diverse sporting presence club suggests may involved multiple sports answer based enhanced reasoning process likely usr sainte rose involved multiple sports including track field events high jump triple jump possibly football specific sport played usr sainte rose explicitly provided given information additional details club activities official announcements needed determine specific sport play"
+        ],
+        "bleu_score": 0.004261291334530179,
+        "correctness": "True",
+        "weights": [
+            [
+                0.1923718899488449,
+                0.17782066762447357,
+                0.17045487463474274,
+                0.14748649299144745,
+                0.1400413066148758
+            ]
+        ]
+    },
+    {
+        "filename": "41.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 cover song artist trevor daniel 2 trevor daniel known pop r b music 3 however references cover different genres cover tribute album j pop idol group morning musume american metalcore band called cover tracks 4 considering diverse references cover important acknowledge song cover trevor daniel may necessarily fit pop r b genre answer genre cover trevor daniel uncertain references cover different genres pop r b j pop metalcore"
+        ],
+        "bleu_score": 0.004409125062663348,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25942716002464294,
+                0.19435355067253113,
+                0.24971987307071686,
+                0.17594432830810547,
+                0.2288336604833603
+            ]
+        ]
+    },
+    {
+        "filename": "204.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 partner bollywood movie released 2007 director movie david dhawan 2 works titled partner partners related bollywood movie released 2007 based information infer director bollywood movie partner david dhawan answer david dhawan"
+        ],
+        "bleu_score": 0.01780895112194094,
+        "correctness": "True",
+        "weights": [
+            [
+                0.26047074794769287,
+                0.1638379842042923,
+                0.19664739072322845,
+                0.2181137502193451,
+                0.21529075503349304
+            ]
+        ]
+    },
+    {
+        "filename": "309.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 producer rescue found looking information film production 2 search official credits film find name producer answer producer rescue christopher figg"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.29461175203323364,
+                0.18992121517658234,
+                0.22071929275989532,
+                0.21160419285297394,
+                0.17358814179897308
+            ]
+        ]
+    },
+    {
+        "filename": "143.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 consent kill novel mitch rapp series 2 author mitch rapp series vince flynn 3 vince flynn passed away 2013 kyle mills took writing mitch rapp series 4 therefore author consent kill vince flynn subsequent books series written kyle mills 5 additionally consent kill planned adapted film indicates continued relevance popularity answer vince flynn"
+        ],
+        "bleu_score": 0.011280369308819071,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28070345520973206,
+                0.1982361525297165,
+                0.21080690622329712,
+                0.17272056639194489,
+                0.18978282809257507
+            ]
+        ]
+    },
+    {
+        "filename": "179.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 marguerite de rothschild born prominent rothschild family known banking financial success maurice edmond karl de rothschild member french branch rothschild family known involvement finance politics 2 maurice de rothschild married no\u00e9mie de rothschild one child son edmond 3 based updated knowledge maurice edmond karl de rothschild father marguerite de rothschild answer maurice edmond karl de rothschild father marguerite de rothschild"
+        ],
+        "bleu_score": 0.004863687509482329,
+        "correctness": "False",
+        "weights": [
+            [
+                0.19209417700767517,
+                0.14391320943832397,
+                0.16081421077251434,
+                0.18237417936325073,
+                0.1587236374616623
+            ]
+        ]
+    },
+    {
+        "filename": "223.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate enhance understanding question could refer specific film without specific information impossible determine director retrieved knowledge 1965 film directed robert day based novel h rider haggard enhanced reasoning process film directed robert day based novel h rider haggard specific information provides clarity director answer director robert day"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.24986697733402252,
+                0.16493907570838928,
+                0.19686539471149445,
+                0.15646757185459137,
+                0.21158604323863983
+            ]
+        ]
+    },
+    {
+        "filename": "156.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process find director movie relentless search specific version film question multiple films title relentless including 1989 american crime film directed william lustig 2010 nigerian drama film directed andy amadi okoroafor 1948 american technicolor western film directed george sherman given 1989 version well known widely referenced safe assume question pertains particular film answer director 1989 film relentless william lustig"
+        ],
+        "bleu_score": 0.01093995829218893,
+        "correctness": "True",
+        "weights": [
+            [
+                0.30241572856903076,
+                0.1610574722290039,
+                0.18796312808990479,
+                0.17606867849826813,
+                0.19062934815883636
+            ]
+        ]
+    },
+    {
+        "filename": "64.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process atl\u00e9tico de madrid commonly known atl\u00e9tico madrid professional football club based madrid spain competing la liga top tier spanish football team known red white striped home jerseys official team colors answer color atl\u00e9tico de madrid red white"
+        ],
+        "bleu_score": 0.008519338638608924,
+        "correctness": "True",
+        "weights": [
+            [
+                0.33599933981895447,
+                0.1753833293914795,
+                0.24823513627052307,
+                0.16471649706363678,
+                0.17033807933330536
+            ]
+        ]
+    },
+    {
+        "filename": "228.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 little children novel written tom perrotta published 2004 well received readers critics 2 tom perrotta known insightful humorous portrayal suburban life relationships novels 3 also written popular novels election leftovers 4 passage mentioning littles john peterson relevant authorship little children disregarded answer author little children tom perrotta"
+        ],
+        "bleu_score": 0.012450362839020346,
+        "correctness": "True",
+        "weights": [
+            [
+                0.18303872644901276,
+                0.18253962695598602,
+                0.16630049049854279,
+                0.1651621162891388,
+                0.1767236739397049
+            ]
+        ]
+    },
+    {
+        "filename": "463.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided contains inaccuracies author time come h g wells rather august derleth american writer edited anthology science fiction fantasy stories anthology first published 1954 features original stories deepen language model understanding question familiarity basic advanced pieces information important note time come specific work august derleth confused works similar titles different authors consolidating knowledge model comprehend question thoroughly expand knowledge boundaries recognizing specific work author question answer august derleth"
+        ],
+        "bleu_score": 0.009516666638322862,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25167083740234375,
+                0.1572115421295166,
+                0.18870851397514343,
+                0.1796523630619049,
+                0.16690517961978912
+            ]
+        ]
+    },
+    {
+        "filename": "60.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 castle 1997 australian comedy drama film 2 director castle rob sitch answer rob sitch"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2837212383747101,
+                0.24266014993190765,
+                0.18897175788879395,
+                0.1994563788175583,
+                0.16876588761806488
+            ]
+        ]
+    },
+    {
+        "filename": "297.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 lemon table collection short stories written julian barnes well known british author 2 julian barnes published lemon table 2004 3 based information clear julian barnes author lemon table answer julian barnes"
+        ],
+        "bleu_score": 0.017360570848147464,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24292242527008057,
+                0.1869584023952484,
+                0.20846381783485413,
+                0.1990770846605301,
+                0.21543453633785248
+            ]
+        ]
+    },
+    {
+        "filename": "491.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 pierre antoine paulo roman catholic bishop belonging missionary oblates mary immaculate specific religious institute within catholic church 2 understanding significance missionary oblates mary immaculate adherence roman catholic beliefs practices crucial determining pierre antoine paulo religious affiliation 3 considering specific religious order teachings well broader context catholic church provide insight pierre antoine paulo religious identity answer pierre antoine paulo roman catholic belonging missionary oblates mary immaculate"
+        ],
+        "bleu_score": 0.012688696723077666,
+        "correctness": "True",
+        "weights": [
+            [
+                0.18622440099716187,
+                0.18233224749565125,
+                0.19241999089717865,
+                0.1864258497953415,
+                0.2021578848361969
+            ]
+        ]
+    },
+    {
+        "filename": "174.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 fine song musical artist sean paul 2 sean paul known music reggae dancehall hip hop genres 3 additionally works titled fine various genres including rock reggae r b film 4 considering diverse contexts phrase fine used understand different cultural artistic expressions associated phrase 5 knowledge helps us recognize fine used different genres specific context work important determining genre answer genre fine sean paul likely reggae dancehall based musical style however considering diverse contexts phrase fine used important note works title different genres rock r b film therefore specific context work crucial determining genre"
+        ],
+        "bleu_score": 0.0034635913210619767,
+        "correctness": "False",
+        "weights": [
+            [
+                0.25383707880973816,
+                0.17447781562805176,
+                0.18798203766345978,
+                0.15511488914489746,
+                0.15776263177394867
+            ]
+        ]
+    },
+    {
+        "filename": "438.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process find director movie guitar first search movie reliable database website imdb rotten tomatoes found movie look director name credits movie information section knowledge director guitar amy redford help provide clear specific answer question answer director guitar amy redford"
+        ],
+        "bleu_score": 0.015101184680867224,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2697681784629822,
+                0.1956227570772171,
+                0.1814943104982376,
+                0.22444772720336914,
+                0.19960308074951172
+            ]
+        ]
+    },
+    {
+        "filename": "296.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 williamson county common name counties cities united states including locations texas tennessee illinois iowa new york west virginia georgia 2 determine specific country williamson county located need know state particular williamson county question situated answer specific country williamson county located depends state without information cannot determine exact country"
+        ],
+        "bleu_score": 0.011643856074034249,
+        "correctness": "True",
+        "weights": [
+            [
+                0.22391997277736664,
+                0.18440717458724976,
+                0.15463581681251526,
+                0.1462085247039795,
+                0.1492558866739273
+            ]
+        ]
+    },
+    {
+        "filename": "290.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided contains inaccuracies bourbon restoration actually refers period french history 1814 1830 bourbon monarchy restored power fall napoleon time official religion france roman catholicism bourbon kings strong supporters catholic church deepen understanding important note bourbon restoration france characterized return traditional values including close relationship monarchy catholic church church regained position state religion religious freedoms limited extent bourbon restoration france also saw establishment religious orders reinstatement catholic church influence education social welfare answer religion bourbon restoration france roman catholicism monarchy close alignment catholic church shaping religious landscape period"
+        ],
+        "bleu_score": 0.00847437018137505,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2605056166648865,
+                0.16745804250240326,
+                0.19214099645614624,
+                0.19641347229480743,
+                0.18504402041435242
+            ]
+        ]
+    },
+    {
+        "filename": "160.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process find producer 45 minutes hollywood start researching film production credits answer producer 45 minutes hollywood hal roach"
+        ],
+        "bleu_score": 0.031070806525575975,
+        "correctness": "True",
+        "weights": [
+            [
+                0.29666343331336975,
+                0.2544967830181122,
+                0.17177166044712067,
+                0.19300605356693268,
+                0.1925753951072693
+            ]
+        ]
+    },
+    {
+        "filename": "226.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 edward vi england son king henry viii six wives catherine aragon anne boleyn jane seymour anne cleves catherine howard catherine parr 2 edward vi mother jane seymour third wife king henry viii known influence king role securing succession son answer jane seymour mother edward vi england"
+        ],
+        "bleu_score": 0.012237885095536926,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25493982434272766,
+                0.19023394584655762,
+                0.20060685276985168,
+                0.17508795857429504,
+                0.17063207924365997
+            ]
+        ]
+    },
+    {
+        "filename": "91.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "enhanced reasoning process 1 author template could specific individual team company 2 author template typically entity created template responsible design content 3 novel template matthew hughes piece fiction related creation template retrieved knowledge novel template canadian science fiction novel matthew hughes published ps publishing follows adventures professional duelist drawn murder mystery novel explores differences various cultures answer author template could individual team company depending created designed specific template question novel template matthew hughes unrelated creation templates"
+        ],
+        "bleu_score": 0.008834324809451557,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21868030726909637,
+                0.12572453916072845,
+                0.12955817580223083,
+                0.12357807159423828,
+                0.180583655834198
+            ]
+        ]
+    },
+    {
+        "filename": "87.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process provided accurate enhance understanding question documentary film one life directed michael gunton co directed film martha holmes film narrated daniel craig additionally production team involved accompanying video mention films title directed different individuals provide deeper context film director answer michael gunton"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.30995309352874756,
+                0.21229225397109985,
+                0.2139025181531906,
+                0.17615337669849396,
+                0.23731505870819092
+            ]
+        ]
+    },
+    {
+        "filename": "291.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 cache county located state utah usa 2 cache county county utah city 3 capital utah salt lake city answer capital cache county applicable county city capital utah cache county located salt lake city"
+        ],
+        "bleu_score": 0.007633935801913548,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2706912159919739,
+                0.18205080926418304,
+                0.15305191278457642,
+                0.1705377995967865,
+                0.1897144466638565
+            ]
+        ]
+    },
+    {
+        "filename": "388.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process eleanor beaufort born prominent beaufort family descended john gaunt duke lancaster mistress later wife katherine swynford eleanor father john beaufort 1st earl somerset son john gaunt mistress katherine swynford john beaufort 1st earl somerset key figure english nobility played significant role political military events time answer father eleanor beaufort john beaufort 1st earl somerset"
+        ],
+        "bleu_score": 0.007150475455780605,
+        "correctness": "False",
+        "weights": [
+            [
+                0.325285404920578,
+                0.2050124555826187,
+                0.16058920323848724,
+                0.15346971154212952,
+                0.1470302790403366
+            ]
+        ]
+    },
+    {
+        "filename": "393.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge muhammad ali religious journey complex evolving one initially member nation islam movement combined elements islam black nationalism however death nation islam leader elijah muhammad muhammad ali converted sunni islam later life also found inspiration sufism mystical branch islam additionally muhammad ali holds significant position islamic history influence sufi traditions high position many sufi orders spiritual journey reflects diversity within islamic traditions including differing interpretations wilayah imamate sunni shia muslim views answer muhammad ali religion sunni islam later inspiration sufism"
+        ],
+        "bleu_score": 0.01050639890524698,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24602660536766052,
+                0.17886339128017426,
+                0.15010619163513184,
+                0.14625759422779083,
+                0.1425393968820572
+            ]
+        ]
+    },
+    {
+        "filename": "59.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 winning book written jack welch 2 jack welch renowned business executive former ceo general electric 3 well known management strategies leadership principles shared book winning answer author winning jack welch"
+        ],
+        "bleu_score": 0.01878367300358391,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21485546231269836,
+                0.20001529157161713,
+                0.19389455020427704,
+                0.19843032956123352,
+                0.18511441349983215
+            ]
+        ]
+    },
+    {
+        "filename": "494.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 poem heart leaps also known rainbow written william wordsworth prominent british romantic poet 1802 2 poem reflects wordsworth deep connection nature belief profound impact human spirit expresses joy wonder feels witnessing rainbow feeling since childhood 3 heart leaps noted simplicity structure language published part poems two volumes 1807 solidifying place wordsworth body work answer author heart leaps william wordsworth renowned british romantic poet known profound connection nature human spirit"
+        ],
+        "bleu_score": 0.00916218304694329,
+        "correctness": "True",
+        "weights": [
+            [
+                0.19505980610847473,
+                0.19775238633155823,
+                0.18514946103096008,
+                0.18249677121639252,
+                0.17931540310382843
+            ]
+        ]
+    },
+    {
+        "filename": "34.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1990 91 british basketball league season took place 1990 91 season reasonable infer sport played season basketball british basketball league dedicated basketball answer basketball"
+        ],
+        "bleu_score": 0.009849574084214482,
+        "correctness": "True",
+        "weights": [
+            [
+                0.27957096695899963,
+                0.22319896519184113,
+                0.17230848968029022,
+                0.1662219911813736,
+                0.2035903036594391
+            ]
+        ]
+    },
+    {
+        "filename": "20.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge provides background information film stop mom shoot connections question mention screenwriters helps identifying individual responsible screenplay reference cooper autobiography song freak leash may directly contribute answering question provide additional context related cultural references enhanced reasoning process find screenwriter stop dog shoot start looking movie credits production information film stop mom shoot related question screenwriters film blake snyder william osborne william davies information help us identify screenwriter stop dog shoot answer screenwriter stop dog shoot likely stop mom shoot includes blake snyder william osborne william davies"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.27050718665122986,
+                0.18711085617542267,
+                0.18989452719688416,
+                0.1514136642217636,
+                0.188669815659523
+            ]
+        ]
+    },
+    {
+        "filename": "303.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge crestwood city name exists multiple locations including queanbeyan new south wales australia sydney new south wales australia portland oregon new south wales australia additionally crestwood located south st louis county missouri united states diverse geographical distribution crestwood locations emphasizes importance specifying country inquiring specific crestwood answer based enhanced reasoning process crestwood located united states specifically state missouri"
+        ],
+        "bleu_score": 0.010467939329359709,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3208007514476776,
+                0.18263936042785645,
+                0.17585772275924683,
+                0.1362532526254654,
+                0.19428716599941254
+            ]
+        ]
+    },
+    {
+        "filename": "240.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process 1 mumbai city state maharashtra india 2 mumbai monorail monorail system located mumbai implemented mumbai metropolitan region development authority mmrda 3 mumbai monorail started commercial operation partially opening phase 1 public 2014 making first operational monorail network india since patiala state monorail trainways closed 1927 4 construction mumbai monorail began january 2009 first operational line inaugurated 1 february 2014 5 therefore based specific details mumbai monorail location logically inferred mumbai monorail india specifically city mumbai maharashtra answer india"
+        ],
+        "bleu_score": 0.0039953980442147775,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28738826513290405,
+                0.1944127380847931,
+                0.19246456027030945,
+                0.18447543680667877,
+                0.214889258146286
+            ]
+        ]
+    },
+    {
+        "filename": "76.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 face face title 1976 swedish psychological drama film 2011 independent australian film 2 screenwriter 1976 swedish film face face ingmar bergman 3 2011 independent australian film face face based play name written australian playwright david williamson answer screenwriter 2011 independent australian film face face david williamson"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2562476098537445,
+                0.18790243566036224,
+                0.15002217888832092,
+                0.21060563623905182,
+                0.21802237629890442
+            ]
+        ]
+    },
+    {
+        "filename": "53.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 fire song band crazy world arthur brown 2 composer fire vincent crane member band co wrote song arthur brown 3 additionally composers created compositions related theme fire tan dun michael askill jean sibelius michel camilo composers unique interpretation theme compositions adding diversity musical works inspired fire answer vincent crane"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.24724268913269043,
+                0.1884068101644516,
+                0.15724237263202667,
+                0.1949026733636856,
+                0.21098129451274872
+            ]
+        ]
+    },
+    {
+        "filename": "200.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge enhance causal reasoning logical inference abilities 1 based retrieved knowledge makkal 1975 indian malayalam film directed k sethumadhavan produced joseph film starred jayabharathi kaviyoor ponnamma adoor bhasi jose prakash lead roles musical score g devarajan 2 information directly provide name screenwriter makkal 3 given lack direct information necessary conduct research identify screenwriter film makkal answer based retrieved knowledge specific screenwriter movie makkal available research needed determine screenwriter film information please provide verify"
+        ],
+        "bleu_score": 0.004168514908224489,
+        "correctness": "True",
+        "weights": [
+            [
+                0.18641601502895355,
+                0.1631307452917099,
+                0.16009224951267242,
+                0.14938482642173767,
+                0.16504763066768646
+            ]
+        ]
+    },
+    {
+        "filename": "336.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process consolidating retrieved knowledge infer emperor gaozu han founder han dynasty born liu bang eldest son maternal grandfather father law indicates liu taigong also known liu bang father emperor gaozu han understanding familial lineage historical context enhances language model causal reasoning logical inference abilities allowing make logical connections familial relationships historical events answer father emperor gaozu han liu taigong also known liu bang"
+        ],
+        "bleu_score": 0.010036785986031593,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2703445553779602,
+                0.14606080949306488,
+                0.17077702283859253,
+                0.16694502532482147,
+                0.1947019249200821
+            ]
+        ]
+    },
+    {
+        "filename": "385.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 take title associated various forms entertainment including music television novels 2 2016 film take action thriller directed james watkins featuring action packed sequences suspenseful plot 3 considering characteristics film aligns action thriller genre known intense action suspenseful storytelling 4 given association take action packed sequences suspense categorized action thriller film answer take action thriller film"
+        ],
+        "bleu_score": 0.005203424609196104,
+        "correctness": "False",
+        "weights": [
+            [
+                0.24688513576984406,
+                0.21103012561798096,
+                0.18295294046401978,
+                0.1882619857788086,
+                0.20925799012184143
+            ]
+        ]
+    },
+    {
+        "filename": "268.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 holes film based novel holes louis sachar 2 screenplay holes written louis sachar 3 therefore screenwriter holes louis sachar answer louis sachar"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.26676836609840393,
+                0.19799932837486267,
+                0.1889224350452423,
+                0.1927933245897293,
+                0.1721777617931366
+            ]
+        ]
+    },
+    {
+        "filename": "340.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process city widely used title various works across different genres time periods includes 1925 book american urban sociologists robert e park ernest w burgess urban novel ukrainian writer valerian pidmohylny published 1928 1993 graphic novel james herbert 1921 book max weber additionally city city novel british author china mi\u00e9ville published 2009 combines weird fiction police procedural genre however specific novel titled city written dean koontz known contributions suspense thriller genres answer dean koontz"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3264291286468506,
+                0.14717143774032593,
+                0.20297524333000183,
+                0.13565514981746674,
+                0.19471609592437744
+            ]
+        ]
+    },
+    {
+        "filename": "255.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 first need identify snake refers could book poem song form literature 2 based retrieved knowledge snake could refer song civil rights activist oscar brown novel mickey spillane novel called snake skin grigol robakidze 3 know specific work snake refers look author creator work answer based enhanced reasoning process author snake could civil rights activist oscar brown song mickey spillane novel grigol robakidze novel snake skin specific work mind please provide details help find author"
+        ],
+        "bleu_score": 0.008629074566896214,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2006942331790924,
+                0.14785853028297424,
+                0.16239242255687714,
+                0.18301637470722198,
+                0.18494601547718048
+            ]
+        ]
+    },
+    {
+        "filename": "307.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process accurate enhance understanding question important note cable fictional character marvel comics universe known time traveling abilities role various x men storylines x men universe cable father scott summers also known cyclops prominent member x men cyclops known optic blasts leadership within mutant superhero team cable mother madelyne pryor clone jean grey also member x men answer father cable scott summers also known cyclops x men universe"
+        ],
+        "bleu_score": 0.010811686768209665,
+        "correctness": "True",
+        "weights": [
+            [
+                0.200762078166008,
+                0.14650091528892517,
+                0.15811973810195923,
+                0.10772708058357239,
+                0.12910930812358856
+            ]
+        ]
+    },
+    {
+        "filename": "329.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 composer violin concerto well known figure classical music 2 several famous composers written violin concertos tchaikovsky beethoven brahms mendelssohn sibelius ned rorem elliott carter joan tower james macmillan andrzej panufnik christopher rouse magnus lindberg mason bates 3 composer unique style approach composing music 4 determine composer violin concerto need consider specific piece music referred could composed mentioned composers answer composer violin concerto depends specific piece music referred could composed well known composers mentioned tchaikovsky beethoven brahms mendelssohn sibelius ned rorem elliott carter joan tower james macmillan andrzej panufnik christopher rouse magnus lindberg mason bates"
+        ],
+        "bleu_score": 0.003403878707626291,
+        "correctness": "True",
+        "weights": [
+            [
+                0.17491275072097778,
+                0.10957839339971542,
+                0.12842096388339996,
+                0.12196991592645645,
+                0.1058245524764061
+            ]
+        ]
+    },
+    {
+        "filename": "317.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "composer last starfighter craig safan known work film television composed music last starfighter contributing iconic soundtrack movie composition added depth emotion film enhancing overall viewing experience audiences"
+        ],
+        "bleu_score": 0.02253516607622496,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3160174489021301,
+                0.22228647768497467,
+                0.16549678146839142,
+                0.16167114675045013,
+                0.16679170727729797
+            ]
+        ]
+    },
+    {
+        "filename": "118.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find father vimolnaka nabisi need trace lineage vimolnaka nabisi according retrieved knowledge vimolnaka nabisi daughter chulalongkorn member siamese royal family information updates model knowledge provides answer question answer father vimolnaka nabisi chulalongkorn"
+        ],
+        "bleu_score": 0.007986728673290205,
+        "correctness": "True",
+        "weights": [
+            [
+                0.23769110441207886,
+                0.16936442255973816,
+                0.2009572833776474,
+                0.15829361975193024,
+                0.16184227168560028
+            ]
+        ]
+    },
+    {
+        "filename": "342.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process york city f c football club known traditional red white colors team home kit typically consists red white striped shirts red shorts red socks throughout club history variations kit colors including red maroon chocolate cream stripes well periods using white kits understanding significance team colors sports clear official colors york city f c red white answer color york city f c red white"
+        ],
+        "bleu_score": 0.00563777415489041,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24479272961616516,
+                0.1853858381509781,
+                0.18810999393463135,
+                0.15450045466423035,
+                0.21176265180110931
+            ]
+        ]
+    },
+    {
+        "filename": "25.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process director clairvoyant maurice elvey 1935 british drama film armand mastroianni 1982 film information crucial prevent factual errors update language model knowledge answer maurice elvey"
+        ],
+        "bleu_score": 0.02180253718661863,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3155391812324524,
+                0.17454978823661804,
+                0.1678551435470581,
+                0.15181802213191986,
+                0.19603152573108673
+            ]
+        ]
+    },
+    {
+        "filename": "395.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 silence 2019 horror film 2 director silence john r leonetti answer john r leonetti"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2868075370788574,
+                0.2637403905391693,
+                0.21435359120368958,
+                0.18939964473247528,
+                0.24262544512748718
+            ]
+        ]
+    },
+    {
+        "filename": "52.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 reserve teams typically associated football soccer 2 reserve teams made players part main team still affiliated club 3 teams often compete reserve leagues friendly matches provide playing time development opportunities players answer reserve team plays football soccer"
+        ],
+        "bleu_score": 0.00869717822873302,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21986205875873566,
+                0.1764434576034546,
+                0.16194085776805878,
+                0.16392308473587036,
+                0.17652928829193115
+            ]
+        ]
+    },
+    {
+        "filename": "298.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process 1 song recorded different artists various genres including rock country drama released australian rock group chocolate starfish 1993 american country music artist josh turner 2010 additionally 1975 4 billboard chart country hit charlie rich also title 1997 drama film 2 1997 drama film directed alex sichel focuses lives two teenage girls new york city dealing themes friendship love identity answer genre 1997 film coming age drama"
+        ],
+        "bleu_score": 0.00964132457460483,
+        "correctness": "True",
+        "weights": [
+            [
+                0.23259899020195007,
+                0.19150568544864655,
+                0.2162846326828003,
+                0.15307874977588654,
+                0.19016815721988678
+            ]
+        ]
+    },
+    {
+        "filename": "261.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process author hana kimi hisaya nakajo japanese manga artist series first serialized 20th issue hakusensha semi monthly sh\u014djo manga magazine hana yume 1996 ended volume 23 august 2004 japan published english viz media final volume released united states april 2008 english release hana kimi initially limited waldenbooks february may 2004 made available retail stores may year english title originated fan abbreviation original japanese title hisaya nakajo also creator sugar princess answer hisaya nakajo"
+        ],
+        "bleu_score": 0.008940843444267805,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3045022189617157,
+                0.19175244867801666,
+                0.20847836136817932,
+                0.16910064220428467,
+                0.17182394862174988
+            ]
+        ]
+    },
+    {
+        "filename": "496.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge considering retrieved knowledge model understand multiple places named lima different countries sweden iran argentina understanding helps model recognize importance specific details country population determining location place named lima answer based enhanced reasoning process lima capital city peru located south america therefore lima peru"
+        ],
+        "bleu_score": 0.00616976802746866,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3385002017021179,
+                0.1498195230960846,
+                0.15625745058059692,
+                0.18298190832138062,
+                0.1688314825296402
+            ]
+        ]
+    },
+    {
+        "filename": "410.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced reasoning process 1 margaret coit american biographer historian known biography john c calhoun 2 based reliable sources margaret coit born new london connecticut information provides clear answer question birthplace answer margaret coit born new london connecticut"
+        ],
+        "bleu_score": 0.007633935801913548,
+        "correctness": "False",
+        "weights": [
+            [
+                0.23705001175403595,
+                0.19903655350208282,
+                0.19395233690738678,
+                0.1716824322938919,
+                0.17308978736400604
+            ]
+        ]
+    },
+    {
+        "filename": "365.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 boston city state massachusetts 2 capital state city state government located 3 according consolidated knowledge boston capital populous city commonwealth massachusetts answer capital boston boston"
+        ],
+        "bleu_score": 0.009565665109256835,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2759499251842499,
+                0.21673688292503357,
+                0.14598751068115234,
+                0.2005135864019394,
+                0.23220551013946533
+            ]
+        ]
+    },
+    {
+        "filename": "202.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process producer song rain shawn campbell began working rain 2012 updated musical marketing direction rain currently unsigned managed campbell darrien henning production company push music group additionally film rain 2005 bollywood erotic thriller produced vinod bachchan banner v r entertainers consolidating information infer shawn campbell producer song rain played significant role shaping musical marketing direction project answer producer song rain shawn campbell"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.27545398473739624,
+                0.20310039818286896,
+                0.20915420353412628,
+                0.17761164903640747,
+                0.18855495750904083
+            ]
+        ]
+    },
+    {
+        "filename": "57.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "screenwriter upon time explicitly mentioned provided passages however film upon time hollywood written quentin tarantino known unique storytelling dialogue given similar title possible question refers film therefore quentin tarantino could screenwriter upon time confirm information research specific film consult reliable sources imdb answer screenwriter upon time quentin tarantino"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2600085437297821,
+                0.19156497716903687,
+                0.16499890387058258,
+                0.1475648134946823,
+                0.15220539271831512
+            ]
+        ]
+    },
+    {
+        "filename": "142.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 based retrieved knowledge marc h\u00e9rold gracien professional football player haiti 2 information allows us make logical inference marc herold gracien plays football sport answer marc herold gracien plays football"
+        ],
+        "bleu_score": 0.008588486560503192,
+        "correctness": "True",
+        "weights": [
+            [
+                0.20156733691692352,
+                0.17089681327342987,
+                0.14863704144954681,
+                0.16053639352321625,
+                0.19171223044395447
+            ]
+        ]
+    },
+    {
+        "filename": "216.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "reasoning process accurate retrieved knowledge update language model existing knowledge preventing factual errors alleviating model illusions knowledge enhanced inference process find director movie angel right search movie reliable database website imdb wikipedia film angel right 2002 tajik comedy drama director movie jamshed usmonov answer director angel right jamshed usmonov"
+        ],
+        "bleu_score": 0.013137209862130366,
+        "correctness": "True",
+        "weights": [
+            [
+                0.22938232123851776,
+                0.16775523126125336,
+                0.16690054535865784,
+                0.16226215660572052,
+                0.1789248138666153
+            ]
+        ]
+    },
+    {
+        "filename": "417.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 sue could refer composer could also refer sue owen dark humor poet sue keller ragtime blues jazz pianist singer additionally mention sweet sue play r gurney 2 accurately determine composer sue information specific context question needed multiple individuals name sue involved music arts answer without context possible definitively determine composer sue due multiple individuals name sue involved music arts"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.3226392865180969,
+                0.16929276287555695,
+                0.1795492023229599,
+                0.1310175508260727,
+                0.17293104529380798
+            ]
+        ]
+    },
+    {
+        "filename": "154.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process deepen understanding question important note super star film directed xavier giannoli french director additionally films similar titles directed different individuals iranian film directed tahmineh milani kannada film directed nagathihalli chandrashekhar knowledge confidently identify director specific film super star xavier giannoli crucial consider context specific details film provide accurate answer answer director film super star xavier giannoli"
+        ],
+        "bleu_score": 0.01093995829218893,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24682115018367767,
+                0.17845454812049866,
+                0.1990269422531128,
+                0.2480846345424652,
+                0.16507567465305328
+            ]
+        ]
+    },
+    {
+        "filename": "310.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 reform school girl title used multiple films including 1957 film directed edward bernds 1994 film directed jonathan kaplan 2 screenwriter 1957 film reform school girl edward bernds also directed film answer edward bernds"
+        ],
+        "bleu_score": 0.01693542154518793,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28186991810798645,
+                0.24871523678302765,
+                0.15480376780033112,
+                0.21529477834701538,
+                0.15556606650352478
+            ]
+        ]
+    },
+    {
+        "filename": "464.json",
+        "chosen_agent": "associate",
+        "output": [
+            "reasoning process genesis british rock band formed 1967 known progressive rock art rock style considered one pioneering bands progressive rock genre additionally genesis also ep american electronic music producer notaker released monstercat falling within electronic music genre enhanced reasoning process using retrieved knowledge combining associateal knowledge genesis british rock band known progressive rock advanced knowledge genesis ep electronic music producer infer genesis versatile term encompasses progressive rock electronic music genres answer genre genesis combination progressive rock electronic music"
+        ],
+        "bleu_score": 0.004168514908224489,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2868020534515381,
+                0.23568600416183472,
+                0.16530868411064148,
+                0.15568837523460388,
+                0.18339930474758148
+            ]
+        ]
+    },
+    {
+        "filename": "33.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced inference process 1 human book written sylvain neuvel well title music album calum scott film directed dominic harari teresa pelegri short story eileen wilks 2 author name usually mentioned cover book introduction answer sylvain neuvel"
+        ],
+        "bleu_score": 0.01693542154518793,
+        "correctness": "True",
+        "weights": [
+            [
+                0.22392642498016357,
+                0.20837832987308502,
+                0.1897151917219162,
+                0.1988700032234192,
+                0.2343042641878128
+            ]
+        ]
+    },
+    {
+        "filename": "449.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate stud novel written jackie collins composer novel novel adapted film directed quentin masters starred joan collins oliver tobias therefore composer stud applicable answer composer stud"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.3056298792362213,
+                0.2678832411766052,
+                0.17905515432357788,
+                0.11503444612026215,
+                0.2143603414297104
+            ]
+        ]
+    },
+    {
+        "filename": "122.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge 1 dewitt township common name townships united states locations illinois michigan south dakota missouri 2 specific dewitt township question located michigan population 14 321 2010 census 3 therefore referring dewitt township likely michigan usa answer dewitt township located state michigan united states america"
+        ],
+        "bleu_score": 0.015622863439329355,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2765379548072815,
+                0.2029811590909958,
+                0.20176994800567627,
+                0.18278026580810547,
+                0.2073640674352646
+            ]
+        ]
+    },
+    {
+        "filename": "67.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 slow song selena gomez known high octane uptempo dance pop edm style dubstep pre chorus funk guitars spoken word outro 2 song also elements r b rock roll originally written performed larry williams 1957 raucous enough sound considered punk rock answer genre slow selena gomez classified combination pop dance pop edm r b rock roll elements electronic funk music"
+        ],
+        "bleu_score": 0.006572056339086974,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3167177140712738,
+                0.1957469880580902,
+                0.21416600048542023,
+                0.16850794851779938,
+                0.23897647857666016
+            ]
+        ]
+    },
+    {
+        "filename": "234.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge enhance causal reasoning logical inference abilities pierre pansu french mathematician professor universit\u00e9 paris sud 11 \u00e9cole normale sup\u00e9rieure paris main research field geometry member arthur besse group close collaborator mikhail gromov additionally contributions mathematics celebrated conference workshop organized 60th birthday clay mathematics institute based information inferred pierre pansu occupation mathematician professor specializing geometry making significant contributions field answer pierre pansu mathematician professor specializing geometry known significant contributions field mathematics"
+        ],
+        "bleu_score": 0.004309369973332364,
+        "correctness": "True",
+        "weights": [
+            [
+                0.16589584946632385,
+                0.13092269003391266,
+                0.15337669849395752,
+                0.11546050012111664,
+                0.1474619060754776
+            ]
+        ]
+    },
+    {
+        "filename": "429.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process 1 disney kid 2000 american fantasy comedy drama film directed jon turteltaub produced walt disney pictures 2 film involves magical interaction 40 year old man played bruce willis 8 year old self played spencer breslin 3 film contains elements fantasy comedy drama explores themes self discovery personal growth whimsical heartwarming storyline 4 novel kid bruce evans raynold gideon served basis film providing source inspiration genre narrative elements answer genre disney kid fantasy comedy drama drawing magical imaginative elements storyline blend humor heartfelt moments throughout film"
+        ],
+        "bleu_score": 0.004431984415199711,
+        "correctness": "False",
+        "weights": [
+            [
+                0.22876419126987457,
+                0.20084965229034424,
+                0.1751883327960968,
+                0.19864492118358612,
+                0.18903392553329468
+            ]
+        ]
+    },
+    {
+        "filename": "462.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate model provided relevant knowledge capital colombia bogot\u00e1 information crucial understanding question providing accurate response answer columbia capital south carolina state united states however important note capital colombia bogot\u00e1"
+        ],
+        "bleu_score": 0.02972570016905764,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3513106405735016,
+                0.20669980347156525,
+                0.2072431594133377,
+                0.16624198853969574,
+                0.20008599758148193
+            ]
+        ]
+    },
+    {
+        "filename": "390.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate knowledge different films titled guru guru various countries languages provides background information help model understand context guru discussed also introduces model different cultural linguistic aspects filmmaking well diversity directors actors involved films enhanced reasoning process find director guru start looking movie reliable database website imdb rotten tomatoes given multiple films similar titles important specify language country origin ensure referring correct film information provide answer answer director guru daisy von scherler mayer"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2540804445743561,
+                0.1694219559431076,
+                0.1614256054162979,
+                0.2217041701078415,
+                0.12944984436035156
+            ]
+        ]
+    },
+    {
+        "filename": "400.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 breaking bad popular tv show aired 2008 2013 2 director breaking bad vince gilligan 3 vince gilligan also creator executive producer show answer vince gilligan"
+        ],
+        "bleu_score": 0.02180253718661863,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2346092015504837,
+                0.17610806226730347,
+                0.1874101161956787,
+                0.16516566276550293,
+                0.16827699542045593
+            ]
+        ]
+    },
+    {
+        "filename": "475.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 life 2009 filipino film directed olivia lamasan 2 screenwriter life raymond lee answer raymond lee"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.26601120829582214,
+                0.28246477246284485,
+                0.19578906893730164,
+                0.1535734087228775,
+                0.18543210625648499
+            ]
+        ]
+    },
+    {
+        "filename": "203.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process find screenwriter teaser first search movie look reliable sources movie databases official websites news articles find information based retrieved knowledge understand screenwriter teaser lewis milestone edward lowe jr jack wagner based play name adelaide matthews martha stanley collaborative effort involved adapting play screenplay film additionally film directed william seiter universal pictures mention film considered lost also highlights importance preservation efforts film industry answer screenwriters teaser lewis milestone edward lowe jr jack wagner based play name adelaide matthews martha stanley"
+        ],
+        "bleu_score": 0.008157130879636869,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25250983238220215,
+                0.16772034764289856,
+                0.19364356994628906,
+                0.18202169239521027,
+                0.13529735803604126
+            ]
+        ]
+    },
+    {
+        "filename": "372.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process find producer son cheep thrills first search information online also check credits album look interviews articles making album additionally consider background producers experience industry peter macgregor scott british film producer known working various film projects answer producer son cheep thrills adrian sherwood"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2677750289440155,
+                0.20783621072769165,
+                0.17645369470119476,
+                0.1395791918039322,
+                0.17486052215099335
+            ]
+        ]
+    },
+    {
+        "filename": "90.json",
+        "chosen_agent": "associate",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge determine father ki need consider various references different individuals could potentially considered father ki references include michael father shih kien ken father takanashi naiki kiri father ki father hailed hwanghae province present day north korea additionally information kike salinas carrasco griselda eldest son kikito father works taco bar support family retrieved knowledge evident concept father context encompasses various individuals different cultural familial backgrounds advanced information provides deeper understanding ki family history role kike salinas carrasco dedicated father analysis encourages model comprehend question thoroughly expand knowledge boundaries regarding diverse interpretations fatherhood answer father ki provided question based diverse references interpretations fatherhood possible determine father ki without additional information"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.19075338542461395,
+                0.14054088294506073,
+                0.14833244681358337,
+                0.1828187257051468,
+                0.14182697236537933
+            ]
+        ]
+    },
+    {
+        "filename": "195.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate enhance reasoning process emphasize strong jesuit catholic affiliation santa clara university well commitment ethical values social justice community service understanding background crucial analyzing religious identity university private jesuit institution strong emphasis catholic values education answer religion santa clara university catholicism private jesuit university strong affiliation catholic church"
+        ],
+        "bleu_score": 0.0128995453929512,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2907680869102478,
+                0.19659706950187683,
+                0.2014485001564026,
+                0.17595292627811432,
+                0.20805276930332184
+            ]
+        ]
+    },
+    {
+        "filename": "302.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process love story 2050 bollywood movie released 2008 producer love story 2050 pammi baweja harry baweja answer pammi baweja"
+        ],
+        "bleu_score": 0.027161021034885234,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2690221071243286,
+                0.18315546214580536,
+                0.18385495245456696,
+                0.1595863699913025,
+                0.22754019498825073
+            ]
+        ]
+    },
+    {
+        "filename": "78.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find director movie gold search information online check credits movie based retrieved knowledge multiple movies title gold directed different directors including j\u00f6rg graser thomas arslan karl hartl however well known gold movie 2016 american film directed stephen gaghan answer director movie gold stephen gaghan"
+        ],
+        "bleu_score": 0.013384295025391575,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3113323152065277,
+                0.1979544460773468,
+                0.1985810548067093,
+                0.16322988271713257,
+                0.21684600412845612
+            ]
+        ]
+    },
+    {
+        "filename": "164.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate retrieved knowledge diversity individuals name roles football world helps model understand complexity identifying specific birthplace wellington santos da silva without information enhanced reasoning process wellington santos da silva common brazilian name several cities brazil individuals name could born additionally multiple individuals name wellington santos da silva including football players different playing positions without specific information wellington santos da silva referred birth certificate personal records direct confirmation wellington possible determine specific city born answer without information possible determine specific city wellington santos da silva born"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.20756717026233673,
+                0.15623407065868378,
+                0.1563454419374466,
+                0.14125922322273254,
+                0.12607672810554504
+            ]
+        ]
+    },
+    {
+        "filename": "476.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced inference process find director valf\u00e5ngare search movie valf\u00e5ngare look director name according retrieved knowledge director valf\u00e5ngare 1939 anders henrikson tancred ibsen information provides specific answer question director movie answer directors valf\u00e5ngare anders henrikson tancred ibsen"
+        ],
+        "bleu_score": 0.023950302833710274,
+        "correctness": "True",
+        "weights": [
+            [
+                0.3121222257614136,
+                0.17828519642353058,
+                0.1524616777896881,
+                0.21442341804504395,
+                0.16074948012828827
+            ]
+        ]
+    },
+    {
+        "filename": "333.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process considering knowledge soldier 2010 bengali film directed dulal bhowmik soldier 1982 directed james glickenhaus soldier 1998 american science fiction action film directed paul w anderson model make connections titles films respective directors understanding help model differentiate films title different directors improving logical inference capabilities answer director 1998 american science fiction action film soldier paul w anderson"
+        ],
+        "bleu_score": 0.006276214076282571,
+        "correctness": "True",
+        "weights": [
+            [
+                0.26954522728919983,
+                0.190898135304451,
+                0.18067218363285065,
+                0.16182172298431396,
+                0.1776384860277176
+            ]
+        ]
+    },
+    {
+        "filename": "0.json",
+        "chosen_agent": "associate",
+        "output": [
+            "knowledge enhanced inference process movie time time 2009 british film directed julian fellowes adapted children novel featuring star studded cast including maggie smith timothy spall additionally song called time recorded drake album nothing 2013 based knowledge infer producer movie time time found movie credits typically listed imdb official website movie important note song time drake unrelated movie impact search movie producer answer find producer time time one refer movie credits reliable source imdb official website movie"
+        ],
+        "bleu_score": 0.008834324809451557,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2445509433746338,
+                0.2058357298374176,
+                0.19278553128242493,
+                0.15510325133800507,
+                0.1613209843635559
+            ]
+        ]
+    },
+    {
+        "filename": "215.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process find producer skliros andras first search movie skliros andras look information producer based retrieved knowledge skliros andras 1961 greek comedy film produced finos films additionally leo leandros greek musician composer producer direct information linking production skliros andras answer producer skliros andras finos films"
+        ],
+        "bleu_score": 0.007598236665982756,
+        "correctness": "True",
+        "weights": [
+            [
+                0.26804983615875244,
+                0.13776743412017822,
+                0.1593632847070694,
+                0.12076114118099213,
+                0.14882265031337738
+            ]
+        ]
+    },
+    {
+        "filename": "140.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process find producer movie skyline start looking movie credits production details brothers strause greg colin directed produced science fiction thriller skyline 2010 known work visual effects also worked projects youtube red series lifeline 2017 additionally legal issue involving sony pictures entertainment filing lawsuit brothers strause hydralux alleged misuse time resources meant battle los angeles skyline background information helps us understand involvement brothers strause production skyline impact film industry answer producer skyline greg strause"
+        ],
+        "bleu_score": 0.006026375998515526,
+        "correctness": "False",
+        "weights": [
+            [
+                0.3018484115600586,
+                0.18579299747943878,
+                0.1731700897216797,
+                0.13336648046970367,
+                0.18074755370616913
+            ]
+        ]
+    },
+    {
+        "filename": "286.json",
+        "chosen_agent": "logician",
+        "output": [
+            "knowledge enhanced reasoning process find screenwriter absentia start researching credits movie look information official website movie movie databases reliable sources provide details cast crew case know mike flanagan screenwriter absentia wrote edited directed 2011 american independent supernatural horror film specific information confirms role screenwriter enhances understanding involvement movie production answer screenwriter absentia mike flanagan"
+        ],
+        "bleu_score": 0.012032901521760684,
+        "correctness": "True",
+        "weights": [
+            [
+                0.26738324761390686,
+                0.269778847694397,
+                0.15828180313110352,
+                0.19553567469120026,
+                0.18562498688697815
+            ]
+        ]
+    },
+    {
+        "filename": "250.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 movie numbers released 1979 confused tv series numb3rs 2 screenwriter numbers nicolas falacci cheryl heuton created numb3rs rather barry levinson answer barry levinson"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2569403350353241,
+                0.21107620000839233,
+                0.1537691354751587,
+                0.14576119184494019,
+                0.1644020825624466
+            ]
+        ]
+    },
+    {
+        "filename": "51.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process 1 princess florestine duchess urach born 1868 royal noble family 2 mother would member royal noble family possibly european royal house 3 based historical records knowledge royal lineages princess florestine mother princess amalie saxe coburg gotha member prominent european royal family answer princess amalie saxe coburg gotha"
+        ],
+        "bleu_score": 0.006065997938636506,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2221943885087967,
+                0.17068469524383545,
+                0.16353680193424225,
+                0.18378689885139465,
+                0.21932102739810944
+            ]
+        ]
+    },
+    {
+        "filename": "403.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "author birthday specified question specific book story mind title birthday please provide name author associated however based retrieved knowledge birthday could refer science fiction short story esther friesner novel birthday party panos karnezis novel birthday present ruth rendell written pseudonym barbara vine works different author would helpful know specific work referred order identify author accurately different work title birthday mind please provide additional details precise answer"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.2056175321340561,
+                0.1799989491701126,
+                0.17121541500091553,
+                0.1389550119638443,
+                0.1800713986158371
+            ]
+        ]
+    },
+    {
+        "filename": "224.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 alfred jefferis turner british australian pediatrician entomologist 2 found alfred jefferis turner born manchester england based information available 3 therefore confirmed alfred jefferis turner born manchester england answer alfred jefferis turner born manchester england"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.20079079270362854,
+                0.17168879508972168,
+                0.17456640303134918,
+                0.17235177755355835,
+                0.14835280179977417
+            ]
+        ]
+    },
+    {
+        "filename": "153.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process composer burning train r burman answer r burman"
+        ],
+        "bleu_score": 0.023457495174891017,
+        "correctness": "False",
+        "weights": [
+            [
+                0.35595980286598206,
+                0.22175461053848267,
+                0.15192219614982605,
+                0.1456882655620575,
+                0.15640155971050262
+            ]
+        ]
+    },
+    {
+        "filename": "419.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process 1 vozhegodsky district located vologda oblast russia 2 administrative center vozhegodsky district urban locality work settlement vozhega 3 capital vologda oblast city vologda 4 therefore administrative center capital vozhegodsky district vozhega answer vozhega"
+        ],
+        "bleu_score": 0.007805988703535686,
+        "correctness": "True",
+        "weights": [
+            [
+                0.18704023957252502,
+                0.170704647898674,
+                0.1575191169977188,
+                0.16548015177249908,
+                0.15483695268630981
+            ]
+        ]
+    },
+    {
+        "filename": "432.json",
+        "chosen_agent": "cot",
+        "output": [
+            "reasoning process 1 movie holes based novel name louis sachar 2 louis sachar also wrote screenplay movie adaptation holes answer louis sachar"
+        ],
+        "bleu_score": 0.027161021034885234,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24417336285114288,
+                0.1895217001438141,
+                0.17963948845863342,
+                0.17355714738368988,
+                0.22099006175994873
+            ]
+        ]
+    },
+    {
+        "filename": "427.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 hostile hospital eighth novel series unfortunate events written lemony snicket pseudonym daniel handler 2 information consistent across multiple sources widely accepted accurate 3 therefore confidently concluded author hostile hospital daniel handler writing pen name lemony snicket answer author hostile hospital daniel handler writing pen name lemony snicket"
+        ],
+        "bleu_score": 0.017607471983408566,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2241416722536087,
+                0.16285434365272522,
+                0.2028116136789322,
+                0.14852124452590942,
+                0.1954474002122879
+            ]
+        ]
+    },
+    {
+        "filename": "314.json",
+        "chosen_agent": "associate",
+        "output": [
+            "upon review provided knowledge evident abu l hasan ali ibn ruburtayr explicitly mentioned passages however based general understanding islamic civilization historical figures reasonable infer abu l hasan ali ibn ruburtayr likely muslim given historical context naming conventions time answer religion abu l hasan ali ibn ruburtayr islam"
+        ],
+        "bleu_score": 0.009035877104661251,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24567009508609772,
+                0.18151019513607025,
+                0.21557137370109558,
+                0.18542121350765228,
+                0.1954878270626068
+            ]
+        ]
+    },
+    {
+        "filename": "65.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process stari ras capital city medieval serbian state ra\u0161ka one first capitals medieval serbian state ra\u0161ka abandoned 13th century declared monument culture exceptional importance 1990 protected republic serbia information retrieved confirms stari ras indeed capital medieval serbian state ra\u0161ka provides additional details historical cultural significance answer stari ras capital medieval serbian state ra\u0161ka"
+        ],
+        "bleu_score": 0.006558171784064979,
+        "correctness": "True",
+        "weights": [
+            [
+                0.28741803765296936,
+                0.14399099349975586,
+                0.131951242685318,
+                0.12916499376296997,
+                0.1623065173625946
+            ]
+        ]
+    },
+    {
+        "filename": "106.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate knowledge bbc interview television program face face provides additional context title face face used different types media knowledge enhanced inference process find director face face need consider multiple works title case looking director film face face start searching movie face face look director name credits online sources answer director film face face ingmar bergman"
+        ],
+        "bleu_score": 0.011459081050471769,
+        "correctness": "True",
+        "weights": [
+            [
+                0.27268892526626587,
+                0.19422881305217743,
+                0.17561282217502594,
+                0.16424177587032318,
+                0.18240562081336975
+            ]
+        ]
+    },
+    {
+        "filename": "207.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 colony could refer novel short story movie tv show need identify specific work question 2 multiple works titled colony different authors rob grant colony novel carlton cuse ryan j condal colony tv show philip k dick colony short story work different author creator 3 need determine specific colony work question identify author answer author colony work question needs specified providing accurate answer"
+        ],
+        "bleu_score": 0.010036785986031593,
+        "correctness": "True",
+        "weights": [
+            [
+                0.21795940399169922,
+                0.18383415043354034,
+                0.1766638606786728,
+                0.153023362159729,
+                0.15580572187900543
+            ]
+        ]
+    },
+    {
+        "filename": "305.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process based retrieved knowledge elias macdonald could potentially involved various sports football bobsledding soccer rugby league sprinting hurdling coaching however considering elias macdonald professional basketball player toronto raptors likely plays basketball answer elias macdonald plays basketball"
+        ],
+        "bleu_score": 0.009078330771109599,
+        "correctness": "True",
+        "weights": [
+            [
+                0.263009637594223,
+                0.1716235727071762,
+                0.1637183576822281,
+                0.12094338238239288,
+                0.18249253928661346
+            ]
+        ]
+    },
+    {
+        "filename": "117.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced inference process gerald frederick kicanas roman catholic bishop served bishop tucson 2003 2017 information confirms religion roman catholic bishops roman catholic church members clergy within catholic faith answer roman catholic"
+        ],
+        "bleu_score": 0.03939843289484554,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25794702768325806,
+                0.23556508123874664,
+                0.23177042603492737,
+                0.21221226453781128,
+                0.23500844836235046
+            ]
+        ]
+    },
+    {
+        "filename": "443.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process film coquette produced coquette productions company created david arquette courteney cox information establishes connection production company specific film indicating producers coquette david arquette courteney cox answer based enhanced reasoning process david arquette courteney cox"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.3183777332305908,
+                0.19838321208953857,
+                0.23759998381137848,
+                0.204229936003685,
+                0.18763110041618347
+            ]
+        ]
+    },
+    {
+        "filename": "328.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "enhanced reasoning process 1 based knowledge dave marsh american music critic author radio talk show host search reliable sources determine birthplace 2 look biographical information interviews official sources confirm city dave marsh born answer conducting search found dave marsh born detroit michigan"
+        ],
+        "bleu_score": 0.009239938132874763,
+        "correctness": "True",
+        "weights": [
+            [
+                0.24165894091129303,
+                0.20465074479579926,
+                0.21125534176826477,
+                0.15922607481479645,
+                0.17350952327251434
+            ]
+        ]
+    },
+    {
+        "filename": "214.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "knowledge enhanced reasoning process 1 movie taken released 2008 2 executive producers miniseries taken leslie bohem steven spielberg answer leslie bohem steven spielberg"
+        ],
+        "bleu_score": 0.03688230441120732,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25893816351890564,
+                0.19482895731925964,
+                0.20245781540870667,
+                0.2042326182126999,
+                0.21904383599758148
+            ]
+        ]
+    },
+    {
+        "filename": "247.json",
+        "chosen_agent": "associate",
+        "output": [
+            "congress 2013 live action animated science fiction drama film written directed ari folman based stanis\u0142aw lem novel futurological congress film premiered 2013 cannes film festival deals issue identity extensively co acquired north american rights independent film distributor drafthouse films films like toronto planned us theatrical vod digital release 2014 film also features music max richter additionally 1988 documentary film directed ken burns title 1971 short story jorge luis borges congress unique blend science fiction drama animation explores complex themes related identity reality based information congress categorized science fiction animated film"
+        ],
+        "bleu_score": 0.007580336102618728,
+        "correctness": "True",
+        "weights": [
+            [
+                0.25305551290512085,
+                0.16270466148853302,
+                0.1862480342388153,
+                0.1882098764181137,
+                0.1560693234205246
+            ]
+        ]
+    },
+    {
+        "filename": "150.json",
+        "chosen_agent": "cognition",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge update language model knowledge prevent factual errors alleviate model illusions retrieved knowledge indicates proposal hire hollywood screenwriter game cycle ultimately dave ellis vicious cycle designer given task writing game cutscenes voiceover script suggests dave ellis hollywood screenwriter responsible script cycle answer based enhanced reasoning process screenwriter game cycle dave ellis vicious cycle designer"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.27212077379226685,
+                0.1976812779903412,
+                0.17134298384189606,
+                0.12913711369037628,
+                0.18573525547981262
+            ]
+        ]
+    },
+    {
+        "filename": "86.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate enhance understanding question important note city beautiful nonsense 1919 british silent film based novel name e temple thurston director film adrian brunel played significant role bringing novel screen interpreting story audience answer adrian brunel"
+        ],
+        "bleu_score": 0.01693542154518793,
+        "correctness": "True",
+        "weights": [
+            [
+                0.31107795238494873,
+                0.1922513246536255,
+                0.17048895359039307,
+                0.17044562101364136,
+                0.13359194993972778
+            ]
+        ]
+    },
+    {
+        "filename": "73.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "reasoning process accurate enhance model understanding provide additional information government administrative structure french polynesia including capital city leadership french polynesia overseas collectivity france located south pacific capital french polynesia papeete situated island tahiti government french polynesia parliamentary representative democratic system president french polynesia head government presidency french polynesia responsible executive functions territory enhanced understanding answer question capital french polynesia answer papeete"
+        ],
+        "bleu_score": 0.005131423326712104,
+        "correctness": "True",
+        "weights": [
+            [
+                0.2677207887172699,
+                0.18337614834308624,
+                0.19907498359680176,
+                0.172234445810318,
+                0.18167009949684143
+            ]
+        ]
+    },
+    {
+        "filename": "338.json",
+        "chosen_agent": "logician",
+        "output": [
+            "enhanced reasoning process using retrieved knowledge jordan country located middle east capital city jordan amman amman largest city jordan capital since 1946 became capital hashemite kingdom jordan additionally capital bank jordan also known capital bank operates jordan information solidifies fact amman indeed capital jordan answer amman"
+        ],
+        "bleu_score": 0,
+        "correctness": "False",
+        "weights": [
+            [
+                0.25626638531684875,
+                0.1685350388288498,
+                0.14295877516269684,
+                0.17202945053577423,
+                0.19451256096363068
+            ]
+        ]
+    }
+]
