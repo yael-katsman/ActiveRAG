@@ -188,12 +188,21 @@ Source code for our paper :
 
 results:
 nq - top10 - Roberta 
-| Accuracy | Average BLEU Score       | Cognition | Anchoring | Associate | Logician | CoT | Epochs | Learning Rate | Loss Function     | Hidden Sizes |
+| Accuracy (%) | Average BLEU Score       | Cognition | Anchoring | Associate | Logician | CoT | Epochs | Learning Rate | Loss Function     | Hidden Sizes |
 |----------|---------------------------|-----------|-----------|-----------|----------|-----|--------|---------------|------------------|--------------|
-| 55.33%   | 0.00771845063125037       | 23        | 47        | 48        | 25       | 7   | 10     | 0.01          | MSELoss          | [128, 64]    |
-| 55.33%   | 0.00771845063125037       | 23        | 47        | 48        | 25       | 7   | 10     | 0.001         | MSELoss          | [128, 64]    |
-| 55.33%   | 0.007710445651068163      | 22        | 47        | 49        | 25       | 7   | 10     | 0.001         | CrossEntropyLoss | [128, 64]    |
-| 55.33%   | 0.007710445651068163      | 22        | 47        | 49        | 25       | 7   | 15     | 0.001         | CrossEntropyLoss | [128, 64]    |
+| 55.33    | 0.00771845063125037       | 23        | 47        | 48        | 25       | 7   | 10     | 0.01          | MSELoss          | [128, 64]    |
+| 55.33    | 0.00771845063125037       | 23        | 47        | 48        | 25       | 7   | 10     | 0.001         | MSELoss          | [128, 64]    |
+| 55.33    | 0.007710445651068163      | 22        | 47        | 49        | 25       | 7   | 10     | 0.001         | CrossEntropyLoss | [128, 64]    |
+| 55.33    | 0.007710445651068163      | 22        | 47        | 49        | 25       | 7   | 15     | 0.001         | CrossEntropyLoss | [128, 64]    |
 
 The data reveals that both configurations yielded an accuracy of 55.33% and a low average BLEU score of 0.0077, indicating moderate correctness in predictions but low textual similarity to reference answers. The agent selection shows a preference for Anchoring (47 times) and Associate (48 times), suggesting these agents provided more relevant responses compared to Cognition(23), Logician(25), and CoT(7). Despite using different learning rates (0.01 vs. 0.001), both setups with MSELoss and hidden layer sizes of [128, 64] achieved similar results, indicating that accuracy and BLEU scores were largely unaffected by this learning rate change.
+
+nq - top5 - Roberta 
+| Accuracy (%) | Average BLEU Score       | Cognition | Logician | Associate | Anchoring | CoT | Epochs | Learning Rate | Loss Function     | Hidden Sizes |
+|----------|---------------------------|-----------|----------|-----------|-----------|-----|--------|---------------|------------------|--------------|
+| 59.33    | 0.010031881200760486      | 39        | 32       | 36        | 40        | 3   | 10     | 0.01          | MSELoss          | [128, 64]    |
+| 59.33    | 0.010031881200760486      | 39        | 32       | 36        | 40        | 3   | 10     | 0.001         | MSELoss          | [128, 64]    |
+| 59.33    | 0.010017397850049908      | 38        | 32       | 36        | 41        | 3   | 10     | 0.001         | CrossEntropyLoss | [128, 64]    |
+| 59.33    | 0.010031881200760486      | 39        | 32       | 36        | 40        | 3   | 15     | 0.001         | CrossEntropyLoss | [128, 64]    |
+
 
