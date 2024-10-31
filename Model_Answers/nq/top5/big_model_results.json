@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "312.json",
+        "chosen_agent": "anchoring",
+        "output": [
+            "knowledge enhanced reasoning process:\n1. The movie \"The Star\" was released on November 17, 2017, and had its world premiere in Los Angeles at the Regency Village Theater.\n2. Following its theatrical release, the movie became available for viewing on various platforms such as streaming services, DVD, and Blu-ray by Sony Pictures Home Entertainment.\n\nAnswer:\nThe movie \"The Star\" came out on November 17, 2017, and is available for viewing on various platforms such as streaming services, DVD, and Blu-ray."
+        ],
+        "bleu_score": 0.022937952462562982,
+        "correctness": 

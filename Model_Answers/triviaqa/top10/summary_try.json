@@ -1,0 +1,30 @@
+[
+    {
+        "accuracy": "89.33%",
+        "average_bleu_score": 0.009731956017803342,
+        "agent_histogram": {
+            "anchoring": 44,
+            "logician": 33,
+            "cot": 6,
+            "associate": 42,
+            "cognition": 25
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss"
+    },
+    {
+        "accuracy": "94.67%",
+        "average_bleu_score": 0.010311258526849306,
+        "agent_histogram": {
+            "logician": 36,
+            "anchoring": 45,
+            "associate": 31,
+            "cognition": 35,
+            "cot": 3
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss"
+    }
+]
