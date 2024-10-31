@@ -70,16 +70,18 @@ class AgentDataset(Dataset):
         )
 
 class AgentWeightingModel(nn.Module):
-    def __init__(self, embedding_dim=768, num_agents=5):
+    def __init__(self, embedding_dim=768, num_agents=5, hidden_sizes=[128, 64]):
         super(AgentWeightingModel, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(embedding_dim + 1, 128),
-            nn.ReLU(),
-            nn.Linear(128, 64),
-            nn.ReLU(),
-            nn.Linear(64, 1),
-            nn.Sigmoid()
-        )
+        self.hidden_sizes = hidden_sizes  # Save hidden layer sizes for summary
+        layers = []
+        input_dim = embedding_dim + 1
+        for hidden_size in hidden_sizes:
+            layers.append(nn.Linear(input_dim, hidden_size))
+            layers.append(nn.ReLU())
+            input_dim = hidden_size
+        layers.append(nn.Linear(input_dim, 1))
+        layers.append(nn.Sigmoid())
+        self.fc = nn.Sequential(*layers)
 
     def forward(self, agent_embeddings, bleu_scores):
         inputs = torch.cat((agent_embeddings, bleu_scores), dim=-1)
@@ -98,7 +100,8 @@ def find_closest_agent(agent_embeddings, point_in_space):
 def calc_accuracy(file_path):
     with open(file_path, 'r') as f:
         data = json.load(f)
-    correct_count = sum(1 for entry in data if entry['correctness'] is True)
+    correct_count = sum(1 for entry in data if entry['correctness'] == "True")
+    print(f"Correct count: {correct_count}, Total count: {len(data)}")  # Print accuracy details
     return (correct_count / len(data)) * 100 if data else 0
 
 def calc_average_bleu_score(file_path):
@@ -127,12 +130,10 @@ if __name__ == "__main__":
     train_files, test_files = [], []
     for logs_dir, embeddings_dir in zip(logs_dirs, embeddings_dirs):
         data_files = [os.path.join(logs_dir, f) for f in os.listdir(logs_dir) if f.endswith('.json')]
-        # Correct construction of embedding files from data files
         embedding_files = [
-        os.path.join(embeddings_dir, os.path.basename(f).replace('.json', '_embeddings.json')) 
-        for f in data_files
+            os.path.join(embeddings_dir, os.path.basename(f).replace('.json', '_embeddings.json'))
+            for f in data_files
         ]
-
 
         split_idx = int(0.7 * len(data_files))
         train_files.extend(zip(data_files[:split_idx], embedding_files[:split_idx]))
@@ -149,27 +150,41 @@ if __name__ == "__main__":
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    for epoch in range(10):
+    epochs = 10
+    learning_rate = 0.001
+    final_loss = None
+
+    for epoch in range(epochs):
         model.train()
+        epoch_loss = 0
         for embeddings, scores, agent_data, filename_tuple in train_loader:
             output, weights = model(embeddings, scores)
             target = embeddings.mean(dim=1)
             loss = criterion(output, target)
+            epoch_loss += loss.item()
+
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+
+        final_loss = epoch_loss / len(train_loader)
+        print(f"Epoch [{epoch + 1}/{epochs}], Loss: {final_loss:.4f}")
 
     all_test_results = []
     with torch.no_grad():
         model.eval()
         for embeddings, scores, agent_data, filename_tuple in test_loader:
             output, weights = model(embeddings, scores)
-            closest_agent = find_closest_agent({a: np.array(data['embedding']) for a, data in agent_data.items()}, output[0].cpu().numpy())
+            closest_agent = find_closest_agent(
+                {a: np.array(data['embedding']) for a, data in agent_data.items()},
+                output[0].cpu().numpy()
+            )
             chosen_agent_correctness = agent_data[closest_agent]['correctness']
+            print(f"Correctness Type: {type(chosen_agent_correctness)}, Value: {chosen_agent_correctness}")  # Print correctness type and value
             result = {
                 'filename': os.path.basename(filename_tuple[0]),
                 'chosen_agent': closest_agent,
-                'correctness': str(chosen_agent_correctness.item() if isinstance(chosen_agent_correctness, torch.Tensor) else chosen_agent_correctness),  # Convert tensor to scalar              
+                'correctness': str(chosen_agent_correctness.item() if isinstance(chosen_agent_correctness, torch.Tensor) else chosen_agent_correctness),
                 'weights': weights.cpu().numpy().tolist(),
                 'output': agent_data[closest_agent]['output'],
                 'bleu_score': float(agent_data[closest_agent]['bleu_score'])
@@ -190,7 +205,11 @@ if __name__ == "__main__":
     summary = {
         'accuracy': f"{accuracy:.2f}%",
         'average_bleu_score': average_bleu,
-        'agent_histogram': agent_histogram
+        'agent_histogram': agent_histogram,
+        'epochs': epochs,
+        'learning_rate': learning_rate,
+        'loss_function': criterion.__class__.__name__,
+        'hidden_sizes': model.hidden_sizes
     }
 
     summary_file = os.path.join(output_dir, 'summary_big_model.json')

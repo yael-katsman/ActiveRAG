@@ -26,5 +26,34 @@
         "epochs": 10,
         "learning_rate": 0.001,
         "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "67.33%",
+        "average_bleu_score": 0.0075509335901420074,
+        "agent_histogram": {
+            "anchoring": 39,
+            "cognition": 40,
+            "logician": 26,
+            "associate": 42,
+            "cot": 3
+        },
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "58.67%",
+        "average_bleu_score": 0.006651166691617593,
+        "agent_histogram": {
+            "cognition": 42,
+            "logician": 19,
+            "associate": 41,
+            "anchoring": 39,
+            "cot": 9
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss",
+        "optimizer": "AdamW"
     }
 ]

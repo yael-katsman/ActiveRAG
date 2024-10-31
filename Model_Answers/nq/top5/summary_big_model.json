@@ -1,0 +1,18 @@
+{
+    "accuracy": "59.33%",
+    "average_bleu_score": 0.008672235753163827,
+    "agent_histogram": {
+        "cognition": 30,
+        "logician": 37,
+        "anchoring": 46,
+        "associate": 35,
+        "cot": 2
+    },
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "loss_function": "MSELoss",
+    "hidden_sizes": [
+        128,
+        64
+    ]
+}
