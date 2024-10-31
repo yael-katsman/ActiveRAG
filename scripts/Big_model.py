@@ -134,7 +134,7 @@ if __name__ == "__main__":
 
         model = AgentWeightingModel()
         learning_rate = 0.001
-        criterion = nn.MSELoss()
+        criterion = nn.CrossEntropyLoss()
         optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.01)        
         epochs = 10
         

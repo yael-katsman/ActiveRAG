@@ -16,5 +16,59 @@
             128,
             64
         ]
+    },
+    {
+        "accuracy": "64.00%",
+        "average_bleu_score": 0.007446883196055573,
+        "agent_histogram": {
+            "anchoring": 55,
+            "logician": 23,
+            "cognition": 31,
+            "associate": 40,
+            "cot": 1
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
+    },
+    {
+        "accuracy": "64.00%",
+        "average_bleu_score": 0.007408801083349768,
+        "agent_histogram": {
+            "anchoring": 56,
+            "logician": 24,
+            "cognition": 30,
+            "associate": 39,
+            "cot": 1
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
+    },
+    {
+        "accuracy": "64.00%",
+        "average_bleu_score": 0.007412585944245333,
+        "agent_histogram": {
+            "anchoring": 54,
+            "logician": 24,
+            "cognition": 30,
+            "associate": 41,
+            "cot": 1
+        },
+        "epochs": 15,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
     }
 ]

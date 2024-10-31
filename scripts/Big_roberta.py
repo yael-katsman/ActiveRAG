@@ -133,9 +133,9 @@ if __name__ == "__main__":
         train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
 
         model = AgentWeightingModel()
-        criterion = nn.MSELoss()
+        criterion = nn.CrossEntropyLoss()
         optimizer = optim.Adam(model.parameters(), lr=0.001)
-        epochs = 10
+        epochs = 15
         learning_rate = 0.001
 
         for epoch in range(epochs):
