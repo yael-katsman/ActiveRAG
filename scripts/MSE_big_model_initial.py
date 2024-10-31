@@ -120,42 +120,40 @@ if __name__ == "__main__":
     logs_dirs = {ds: {k: f"logs/{ds}/top{k}" for k in top_k_values} for ds in datasets}
     embeddings_dirs = {ds: {k: f"embeddings/{ds}/top{k}" for k in top_k_values} for ds in datasets}
 
-    for k in top_k_values:
-        # Gather all train files across datasets for the specific top_k value
-        train_files = []
-        for ds in datasets:
+    train_files = []
+    for ds in datasets:
+        for k in top_k_values:
             data_files = [os.path.join(logs_dirs[ds][k], f) for f in os.listdir(logs_dirs[ds][k]) if f.endswith('.json')]
             embedding_files = [os.path.join(embeddings_dirs[ds][k], os.path.basename(f).replace('.json', '_embeddings.json')) for f in data_files]
             split_idx = int(0.7 * len(data_files))
             train_files.extend(zip(data_files[:split_idx], embedding_files[:split_idx]))
 
-        train_data_files, train_embedding_files = zip(*train_files)
-        train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
+    train_data_files, train_embedding_files = zip(*train_files)
+    train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
 
-        model = AgentWeightingModel()
-        learning_rate = 0.001
-        criterion = nn.MSELoss()
-        optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.01)        
-        epochs = 10
-        
+    model = AgentWeightingModel()
+    criterion = nn.MSELoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    epochs = 10
+    learning_rate = 0.001
 
-        for epoch in range(epochs):
-            model.train()
-            epoch_loss = 0
-            for embeddings, scores, agent_data, filename_tuple in train_loader:
-                output, weights = model(embeddings, scores)
-                target = embeddings.mean(dim=1)
-                loss = criterion(output, target)
-                epoch_loss += loss.item()
+    for epoch in range(epochs):
+        model.train()
+        epoch_loss = 0
+        for embeddings, scores, agent_data, filename_tuple in train_loader:
+            output, weights = model(embeddings, scores)
+            target = embeddings.mean(dim=1)
+            loss = criterion(output, target)
+            epoch_loss += loss.item()
 
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-            print(f"Epoch [{epoch + 1}/{epochs}], Loss: {epoch_loss / len(train_loader):.4f}")
+        print(f"Epoch [{epoch + 1}/{epochs}], Loss: {epoch_loss / len(train_loader):.4f}")
 
-        # Testing only on the remaining 30% of top_k data for each dataset
-        for ds in datasets:
+    for ds in datasets:
+        for k in top_k_values:
             print(f"Testing on dataset: {ds}, top-K: {k}")
             test_files = []
             data_files = [os.path.join(logs_dirs[ds][k], f) for f in os.listdir(logs_dirs[ds][k]) if f.endswith('.json')]
@@ -188,14 +186,23 @@ if __name__ == "__main__":
 
             output_dir = f"Model_Answers/{ds}/top{k}"
             os.makedirs(output_dir, exist_ok=True)
-            output_file = os.path.join(output_dir, 'results_fix_big_model.json')
+            results_file = os.path.join(output_dir, 'results_big_model.json')
 
-            with open(output_file, 'w') as f:
-                json.dump(all_test_results, f, indent=4)
+            # Append or initialize results
+            try:
+                with open(results_file, 'r') as f:
+                    existing_results = json.load(f)
+            except (FileNotFoundError, json.JSONDecodeError):
+                existing_results = []
 
-            accuracy = calc_accuracy(output_file)
-            average_bleu = calc_average_bleu_score(output_file)
-            agent_histogram = get_agent_histogram(output_file)
+            existing_results.extend(all_test_results)
+
+            with open(results_file, 'w') as f:
+                json.dump(existing_results, f, indent=4)
+
+            accuracy = calc_accuracy(results_file)
+            average_bleu = calc_average_bleu_score(results_file)
+            agent_histogram = get_agent_histogram(results_file)
 
             summary = {
                 'accuracy': f"{accuracy:.2f}%",
@@ -204,24 +211,21 @@ if __name__ == "__main__":
                 'epochs': epochs,
                 'learning_rate': learning_rate,
                 'loss_function': criterion.__class__.__name__,
-                'hidden_sizes': model.hidden_sizes,
-                'optimizer': 'AdamW'
+                'hidden_sizes': model.hidden_sizes
             }
 
-            summary_file = os.path.join(output_dir, 'summary_fix_big_model.json')
-                # Load existing summary data or start with an empty list
+            summary_file = os.path.join(output_dir, 'summary_big_model.json')
+
+            # Append or initialize summary
             try:
-                with open(summary_file, 'r', encoding='utf-8') as f:
+                with open(summary_file, 'r') as f:
                     existing_summary = json.load(f)
-                    if isinstance(existing_summary, dict):
-                        existing_summary = [existing_summary]
             except (FileNotFoundError, json.JSONDecodeError):
                 existing_summary = []
 
             existing_summary.append(summary)
 
-            with open(summary_file, 'w', encoding='utf-8') as f:
+            with open(summary_file, 'w') as f:
                 json.dump(existing_summary, f, indent=4)
 
-            print(f"Summary metrics saved in: {summary_file}")
-
+            print(f"Summary metrics for {ds} (top {k}) saved in: {summary_file}")

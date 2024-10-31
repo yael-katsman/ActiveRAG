@@ -1,0 +1,99 @@
+[
+    {
+        "accuracy": "92.00%",
+        "average_bleu_score": 0.012472567987365952,
+        "agent_histogram": {
+            "anchoring": 40,
+            "cognition": 42,
+            "logician": 25,
+            "associate": 42,
+            "cot": 1
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "96.00%",
+        "average_bleu_score": 0.011631110170263553,
+        "agent_histogram": {
+            "anchoring": 45,
+            "cognition": 41,
+            "associate": 36,
+            "logician": 27,
+            "cot": 1
+        },
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "93.33%",
+        "average_bleu_score": 0.01157955270548797,
+        "agent_histogram": {
+            "anchoring": 51,
+            "cognition": 32,
+            "logician": 31,
+            "associate": 36
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss"
+    },
+    {
+        "accuracy": "92.00%",
+        "average_bleu_score": 0.010356110450520997,
+        "agent_histogram": {
+            "logician": 21,
+            "anchoring": 47,
+            "cognition": 42,
+            "associate": 38,
+            "cot": 2
+        },
+        "epochs": 10,
+        "learning_rate": 0.005,
+        "loss_function": "MSELoss"
+    },
+    {
+        "accuracy": "96.00%",
+        "average_bleu_score": 0.010380262664477863,
+        "agent_histogram": {
+            "anchoring": 42,
+            "associate": 36,
+            "logician": 29,
+            "cognition": 42,
+            "cot": 1
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "89.33%",
+        "average_bleu_score": 0.010964286997742873,
+        "agent_histogram": {
+            "cognition": 27,
+            "anchoring": 55,
+            "logician": 17,
+            "associate": 48,
+            "cot": 3
+        },
+        "epochs": 15,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss"
+    },
+    {
+        "accuracy": "90.67%",
+        "average_bleu_score": 0.010639786574522298,
+        "agent_histogram": {
+            "associate": 34,
+            "cot": 1,
+            "anchoring": 53,
+            "cognition": 33,
+            "logician": 29
+        },
+        "epochs": 5,
+        "learning_rate": 0.001,
+        "loss_function": "CrossEntropyLoss"
+    }
+]

@@ -118,7 +118,7 @@ if __name__ == "__main__":
     datasets = ['nq', 'popqa', 'triviaqa', 'webq']
     top_k_values = [5, 10]
     logs_dirs = {ds: {k: f"logs/{ds}/top{k}" for k in top_k_values} for ds in datasets}
-    embeddings_dirs = {ds: {k: f"embeddings/{ds}/top{k}" for k in top_k_values} for ds in datasets}
+    embeddings_dirs = {ds: {k: f"Roberta_embeddings/{ds}/top{k}" for k in top_k_values} for ds in datasets}
 
     for k in top_k_values:
         # Gather all train files across datasets for the specific top_k value
@@ -133,11 +133,10 @@ if __name__ == "__main__":
         train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
 
         model = AgentWeightingModel()
-        learning_rate = 0.001
         criterion = nn.MSELoss()
-        optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.01)        
+        optimizer = optim.Adam(model.parameters(), lr=0.001)
         epochs = 10
-        
+        learning_rate = 0.001
 
         for epoch in range(epochs):
             model.train()
@@ -204,11 +203,10 @@ if __name__ == "__main__":
                 'epochs': epochs,
                 'learning_rate': learning_rate,
                 'loss_function': criterion.__class__.__name__,
-                'hidden_sizes': model.hidden_sizes,
-                'optimizer': 'AdamW'
+                'hidden_sizes': model.hidden_sizes
             }
 
-            summary_file = os.path.join(output_dir, 'summary_fix_big_model.json')
+            summary_file = os.path.join(output_dir, 'summary_big_Roberta.json')
                 # Load existing summary data or start with an empty list
             try:
                 with open(summary_file, 'r', encoding='utf-8') as f:

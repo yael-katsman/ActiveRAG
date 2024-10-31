@@ -1,0 +1,75 @@
+[
+    {
+        "accuracy": "66.67%",
+        "average_bleu_score": 0.006353917885088976,
+        "agent_histogram": {
+            "associate": 41,
+            "anchoring": 48,
+            "logician": 32,
+            "cognition": 27,
+            "cot": 2
+        },
+        "epochs": 10,
+        "learning_rate": 0.005,
+        "loss_function": "CrossEntropyLoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
+    },
+    {
+        "accuracy": "66.67%",
+        "average_bleu_score": 0.006370235325470693,
+        "agent_histogram": {
+            "associate": 41,
+            "anchoring": 48,
+            "logician": 32,
+            "cognition": 26,
+            "cot": 3
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
+    },
+    {
+        "accuracy": "66.00%",
+        "average_bleu_score": 0.0063615062386802165,
+        "agent_histogram": {
+            "associate": 40,
+            "anchoring": 48,
+            "cot": 4,
+            "logician": 31,
+            "cognition": 27
+        },
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "loss_function": "MSELoss",
+        "hidden_sizes": [
+            128,
+            64
+        ]
+    },
+    {
+        "accuracy": "66.67%",
+        "average_bleu_score": 0.006369524609758065,
+        "agent_histogram": {
+            "associate": 42,
+            "anchoring": 47,
+            "logician": 32,
+            "cognition": 26,
+            "cot": 3
+        },
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss",
+        "hidden_sizes": [
+            128,
+            64
+        ],
+        "optimizer": "AdamW"
+    }
+]
