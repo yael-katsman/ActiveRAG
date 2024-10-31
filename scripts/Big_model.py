@@ -10,14 +10,9 @@ import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from collections import Counter
 
-# Download necessary NLTK data
+# Download NLTK data
 nltk.download("stopwords")
 nltk.download("punkt")
-
-epochs = 10
-learning_rate = 0.001
-datasets = ["triviaqa", "popqa", "nq", "webq"]
-topk_values = [5, 10]
 
 def calculate_bleu(reference, candidate):
     ref_tokens = [nltk.word_tokenize(ref.lower()) for ref in reference]
@@ -43,7 +38,6 @@ def extract_agent_data(data_file_path, embedding_file_path):
 
             correctness_key = f"{key}_correctness"
             agent_correctness = data.get(key, {}).get(correctness_key, "False").strip().lower() == "true"
-
             agent_data[key] = {
                 'embedding': embedding,
                 'bleu_score': bleu_score,
@@ -76,120 +70,146 @@ class AgentDataset(Dataset):
         )
 
 class AgentWeightingModel(nn.Module):
-    def __init__(self, embedding_dim=768, num_agents=5):
+    def __init__(self, embedding_dim=768, num_agents=5, hidden_sizes=[128, 64]):
         super(AgentWeightingModel, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(embedding_dim + 1, 128),
-            nn.ReLU(),
-            nn.Linear(128, 64),
-            nn.ReLU(),
-            nn.Linear(64, 1),
-            nn.Sigmoid()  # Following small model's Sigmoid approach
-        )
+        self.hidden_sizes = hidden_sizes
+        layers = []
+        input_dim = embedding_dim + 1
+        for hidden_size in hidden_sizes:
+            layers.append(nn.Linear(input_dim, hidden_size))
+            layers.append(nn.ReLU())
+            input_dim = hidden_size
+        layers.append(nn.Linear(input_dim, 1))
+        layers.append(nn.Sigmoid())
+        self.fc = nn.Sequential(*layers)
 
     def forward(self, agent_embeddings, bleu_scores):
         inputs = torch.cat((agent_embeddings, bleu_scores), dim=-1)
-        logits = self.fc(inputs).squeeze(-1)
-        weighted_embeddings = (logits.unsqueeze(-1) * agent_embeddings).sum(dim=1)
-        return weighted_embeddings, logits
+        weights = self.fc(inputs).squeeze(-1)
+        weighted_embeddings = weights.unsqueeze(-1) * agent_embeddings
+        return weighted_embeddings.sum(dim=1), weights
 
 def find_closest_agent(agent_embeddings, point_in_space):
     point_in_space = point_in_space.reshape(1, -1)
     similarities = {
-        agent: cosine_similarity(np.array(embedding).reshape(1, -1), point_in_space)[0][0]
+        agent: cosine_similarity(embedding.reshape(1, -1), point_in_space)[0][0]
         for agent, embedding in agent_embeddings.items()
     }
     return max(similarities, key=similarities.get)
 
-# Training and Testing Loop
-for dataset in datasets:
-    for topk in topk_values:
-        logs_dir = f"logs/{dataset}/top{topk}"
-        embeddings_dir = f"embeddings/{dataset}/top{topk}"
+def calc_accuracy(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    correct_count = sum(1 for entry in data if entry['correctness'] == "True")
+    return (correct_count / len(data)) * 100 if data else 0
 
-        data_files = [os.path.join(logs_dir, f) for f in os.listdir(logs_dir) if f.endswith('.json')]
-        embedding_files = [
-            os.path.join(embeddings_dir, f"{os.path.splitext(f)[0]}_embeddings.json")
-            for f in os.listdir(logs_dir) if f.endswith('.json')
-        ]
+def calc_average_bleu_score(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    return sum(entry['bleu_score'] for entry in data) / len(data) if data else 0
 
-        assert len(data_files) == len(embedding_files), "Mismatch between data and embedding files."
+def get_agent_histogram(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    agent_counts = Counter(entry['chosen_agent'] for entry in data)
+    return dict(agent_counts)
 
-        train_size = int(0.7 * len(data_files))
-        train_data, test_data = random_split(
-            list(zip(data_files, embedding_files)),
-            [train_size, len(data_files) - train_size]
-        )
+if __name__ == "__main__":
+    datasets = ['nq', 'popqa', 'triviaqa', 'webq']
+    top_k_values = [5, 10]
+    logs_dirs = {ds: {k: f"logs/{ds}/top{k}" for k in top_k_values} for ds in datasets}
+    embeddings_dirs = {ds: {k: f"embeddings/{ds}/top{k}" for k in top_k_values} for ds in datasets}
 
-        train_data_files, train_embedding_files = zip(*train_data)
-        test_data_files, test_embedding_files = zip(*test_data)
+    # Gather all train files from all datasets and top-k values
+    train_files = []
+    for ds in datasets:
+        for k in top_k_values:
+            data_files = [os.path.join(logs_dirs[ds][k], f) for f in os.listdir(logs_dirs[ds][k]) if f.endswith('.json')]
+            embedding_files = [os.path.join(embeddings_dirs[ds][k], os.path.basename(f).replace('.json', '_embeddings.json')) for f in data_files]
+            split_idx = int(0.7 * len(data_files))
+            train_files.extend(zip(data_files[:split_idx], embedding_files[:split_idx]))
 
-        train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
-        test_loader = DataLoader(AgentDataset(test_data_files, test_embedding_files), batch_size=1, shuffle=False)
+    train_data_files, train_embedding_files = zip(*train_files)
+    train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
 
-        model = AgentWeightingModel()
-        criterion = nn.CrossEntropyLoss()
-        optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    model = AgentWeightingModel()
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    epochs = 10
+    learning_rate = 0.001
 
-        # Training loop
-        for epoch in range(epochs):
-            model.train()
-            for embeddings, scores, agent_data, filename_tuple in train_loader:
-                logits = model(embeddings, scores)[1]  # Get logits
-                target_indices = torch.tensor([list(agent_data.keys()).index(find_closest_agent(agent_data, embeddings.mean(dim=1).cpu().numpy()))])
-                loss = criterion(logits, target_indices)
+    for epoch in range(epochs):
+        model.train()
+        epoch_loss = 0
+        for embeddings, scores, agent_data, filename_tuple in train_loader:
+            output, weights = model(embeddings, scores)
+            target = embeddings.mean(dim=1)
+            loss = criterion(output, target)
+            epoch_loss += loss.item()
 
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-            print(f"Dataset: {dataset}, TopK: {topk}, Epoch [{epoch + 1}/{epochs}], Loss: {loss.item():.4f}")
+        print(f"Epoch [{epoch + 1}/{epochs}], Loss: {epoch_loss / len(train_loader):.4f}")
 
-        # Testing loop
-        model.eval()
-        all_test_results = []
-        with torch.no_grad():
-            for embeddings, scores, agent_data, filename_tuple in test_loader:
-                logits = model(embeddings, scores)[1]
-                chosen_agent_idx = logits.argmax(dim=-1).item()
-                chosen_agent = list(agent_data.keys())[chosen_agent_idx]
-                chosen_agent_correctness = agent_data[chosen_agent]['correctness']
+    # Test on each individual dataset and top-k combination
+    for ds in datasets:
+        for k in top_k_values:
+            print(f"Testing on dataset: {ds}, top-K: {k}")
+            test_files = []
+            data_files = [os.path.join(logs_dirs[ds][k], f) for f in os.listdir(logs_dirs[ds][k]) if f.endswith('.json')]
+            embedding_files = [os.path.join(embeddings_dirs[ds][k], os.path.basename(f).replace('.json', '_embeddings.json')) for f in data_files]
+            split_idx = int(0.7 * len(data_files))
+            test_files.extend(zip(data_files[split_idx:], embedding_files[split_idx:]))
 
-                result = {
-                    'filename': os.path.basename(filename_tuple[0]),
-                    'chosen_agent': chosen_agent,
-                    'output': agent_data[chosen_agent]['output'],
-                    'bleu_score': float(agent_data[chosen_agent]['bleu_score']),
-                    'correctness': str(chosen_agent_correctness),
-                    'weights': logits.cpu().numpy().tolist()
-                }
-                all_test_results.append(result)
+            test_data_files, test_embedding_files = zip(*test_files)
+            test_loader = DataLoader(AgentDataset(test_data_files, test_embedding_files), batch_size=1, shuffle=False)
 
-        output_dir = f"Model_Answers/{dataset}/top{topk}"
-        os.makedirs(output_dir, exist_ok=True)
-        output_file = os.path.join(output_dir, 'results_big_model.json')
+            all_test_results = []
+            with torch.no_grad():
+                model.eval()
+                for embeddings, scores, agent_data, filename_tuple in test_loader:
+                    output, weights = model(embeddings, scores)
+                    closest_agent = find_closest_agent(
+                        {a: np.array(data['embedding']) for a, data in agent_data.items()},
+                        output[0].cpu().numpy()
+                    )
+                    chosen_agent_correctness = agent_data[closest_agent]['correctness']
+                    result = {
+                        'filename': os.path.basename(filename_tuple[0]),
+                        'chosen_agent': closest_agent,
+                        'correctness': str(chosen_agent_correctness.item() if isinstance(chosen_agent_correctness, torch.Tensor) else chosen_agent_correctness),
+                        'weights': weights.cpu().numpy().tolist(),
+                        'output': agent_data[closest_agent]['output'],
+                        'bleu_score': float(agent_data[closest_agent]['bleu_score'])
+                    }
+                    all_test_results.append(result)
 
-        with open(output_file, 'w') as f:
-            json.dump(all_test_results, f, indent=4)
+            output_dir = f"Model_Answers/{ds}/top{k}"
+            os.makedirs(output_dir, exist_ok=True)
+            output_file = os.path.join(output_dir, 'results_big_model.json')
 
-        # Calculate metrics for the summary
-        accuracy = calc_accuracy(output_file)
-        average_bleu_score = calc_average_bleu_score(output_file)
-        agent_histogram = get_agent_histogram(output_file)
+            with open(output_file, 'w') as f:
+                json.dump(all_test_results, f, indent=4)
 
-        # Save summary in summary_big_model.json
+            accuracy = calc_accuracy(output_file)
+            average_bleu = calc_average_bleu_score(output_file)
+            agent_histogram = get_agent_histogram(output_file)
+
         summary = {
-            'accuracy': f"{accuracy:.2f}%",
-            'average_bleu_score': average_bleu_score,
-            'agent_histogram': agent_histogram,
-            'epochs': epochs,
-            'learning_rate': learning_rate,
-            'loss_function': "CrossEntropyLoss"
-        }
+              'accuracy': f"{accuracy:.2f}%",
+              'average_bleu_score': average_bleu,
+              'agent_histogram': agent_histogram,
+              'epochs': epochs,
+              'learaning_rate': learning_rate,
+              'loss_function': criterion.__class__.__name__,
+              'hidden_sizes': model.hidden_sizes
+          }
 
         summary_file = os.path.join(output_dir, 'summary_big_model.json')
 
-        # Append or initialize summary
+        # Load existing summary data or start with an empty list
         try:
             with open(summary_file, 'r', encoding='utf-8') as f:
                 existing_summary = json.load(f)
@@ -203,4 +223,4 @@ for dataset in datasets:
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(existing_summary, f, indent=4)
 
-        print(f"Summary metrics for {dataset} (top {topk}) saved in: {summary_file}")
+        print(f"Summary metrics saved in: {summary_file}")

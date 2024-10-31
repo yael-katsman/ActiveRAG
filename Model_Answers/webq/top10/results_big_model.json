@@ -5,11 +5,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19893822073936462,
-                0.19917011260986328,
-                0.19488297402858734,
-                0.19451698660850525,
-                0.19663852453231812
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -23,11 +23,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19801168143749237,
-                0.1924959421157837,
-                0.194398432970047,
-                0.19567197561264038,
-                0.19700412452220917
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -37,21 +37,21 @@
     },
     {
         "filename": "421.json",
-        "chosen_agent": "associate",
+        "chosen_agent": "logician",
         "correctness": "True",
         "weights": [
             [
-                0.19455412030220032,
-                0.19619792699813843,
-                0.19718745350837708,
-                0.19416794180870056,
-                0.19190970063209534
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
-            "Enhanced Reasoning Process:\n\n1. Abraham Lincoln was a member of the Republican Party and won the 1860 presidential election as a Republican.\n2. In the 1864 presidential election, he ran under the banner of the National Union Party to accommodate War Democrats and Bridge partisan politics during the American Civil War.\n\nAnswer:\nAbraham Lincoln was initially part of the Republican Party and later ran as a candidate of the National Union Party in the 1864 presidential election."
+            "Enhanced reasoning process using retrieved knowledge:\n1. Abraham Lincoln was a member of the National Union Party during the 1864 presidential election.\n2. The National Union Party was a temporary coalition that aimed to attract War Democrats and Border State Unionists who would not vote for the Republican Party.\n3. The party consisted of both Democrats and Republicans and was formed in an effort to bridge partisan politics during the American Civil War.\n4. The National Unionists hoped that the new party and the Lincoln-Johnson ticket would emphasize the national character of the war.\n\nAnswer:\nAbraham Lincoln was part of the National Union Party during the 1864 presidential election."
         ],
-        "bleu_score": 0.018621113959331772
+        "bleu_score": 0.013497892499382878
     },
     {
         "filename": "497.json",
@@ -59,11 +59,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1951713263988495,
-                0.20102547109127045,
-                0.19642694294452667,
-                0.19898173213005066,
-                0.19612714648246765
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -77,11 +77,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1989801824092865,
-                0.19858123362064362,
-                0.1968843787908554,
-                0.20327216386795044,
-                0.2006637006998062
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -91,21 +91,21 @@
     },
     {
         "filename": "211.json",
-        "chosen_agent": "cot",
+        "chosen_agent": "cognition",
         "correctness": "True",
         "weights": [
             [
-                0.1966698169708252,
-                0.19820132851600647,
-                0.19560272991657257,
-                0.19439636170864105,
-                0.19639983773231506
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
-            "Reasoning process:\n1. Costa Rica's official currency is the Costa Rican col\u00f3n (CRC).\n2. It is recommended to take some local currency, CRC, when traveling to Costa Rica for small purchases, local transportation, and other expenses.\n3. It is also advisable to carry some US dollars as they are widely accepted in tourist areas and can be used for larger purchases, such as hotel bills and tours.\n4. It is important to have a mix of both local currency and US dollars for convenience and flexibility during the trip.\n\nAnswer:\nIt is recommended to take a combination of Costa Rican col\u00f3n (CRC) and US dollars when traveling to Costa Rica."
+            "Enhanced reasoning process using retrieved knowledge:\n1. Costa Rica's official currency is the Costa Rican col\u00f3n (CRC), not the Costa Rican peso or the US dollar.\n2. It is recommended to take some local currency, CRC, when traveling to Costa Rica for small purchases, local transportation, and other expenses.\n3. US dollars are widely accepted in tourist areas and can be used for larger purchases, such as hotel bills and tours.\n4. When traveling to Costa Rica, it is important to have a mix of both local currency and US dollars for convenience and flexibility during the trip.\n5. Additionally, travelers should be aware that a tourist visa may be required, and it is advisable to have a bank statement with enough money for the visa application process.\n\nAnswer:\nIt is recommended to take a combination of Costa Rican col\u00f3n (CRC) and US dollars when traveling to Costa Rica. Additionally, travelers should be aware of the potential need for a tourist visa and the requirement for a bank statement with enough money for the visa application process."
         ],
-        "bleu_score": 0.010404388213651358
+        "bleu_score": 0.006694811938991355
     },
     {
         "filename": "425.json",
@@ -113,11 +113,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.2011243999004364,
-                0.20330528914928436,
-                0.20063935220241547,
-                0.2059900164604187,
-                0.19956040382385254
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -131,11 +131,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19878600537776947,
-                0.19740381836891174,
-                0.19422873854637146,
-                0.198370099067688,
-                0.19549067318439484
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -149,11 +149,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19797225296497345,
-                0.19416439533233643,
-                0.19437357783317566,
-                0.19774316251277924,
-                0.19550707936286926
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -167,11 +167,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20056875050067902,
-                0.19385108351707458,
-                0.19546149671077728,
-                0.19701141119003296,
-                0.19940990209579468
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -185,11 +185,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20056964457035065,
-                0.19625572860240936,
-                0.19999666512012482,
-                0.19728362560272217,
-                0.19904018938541412
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -203,11 +203,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19372320175170898,
-                0.1925615668296814,
-                0.196727454662323,
-                0.19619759917259216,
-                0.19084687530994415
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -221,11 +221,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19715258479118347,
-                0.19469426572322845,
-                0.19908271729946136,
-                0.20129111409187317,
-                0.1942092776298523
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -235,21 +235,21 @@
     },
     {
         "filename": "134.json",
-        "chosen_agent": "anchoring",
+        "chosen_agent": "associate",
         "correctness": "False",
         "weights": [
             [
-                0.19890102744102478,
-                0.2012459635734558,
-                0.200245201587677,
-                0.19906827807426453,
-                0.19904911518096924
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
-            "The reasoning process is accurate and provides a comprehensive overview of the traditions of Islam. To enhance the understanding of the question, it is important to note that Islam is a diverse religion with various branches and schools of thought, such as Sunni, Shia, Ibadi, and Twelver, each with its own traditions and practices. Additionally, there are smaller sects like Ahmadiyya, and the presence of Druze followers within the Arab Middle Eastern community, which adds to the diversity of Islamic traditions.\n\nAnswer:\nSome of the traditions of Islam include the Five Pillars of Islam, Eid al-Fitr and Eid al-Adha celebrations, Halal and Haram dietary laws, modest dress code, Friday prayer, and the Islamic calendar. These traditions are observed by Muslims worldwide and are integral to the practice of Islam. Additionally, the diverse branches and schools of thought within Islam contribute to a rich tapestry of traditions and cultural practices within the religion."
+            "Reasoning process:\n1. Islam is a religion with a rich tradition and culture, with diverse practices and beliefs.\n2. The traditions of Islam are influenced by the teachings of the Qur'an and the Hadith, as well as regional and cultural variations.\n3. Different schools of thought within Islam, such as Sunni and Shia, have their own traditions and practices.\n\nRetrieved knowledge:\n- The Five Pillars of Islam are fundamental practices that include the declaration of faith, prayer, giving alms, fasting during Ramadan, and pilgrimage to Mecca.\n- Eid al-Fitr and Eid al-Adha are important Islamic holidays marking the end of Ramadan and commemorating the willingness of Ibrahim to sacrifice his son.\n- Halal and Haram dietary laws dictate what is permissible and forbidden for Muslims to consume.\n- Modest dress code and Friday prayer are important traditions in Islam.\n- The Islamic calendar is lunar-based and is used to determine the dates of Islamic holidays and events.\n\nEnhanced reasoning process:\nUnderstanding the diverse traditions within Islam, including the Five Pillars, holidays, dietary laws, dress code, and prayer practices, is essential for comprehending the cultural and religious practices of Muslims worldwide.\n\nAnswer:\nSome of the traditions of Islam include the Five Pillars of Islam, Eid al-Fitr and Eid al-Adha celebrations, Halal and Haram dietary laws, modest dress code, Friday prayer, and the Islamic calendar. These traditions play a significant role in shaping the religious and cultural identity of Muslims and are observed with reverence and devotion."
         ],
-        "bleu_score": 0.004951794501601839
+        "bleu_score": 0.003215873572613616
     },
     {
         "filename": "413.json",
@@ -257,11 +257,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19705678522586823,
-                0.19607819616794586,
-                0.19659675657749176,
-                0.19530579447746277,
-                0.19517052173614502
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -275,11 +275,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20169185101985931,
-                0.19926027953624725,
-                0.19788673520088196,
-                0.19576676189899445,
-                0.1976562887430191
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -293,11 +293,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1962203085422516,
-                0.19539418816566467,
-                0.19733676314353943,
-                0.19750629365444183,
-                0.19401714205741882
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -311,11 +311,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19243697822093964,
-                0.19639278948307037,
-                0.19797606766223907,
-                0.19436000287532806,
-                0.19380459189414978
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -329,11 +329,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19853031635284424,
-                0.19608286023139954,
-                0.1988791525363922,
-                0.19542840123176575,
-                0.2015179693698883
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -347,11 +347,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19453734159469604,
-                0.19559909403324127,
-                0.1996726393699646,
-                0.19319124519824982,
-                0.193584606051445
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -365,11 +365,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20040912926197052,
-                0.20008888840675354,
-                0.19711525738239288,
-                0.19792570173740387,
-                0.19950559735298157
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -383,11 +383,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20075108110904694,
-                0.20062807202339172,
-                0.19952382147312164,
-                0.2009735405445099,
-                0.20007941126823425
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -401,11 +401,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19697123765945435,
-                0.19634582102298737,
-                0.19787771999835968,
-                0.20030070841312408,
-                0.20455293357372284
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -419,11 +419,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20171889662742615,
-                0.1997966170310974,
-                0.19688250124454498,
-                0.19809013605117798,
-                0.19578564167022705
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -437,11 +437,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20058144629001617,
-                0.19788429141044617,
-                0.19510436058044434,
-                0.19799765944480896,
-                0.19558225572109222
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -455,11 +455,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19921493530273438,
-                0.19937847554683685,
-                0.1998106837272644,
-                0.1950068473815918,
-                0.19979077577590942
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -473,11 +473,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1969786286354065,
-                0.199445903301239,
-                0.20127470791339874,
-                0.1965857446193695,
-                0.19965599477291107
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -491,11 +491,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19807475805282593,
-                0.1990574449300766,
-                0.1938692182302475,
-                0.19907380640506744,
-                0.1960536688566208
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -509,11 +509,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19911697506904602,
-                0.1971699595451355,
-                0.19711793959140778,
-                0.19686554372310638,
-                0.19821879267692566
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -527,11 +527,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19733183085918427,
-                0.1965382844209671,
-                0.1973780244588852,
-                0.19700761139392853,
-                0.19628065824508667
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -545,11 +545,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19704225659370422,
-                0.1997363269329071,
-                0.1979602724313736,
-                0.19786493480205536,
-                0.19880713522434235
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -563,11 +563,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.194971963763237,
-                0.19703856110572815,
-                0.19609904289245605,
-                0.19651156663894653,
-                0.19593845307826996
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -581,11 +581,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1952289640903473,
-                0.19532880187034607,
-                0.1993449330329895,
-                0.19714918732643127,
-                0.19689151644706726
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -599,11 +599,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20261985063552856,
-                0.19868358969688416,
-                0.19632388651371002,
-                0.19708821177482605,
-                0.197406604886055
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -617,11 +617,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19762273132801056,
-                0.20142684876918793,
-                0.20233003795146942,
-                0.20176035165786743,
-                0.19944114983081818
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -635,11 +635,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20384447276592255,
-                0.19756115972995758,
-                0.1975225806236267,
-                0.1968395709991455,
-                0.2015146017074585
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -653,11 +653,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1960027813911438,
-                0.1943017691373825,
-                0.19764883816242218,
-                0.1943126618862152,
-                0.1949116587638855
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -671,11 +671,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20115381479263306,
-                0.2026667296886444,
-                0.20007221400737762,
-                0.19986367225646973,
-                0.2011788785457611
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -689,11 +689,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20127186179161072,
-                0.19782572984695435,
-                0.20271775126457214,
-                0.19890564680099487,
-                0.19656018912792206
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -707,11 +707,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20049604773521423,
-                0.19831626117229462,
-                0.19493642449378967,
-                0.19600458443164825,
-                0.19800648093223572
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -725,11 +725,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1938013881444931,
-                0.1950225681066513,
-                0.19716018438339233,
-                0.19589754939079285,
-                0.1960953027009964
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -743,11 +743,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19874395430088043,
-                0.19914716482162476,
-                0.19567812979221344,
-                0.1992991417646408,
-                0.19871275126934052
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -761,11 +761,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1966918259859085,
-                0.19265758991241455,
-                0.19721312820911407,
-                0.1973094642162323,
-                0.1943836212158203
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -779,11 +779,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19955334067344666,
-                0.19856464862823486,
-                0.20007574558258057,
-                0.1952003389596939,
-                0.2009531855583191
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -797,11 +797,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19858169555664062,
-                0.1966330111026764,
-                0.2011164277791977,
-                0.19712604582309723,
-                0.19764883816242218
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -815,11 +815,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19614136219024658,
-                0.19611595571041107,
-                0.198139950633049,
-                0.19703331589698792,
-                0.1931852251291275
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -833,11 +833,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1998862773180008,
-                0.19421613216400146,
-                0.19678913056850433,
-                0.19629353284835815,
-                0.19418726861476898
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -851,11 +851,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19743609428405762,
-                0.1973462700843811,
-                0.19909314811229706,
-                0.19995515048503876,
-                0.19906571507453918
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -869,11 +869,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20162329077720642,
-                0.19507086277008057,
-                0.19629986584186554,
-                0.19431355595588684,
-                0.20380066335201263
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -887,11 +887,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.2014976441860199,
-                0.2018294781446457,
-                0.196953684091568,
-                0.19862079620361328,
-                0.19955705106258392
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -905,11 +905,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.2023061215877533,
-                0.20047789812088013,
-                0.20483513176441193,
-                0.20245210826396942,
-                0.20397791266441345
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -923,11 +923,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20381507277488708,
-                0.19909323751926422,
-                0.1993476152420044,
-                0.19824336469173431,
-                0.19877701997756958
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -941,11 +941,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20068670809268951,
-                0.19989196956157684,
-                0.1993139386177063,
-                0.20147676765918732,
-                0.1973559856414795
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -959,11 +959,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19636425375938416,
-                0.19409066438674927,
-                0.19372636079788208,
-                0.19563379883766174,
-                0.19511087238788605
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -977,11 +977,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20615234971046448,
-                0.1958497315645218,
-                0.1982143521308899,
-                0.20151421427726746,
-                0.20477044582366943
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -995,11 +995,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20071075856685638,
-                0.20184847712516785,
-                0.20313040912151337,
-                0.20021240413188934,
-                0.20036210119724274
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1013,11 +1013,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1989981234073639,
-                0.19827815890312195,
-                0.19963662326335907,
-                0.195950448513031,
-                0.19595156610012054
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1031,11 +1031,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19994275271892548,
-                0.19619116187095642,
-                0.19834139943122864,
-                0.19275109469890594,
-                0.19571731984615326
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1049,11 +1049,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.196088045835495,
-                0.19679640233516693,
-                0.19628728926181793,
-                0.19745971262454987,
-                0.1950249820947647
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1067,11 +1067,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20071834325790405,
-                0.20188000798225403,
-                0.20068196952342987,
-                0.20236963033676147,
-                0.20099225640296936
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1085,11 +1085,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19845013320446014,
-                0.1938767433166504,
-                0.19832386076450348,
-                0.19555075466632843,
-                0.19476069509983063
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1103,11 +1103,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19884127378463745,
-                0.19763341546058655,
-                0.19722777605056763,
-                0.19887058436870575,
-                0.20636974275112152
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1121,11 +1121,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19527675211429596,
-                0.1967722475528717,
-                0.19597390294075012,
-                0.20066788792610168,
-                0.1976463794708252
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1139,11 +1139,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1980227828025818,
-                0.19463928043842316,
-                0.19851218163967133,
-                0.19851113855838776,
-                0.1953863948583603
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1157,11 +1157,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19868439435958862,
-                0.1996438205242157,
-                0.19545616209506989,
-                0.1993197798728943,
-                0.2023758590221405
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1175,11 +1175,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1969269961118698,
-                0.19475512206554413,
-                0.19651015102863312,
-                0.19730083644390106,
-                0.19453567266464233
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1193,11 +1193,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19568969309329987,
-                0.1966375857591629,
-                0.2006901204586029,
-                0.1992098093032837,
-                0.19258025288581848
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1211,11 +1211,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19850103557109833,
-                0.19830408692359924,
-                0.19631347060203552,
-                0.19328534603118896,
-                0.19785304367542267
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1229,11 +1229,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1993502974510193,
-                0.20240595936775208,
-                0.19743621349334717,
-                0.20097588002681732,
-                0.19885161519050598
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1247,11 +1247,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20018495619297028,
-                0.19806304574012756,
-                0.1947958916425705,
-                0.19298790395259857,
-                0.19729168713092804
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1265,11 +1265,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1960761398077011,
-                0.19858838617801666,
-                0.19862499833106995,
-                0.19904501736164093,
-                0.20145195722579956
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1283,11 +1283,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19813305139541626,
-                0.19858627021312714,
-                0.1927841305732727,
-                0.1992712765932083,
-                0.20176540315151215
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1301,11 +1301,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1957700252532959,
-                0.1957976073026657,
-                0.1942211538553238,
-                0.19714803993701935,
-                0.19746078550815582
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1319,11 +1319,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19546720385551453,
-                0.19948884844779968,
-                0.19788844883441925,
-                0.19577546417713165,
-                0.19459649920463562
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1333,21 +1333,21 @@
     },
     {
         "filename": "150.json",
-        "chosen_agent": "cot",
+        "chosen_agent": "cognition",
         "correctness": "False",
         "weights": [
             [
-                0.2012072503566742,
-                0.19584953784942627,
-                0.19695189595222473,
-                0.19567488133907318,
-                0.1985456347465515
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
-            "Reasoning process:\n1. Jordan is a famous former basketball player.\n2. After retiring from playing, he became the principal owner and chairman of the Charlotte Hornets, an NBA team.\n\nAnswer:\nJordan owns the Charlotte Hornets."
+            "knowledge enhanced reasoning process:\n1. Jordan is a famous former basketball player.\n2. After retiring from playing, he became the principal owner and chairman of the Charlotte Hornets, an NBA team.\n3. However, it is important to note that Jordan Racing is owned by Patrick and Debra Jordan, Jordan's parents, which is unrelated to the Charlotte Hornets.\n\nAnswer:\nJordan owns the Charlotte Hornets."
         ],
-        "bleu_score": 0.008349226610096646
+        "bleu_score": 0.005124733433465935
     },
     {
         "filename": "407.json",
@@ -1355,11 +1355,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20015490055084229,
-                0.19717517495155334,
-                0.19660688936710358,
-                0.19671691954135895,
-                0.20111769437789917
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1373,11 +1373,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20318609476089478,
-                0.19884686172008514,
-                0.1997726708650589,
-                0.19881649315357208,
-                0.20214331150054932
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1391,11 +1391,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1984511911869049,
-                0.20009395480155945,
-                0.19920679926872253,
-                0.19998003542423248,
-                0.19707487523555756
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1409,11 +1409,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19516992568969727,
-                0.19665516912937164,
-                0.1972886025905609,
-                0.20382827520370483,
-                0.1958395540714264
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1427,11 +1427,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19385689496994019,
-                0.19354543089866638,
-                0.19224727153778076,
-                0.19642381370067596,
-                0.19479896128177643
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1445,11 +1445,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19687379896640778,
-                0.19288796186447144,
-                0.20033077895641327,
-                0.20179276168346405,
-                0.19714073836803436
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1463,11 +1463,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19783642888069153,
-                0.19687552750110626,
-                0.1971045732498169,
-                0.19749677181243896,
-                0.19744092226028442
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1481,11 +1481,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1983264982700348,
-                0.20243674516677856,
-                0.1987786889076233,
-                0.19839197397232056,
-                0.20048773288726807
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1499,11 +1499,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20045951008796692,
-                0.19840608537197113,
-                0.19625839591026306,
-                0.19736063480377197,
-                0.19862093031406403
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1517,11 +1517,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20236638188362122,
-                0.19732914865016937,
-                0.20120595395565033,
-                0.19905152916908264,
-                0.20050185918807983
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1535,11 +1535,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19612979888916016,
-                0.19959713518619537,
-                0.1973196268081665,
-                0.19709575176239014,
-                0.1986055225133896
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1553,11 +1553,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20175836980342865,
-                0.20197728276252747,
-                0.1979994922876358,
-                0.19653989374637604,
-                0.20133395493030548
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1571,11 +1571,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1961774230003357,
-                0.19678568840026855,
-                0.20001725852489471,
-                0.19992436468601227,
-                0.19686034321784973
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1589,11 +1589,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19898635149002075,
-                0.19866736233234406,
-                0.19917017221450806,
-                0.19842305779457092,
-                0.19704574346542358
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1607,11 +1607,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19760805368423462,
-                0.19645175337791443,
-                0.1984758824110031,
-                0.19559481739997864,
-                0.19572311639785767
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1625,11 +1625,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19757258892059326,
-                0.19937686622142792,
-                0.19672375917434692,
-                0.19910553097724915,
-                0.200180783867836
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1643,11 +1643,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.2000860571861267,
-                0.19859778881072998,
-                0.20087191462516785,
-                0.19906310737133026,
-                0.20217551290988922
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1661,11 +1661,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19885171949863434,
-                0.19500893354415894,
-                0.1983671337366104,
-                0.19530539214611053,
-                0.20032711327075958
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1679,11 +1679,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20364412665367126,
-                0.19705204665660858,
-                0.19751453399658203,
-                0.19971759617328644,
-                0.19793450832366943
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1697,11 +1697,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19353365898132324,
-                0.19624659419059753,
-                0.19971098005771637,
-                0.1960328221321106,
-                0.19490978121757507
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1715,11 +1715,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20143750309944153,
-                0.19834929704666138,
-                0.19721363484859467,
-                0.19592922925949097,
-                0.1990058571100235
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1733,11 +1733,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20008815824985504,
-                0.1975109577178955,
-                0.2007836252450943,
-                0.19371263682842255,
-                0.19722267985343933
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1751,11 +1751,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1986609846353531,
-                0.19592636823654175,
-                0.1971266120672226,
-                0.1979517638683319,
-                0.20112106204032898
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1769,11 +1769,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19628769159317017,
-                0.19784313440322876,
-                0.198296919465065,
-                0.19619889557361603,
-                0.1969904601573944
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1787,11 +1787,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20100855827331543,
-                0.1978670060634613,
-                0.20085453987121582,
-                0.19669225811958313,
-                0.19843322038650513
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1805,11 +1805,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.2007053941488266,
-                0.20109517872333527,
-                0.19812539219856262,
-                0.19983473420143127,
-                0.19883175194263458
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1823,11 +1823,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19790533185005188,
-                0.19689083099365234,
-                0.19995051622390747,
-                0.2086370438337326,
-                0.19445914030075073
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1841,11 +1841,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20042747259140015,
-                0.20166483521461487,
-                0.19671505689620972,
-                0.19707709550857544,
-                0.19942058622837067
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1859,11 +1859,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19644519686698914,
-                0.19507279992103577,
-                0.19641102850437164,
-                0.1949348747730255,
-                0.1959516406059265
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1877,11 +1877,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19677816331386566,
-                0.19578656554222107,
-                0.1937485784292221,
-                0.19673468172550201,
-                0.19590751826763153
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1895,11 +1895,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1993597000837326,
-                0.19719448685646057,
-                0.19864563643932343,
-                0.19746685028076172,
-                0.19590383768081665
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1913,11 +1913,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.198946014046669,
-                0.19309909641742706,
-                0.19145099818706512,
-                0.1984587013721466,
-                0.19668792188167572
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1931,11 +1931,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1947902888059616,
-                0.19493110477924347,
-                0.19482867419719696,
-                0.19549870491027832,
-                0.19498708844184875
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1949,11 +1949,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19868093729019165,
-                0.19422726333141327,
-                0.19686269760131836,
-                0.19325223565101624,
-                0.19654998183250427
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1967,11 +1967,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19657030701637268,
-                0.20009304583072662,
-                0.1990961730480194,
-                0.20149892568588257,
-                0.20417316257953644
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -1985,11 +1985,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1991000473499298,
-                0.20297493040561676,
-                0.19766512513160706,
-                0.1966940313577652,
-                0.1956302672624588
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2003,11 +2003,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20138897001743317,
-                0.2015785574913025,
-                0.20092546939849854,
-                0.20253020524978638,
-                0.20249612629413605
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2021,11 +2021,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19981087744235992,
-                0.19665537774562836,
-                0.19851016998291016,
-                0.19373956322669983,
-                0.20313990116119385
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2039,11 +2039,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19844922423362732,
-                0.19613121449947357,
-                0.19536587595939636,
-                0.19665919244289398,
-                0.19217127561569214
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2057,11 +2057,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19707103073596954,
-                0.1996707022190094,
-                0.1994415670633316,
-                0.19965261220932007,
-                0.1983528733253479
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2075,11 +2075,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20135730504989624,
-                0.20053111016750336,
-                0.20193158090114594,
-                0.1974063664674759,
-                0.20235775411128998
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2093,11 +2093,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20147810876369476,
-                0.19632181525230408,
-                0.19344790279865265,
-                0.19795534014701843,
-                0.20284178853034973
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2111,11 +2111,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20152421295642853,
-                0.19801586866378784,
-                0.19830790162086487,
-                0.1975024789571762,
-                0.20008321106433868
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2129,11 +2129,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19829164445400238,
-                0.19585128128528595,
-                0.19743508100509644,
-                0.1954532116651535,
-                0.19713376462459564
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2147,11 +2147,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19841019809246063,
-                0.1974143385887146,
-                0.19614332914352417,
-                0.19669564068317413,
-                0.1967226266860962
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2165,11 +2165,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19781017303466797,
-                0.1954045295715332,
-                0.1996278315782547,
-                0.19494524598121643,
-                0.19390849769115448
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2183,11 +2183,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1967388540506363,
-                0.1968284547328949,
-                0.19370843470096588,
-                0.19568555057048798,
-                0.19960840046405792
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2201,11 +2201,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20160332322120667,
-                0.20083865523338318,
-                0.20053187012672424,
-                0.1989261955022812,
-                0.19751958549022675
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2219,11 +2219,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1980379819869995,
-                0.19891642034053802,
-                0.20199131965637207,
-                0.1965632438659668,
-                0.19619213044643402
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2237,11 +2237,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20194749534130096,
-                0.1982404738664627,
-                0.20580391585826874,
-                0.19901855289936066,
-                0.19887664914131165
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2255,11 +2255,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19636783003807068,
-                0.19660718739032745,
-                0.1962887942790985,
-                0.20233860611915588,
-                0.19744621217250824
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2273,11 +2273,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19876012206077576,
-                0.19565218687057495,
-                0.1961958110332489,
-                0.19537793099880219,
-                0.19816501438617706
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2291,11 +2291,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19614824652671814,
-                0.1975768506526947,
-                0.19221194088459015,
-                0.19579683244228363,
-                0.1956264227628708
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2309,11 +2309,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19617731869220734,
-                0.19731564819812775,
-                0.1995333880186081,
-                0.19854885339736938,
-                0.20352089405059814
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2327,11 +2327,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19809697568416595,
-                0.19807887077331543,
-                0.19576525688171387,
-                0.19709552824497223,
-                0.19597069919109344
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2345,11 +2345,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19872015714645386,
-                0.19763515889644623,
-                0.1961730718612671,
-                0.20152518153190613,
-                0.19648678600788116
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2363,11 +2363,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19816426932811737,
-                0.19677531719207764,
-                0.19766372442245483,
-                0.19998474419116974,
-                0.1988728642463684
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2381,11 +2381,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.1990537792444229,
-                0.20089377462863922,
-                0.20051424205303192,
-                0.20126847922801971,
-                0.2032807469367981
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2399,11 +2399,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20108190178871155,
-                0.19727353751659393,
-                0.19911810755729675,
-                0.19808131456375122,
-                0.20115986466407776
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2417,11 +2417,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.2031320184469223,
-                0.200395405292511,
-                0.19954995810985565,
-                0.1993621438741684,
-                0.20029325783252716
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2435,11 +2435,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1976337879896164,
-                0.19650687277317047,
-                0.19550159573554993,
-                0.19513556361198425,
-                0.19726982712745667
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2453,11 +2453,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19841481745243073,
-                0.19847823679447174,
-                0.1968732625246048,
-                0.19621650874614716,
-                0.19632117450237274
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2471,11 +2471,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.1967247724533081,
-                0.1965395212173462,
-                0.1980457901954651,
-                0.1950128972530365,
-                0.19799232482910156
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2489,11 +2489,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20263665914535522,
-                0.2011914849281311,
-                0.1991412341594696,
-                0.19665312767028809,
-                0.20018556714057922
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2507,11 +2507,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20050519704818726,
-                0.1962854266166687,
-                0.1976773738861084,
-                0.19872553646564484,
-                0.1960669904947281
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2525,11 +2525,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19471782445907593,
-                0.19563765823841095,
-                0.1983651965856552,
-                0.1963852047920227,
-                0.19919808208942413
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2543,11 +2543,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20159243047237396,
-                0.19618387520313263,
-                0.20199885964393616,
-                0.2014302909374237,
-                0.19973155856132507
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2561,11 +2561,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20083318650722504,
-                0.19624167680740356,
-                0.19749635457992554,
-                0.19866108894348145,
-                0.1997874230146408
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2579,11 +2579,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.2008887082338333,
-                0.19784308969974518,
-                0.19725072383880615,
-                0.1962442547082901,
-                0.19351737201213837
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2597,11 +2597,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20421376824378967,
-                0.19935615360736847,
-                0.20142576098442078,
-                0.19809968769550323,
-                0.19207051396369934
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2615,11 +2615,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.20189453661441803,
-                0.20075345039367676,
-                0.20089980959892273,
-                0.2000274509191513,
-                0.19837892055511475
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2633,11 +2633,11 @@
         "correctness": "False",
         "weights": [
             [
-                0.19826138019561768,
-                0.19540095329284668,
-                0.19627508521080017,
-                0.19803281128406525,
-                0.19665782153606415
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2651,11 +2651,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19419312477111816,
-                0.1980743259191513,
-                0.1979236602783203,
-                0.20121249556541443,
-                0.19778944551944733
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2669,11 +2669,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.19772012531757355,
-                0.19641992449760437,
-                0.19519902765750885,
-                0.1939699798822403,
-                0.19729731976985931
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
@@ -2687,11 +2687,11 @@
         "correctness": "True",
         "weights": [
             [
-                0.20949941873550415,
-                0.20706117153167725,
-                0.20287200808525085,
-                0.2006785273551941,
-                0.19716733694076538
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
             ]
         ],
         "output": [
