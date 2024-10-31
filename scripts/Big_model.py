@@ -96,7 +96,7 @@ class AgentWeightingModel(nn.Module):
 def find_closest_agent(agent_embeddings, point_in_space):
     point_in_space = point_in_space.reshape(1, -1)
     similarities = {
-        agent: cosine_similarity(embedding.reshape(1, -1), point_in_space)[0][0]
+        agent: cosine_similarity(np.array(embedding).reshape(1, -1), point_in_space)[0][0]
         for agent, embedding in agent_embeddings.items()
     }
     return max(similarities, key=similarities.get)
