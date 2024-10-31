@@ -14,7 +14,7 @@ from collections import Counter
 nltk.download("stopwords")
 nltk.download("punkt")
 
-epochs = 10
+epochs = 7
 learning_rate = 0.001
 datasets = ["triviaqa", "popqa", "nq", "webq"]
 topk_values = [5, 10]  # Iterate over these values instead of passing them as arguments
@@ -161,8 +161,7 @@ for dataset in datasets:
 
         model = AgentWeightingModel()
         criterion = nn.CrossEntropyLoss()
-        optimizer = optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.01)
-
+        optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
         # Training loop
         for epoch in range(epochs):
@@ -218,9 +217,7 @@ for dataset in datasets:
             'agent_histogram': agent_histogram,
             'epochs': epochs,
             'learning_rate': learning_rate,
-            'loss_function': "CrossEntropyLoss",
-            'optimizer' : "AdamW"
-
+            'loss_function': "CrossEntropyLoss"
         }
 
         summary_file = os.path.join(output_dir, 'summary_try.json')

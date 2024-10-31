@@ -10,20 +10,20 @@ from nltk.corpus import stopwords
 nltk.download("stopwords")
 nltk.download("punkt")
 
-# Initialize BERT tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-model = AutoModel.from_pretrained("bert-base-uncased")
+# Initialize RoBERTa tokenizer and model
+tokenizer = AutoTokenizer.from_pretrained("roberta-base")
+model = AutoModel.from_pretrained("roberta-base")
 
 # Set stop words
 stop_words = set(stopwords.words("english"))
 
 def preprocess_text(text):
-    """Preprocess text by removing non-alphabetic characters and stopwords."""
-    words = re.findall(r'\b\w+\b', text.lower())
+    """Preprocess text by removing stopwords (optional for RoBERTa)."""
+    words = re.findall(r'\b\w+\b', text)
     return ' '.join([word for word in words if word not in stop_words])
 
 def get_embedding(text):
-    """Generate a 768-dimensional BERT embedding for a given text."""
+    """Generate a 768-dimensional RoBERTa embedding for a given text."""
     inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
     with torch.no_grad():
         outputs = model(**inputs)
@@ -59,7 +59,7 @@ def process_json_files_in_directory(directory):
     for file_name in os.listdir(directory):
         if file_name.endswith('.json'):
             input_path = os.path.join(directory, file_name)
-            output_dir = directory.replace('logs', 'embeddings')
+            output_dir = directory.replace('logs', 'Roberta_embeddings')
             os.makedirs(output_dir, exist_ok=True)
 
             output_path = os.path.join(output_dir, file_name.replace('.json', '_embeddings.json'))
