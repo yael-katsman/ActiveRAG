@@ -1,5 +1,4 @@
-import csv
-import numpy as np
+import json
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
@@ -10,23 +9,26 @@ args = parser.parse_args()
 dataset = args.dataset
 topk = args.topk
 
-correctness_columns = ['anchoring_correctness', 'associate_correctness', 'logician_correctness', 'cognition_correctness']
-
-def evaluate(file_name):
-    with open(file_name, 'r', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
-        data = list(reader)
-
-    for column in correctness_columns:
-        column_accuracy = calculate_accuracy(data, column)
-        print(f"{file_name} {column} Accuracy: {column_accuracy:.2f}%")
-
-def calculate_accuracy(data, column):
-    correctness_values = [row[column] for row in data]
-    accuracy = 100 * np.mean([1 if correctness == 'True' else 0 for correctness in correctness_values])
-    return accuracy
+num_anchoring = 0
+num_associate=0
+num_logician=0
+num_cognition=0
 
 
-file_name = f'log_2/{dataset}/top{topk}/prompt_og.csv'
+for i in range(500):
+        file_path = f'logs/{dataset}/top{topk}/{i}.json'
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            if data['anchoring']['anchoring_correctness'] == 'True':
+                num_anchoring+=1
+            if data['associate']['associate_correctness'] == 'True':
+                num_associate+=1
+            if data['logician']['logician_correctness'] == 'True':
+                num_logician+=1
+            if data['cognition']['cognition_correctness'] == 'True':
+                num_cognition+=1
 
-evaluate(file_name)
+print(f"anchoring: {num_anchoring/500}")
+print(f"associate: {num_associate/500}")
+print(f"logician: {num_logician/500}")
+print(f"cognition: {num_cognition/500}")

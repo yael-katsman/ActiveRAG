@@ -21,7 +21,7 @@ def calculate_bleu(reference, candidate):
     smoothie = SmoothingFunction().method4
     return sentence_bleu(reference_tokens, candidate_tokens, smoothing_function=smoothie)
 
-csv_file_path = f'log_2/{dataset}/top{topk}/prompt_bleu.csv'
+csv_file_path = f'logs/{dataset}/top{topk}/prompt_bleu.csv'
 csv_columns = ['id', 'anchoring_output', 'anchoring_bleu', 'associate_output', 'associate_bleu',
                'logician_output', 'logician_bleu', 'cognition_output', 'cognition_bleu', 'true_answer']
 
@@ -30,24 +30,24 @@ with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
     csv_writer.writeheader()
 
     for i in range(500):
-        file_path = f'log_2/{dataset}/top{topk}/{dataset}_idx_{i}.json'
+        file_path = f'logs/{dataset}/top{topk}/{i}.json'
 
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = json.load(file)
 
-                answer_key = data["question_info"]["__answers__"]
+                answer_key = data["true_answer"]
 
-                anchoring_output = data["anchoring"][-1]["content"]
+                anchoring_output = data["anchoring"]["anchoring_output"]
                 anchoring_bleu = calculate_bleu(answer_key, anchoring_output)
 
-                associate_output = data["associate"][-1]["content"]
+                associate_output = data["associate"]["associate_output"]
                 associate_bleu = calculate_bleu(answer_key, associate_output)
 
-                logician_output = data["logician"][-1]["content"]
+                logician_output = data["logician"]["logician_output"]
                 logician_bleu = calculate_bleu(answer_key, logician_output)
 
-                cognition_output = data["cognition"][-1]["content"]
+                cognition_output = data["cognition"]["cognition_output"]
                 cognition_bleu = calculate_bleu(answer_key, cognition_output)
 
                 csv_writer.writerow(
