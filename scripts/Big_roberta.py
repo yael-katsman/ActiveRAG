@@ -131,12 +131,11 @@ if __name__ == "__main__":
 
         train_data_files, train_embedding_files = zip(*train_files)
         train_loader = DataLoader(AgentDataset(train_data_files, train_embedding_files), batch_size=2, shuffle=True)
-
-        model = AgentWeightingModel()
-        criterion = nn.CrossEntropyLoss()
-        optimizer = optim.Adam(model.parameters(), lr=0.001)
-        epochs = 15
         learning_rate = 0.001
+        model = AgentWeightingModel()
+        criterion = nn.MSELoss()
+        optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.01)
+        epochs = 15
 
         for epoch in range(epochs):
             model.train()
@@ -203,7 +202,8 @@ if __name__ == "__main__":
                 'epochs': epochs,
                 'learning_rate': learning_rate,
                 'loss_function': criterion.__class__.__name__,
-                'hidden_sizes': model.hidden_sizes
+                'hidden_sizes': model.hidden_sizes,
+                'optimizer': optimizer.__class__.__name__
             }
 
             summary_file = os.path.join(output_dir, 'summary_big_Roberta.json')
