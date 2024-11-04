@@ -82,17 +82,19 @@ Our project used several baseline models to evaluate performance:
 
 ### Small models
 
-| Dataset   | Embedding    | Retrieval Setting | Epochs | Learning Rate | Loss Function    |
-|-----------|-----------|-------------------|--------|---------------|------------------|
-| NQ        | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          |
-| PopQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss |
-| TriviaQA  | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          |
-| WebQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss |
-| NQ        | RoBERTa   | Top 10           | 10     | 0.005         | MSELoss          |
-| PopQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss |
-| TriviaQA  | RoBERTa   | Top 10           | 10     | 0.01          | CrossEntropyLoss |
-| WebQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss |
 
+| Dataset   | Embedding | Retrieval Setting | Epochs | Learning Rate | Loss Function    | Optimizer |
+|-----------|-----------|-------------------|--------|---------------|------------------|-----------|
+| NQ        | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          | Adam      |
+| PopQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss | AdamW     |
+| TriviaQA  | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          | Adam      |
+| WebQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss | Adam      |
+| NQ        | RoBERTa   | Top 10           | 10     | 0.005         | MSELoss          | AdamW     |
+| PopQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss | AdamW     |
+| TriviaQA  | RoBERTa   | Top 10           | 10     | 0.01          | CrossEntropyLoss | AdamW     |
+| WebQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss | AdamW     |
+
+This table now includes the optimizer used for each dataset and retrieval setting. Let me know if further modifications are needed!
 ### Big models
 
 | Embedding | Retrieval Setting | Epochs | Learning Rate | Loss Function | Optimizer |
