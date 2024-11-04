@@ -26,6 +26,28 @@ ACTIVERAG is an innovative framework designed to enhance LLMs by shifting from p
 
 Our project focuses on enhancing the Associate agent within ACTIVERAG by employing prompt engineering techniques such as iterative refinement, chain of thought prompting, and role assignment. We developed two modified prompts and tested these enhancements on the Natural Questions (NQ) and TriviaQA datasets.
 
+## models
+### Small models
+
+| Dataset   | Model     | Retrieval Setting | Epochs | Learning Rate | Loss Function    |
+|-----------|-----------|-------------------|--------|---------------|------------------|
+| NQ        | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          |
+| PopQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss |
+| TriviaQA  | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          |
+| WebQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss |
+| NQ        | RoBERTa   | Top 10           | 10     | 0.005         | MSELoss          |
+| PopQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss |
+| TriviaQA  | RoBERTa   | Top 10           | 10     | 0.01          | CrossEntropyLoss |
+| WebQA     | BERT      | Top 10           | 10     | 0.01          | CrossEntropyLoss |
+
+### Big models
+
+| Retrieval Setting | Learning Rate | Epochs | Loss Function | Optimizer |
+|-------------------|---------------|--------|---------------|-----------|
+| Top 10           | 0.01          | 10     | MSELoss       | AdamW     |
+| Top 5            | 0.001         | 10     | MSELoss       | AdamW     |
+
+
 
 ## Prerequisites
 To use ActiveRAG, you will need the following dependencies installed on your machine:
