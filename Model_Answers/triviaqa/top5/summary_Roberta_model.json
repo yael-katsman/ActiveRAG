@@ -54,6 +54,7 @@
         "epochs": 10,
         "learning_rate": 0.005,
         "loss_function": "MSELoss"
+	"optimizer": "AdamW"
     },
     {
         "accuracy": "93.33%",
@@ -68,6 +69,7 @@
         "epochs": 10,
         "learning_rate": 0.001,
         "loss_function": "CrossEntropyLoss"
+	"optimizer": "AdamW"
     },
     {
         "accuracy": "93.33%",
@@ -82,6 +84,7 @@
         "epochs": 15,
         "learning_rate": 0.001,
         "loss_function": "CrossEntropyLoss"
+	"optimizer": "AdamW"
     },
     {
         "accuracy": "91.33%",
