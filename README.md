@@ -7,11 +7,9 @@
 
 ## Overview
 
-ACTIVERAG is an innovative framework designed to enhance LLMs by shifting from passive knowledge acquisition to an active learning approach. Unlike conventional RAG models, ACTIVERAG dynamically integrates external knowledge with the model’s existing understanding through a multi-agent system. This system includes the Anchoring agent, which grounds information in relevant contexts; the Logician, which maintains logical coherence; the Cognition agent, which aligns new data with the model’s existing knowledge structures; and the Associate agent, which links new information with prior knowledge to enhance reasoning. 
+This project extends the ACTIVERAG framework to improve Large Language Model (LLM) performance on knowledge-intensive question-answering tasks by addressing limitations in traditional Retrieval-Augmented Generation (RAG) systems. Conventional RAG models retrieve information passively, often leading to hallucinations, incomplete answers, and poor contextual integration. ACTIVERAG introduced a multi-agent approach with agents like Anchoring, Logician, Cognition, and Associate, each contributing unique reasoning and retrieval capabilities. However, previous implementations generated separate outputs from each agent, resulting in fragmented responses.
 
-Our project focuses on enhancing the Associate agent within ACTIVERAG by employing prompt engineering techniques such as iterative refinement, chain of thought prompting, and role assignment. We developed two modified prompts and tested these enhancements on the Natural Questions (NQ) and TriviaQA datasets.
-
-
+AURA (ActiveRAG Unified Agent Model) consolidates multiple agents into a unified output by embedding each agent’s response with BERT and dynamically assigning weights through a neural network. This setup selects the most contextually relevant response by locating the agent output closest to a central embedding point. AURA’s dynamic agent weighting system adapts to the specific needs of each query, resulting in more accurate and contextually aligned answers.
 
 ## Prerequisites
 You will need the following dependencies installed on your machine:
@@ -60,22 +58,31 @@ To change the model or the evaluation metrics, run the scripts according to the 
 ## **File description**
 
 
-### **Prompts**
-The prompts used for *ActiveRAG* can be found in the *SRC* folder.
 
-## Baseline Models
+
+
+## Expirements
+## Setups
+
+### Baseline Models
 Our project used several baseline models to evaluate performance:
-1. Vanilla RAG: A standard RAG model that retrieves relevant passages and generates responses.
-2.	Chain-of-Thought (CoT): A reasoning approach that prompts models to generate step-by-step explanations.
-3.	GPT-4.0 Mini Model: A budget-friendly, multimodal variant of GPT-4 designed for smaller tasks, focusing on cost-efficiency and speed, primarily used in our experiments.
-4.	GPT-4 Turbo: A high-performance variant of GPT-4 that offers superior accuracy and output quality, used for additional evaluations in scenarios where accuracy is critical.
+
+1.ChatGPT-3.5: This model was tested without retrieval-augmented generation (RAG), relying solely on its internal knowledge without incorporating external information. 
+
+2.Chain of Thought): The CoT model generates intermediate reasoning steps to improve answer quality.
+
+3.Guideline: This baseline uses guided question answering without retrieval augmentation, providing structured answer generation without external information.
+
+4.Vanilla RAG: This model represents a standard retrieval-augmented generation approach, where the retrieved paragraphs are appended to the question before being passed through the model. 
+
+5.Self-Rerank: This baseline model retrieves and ranks potential answers by relevance, selecting the best match.
+
+6.Self-Refine: Similar to Self-Rerank, Self-Refine retrieves potential answers but iteratively refines the response based on contextual clues. 
 
 
-## Results
-## models
 ### Small models
 
-| Dataset   | Model     | Retrieval Setting | Epochs | Learning Rate | Loss Function    |
+| Dataset   | Embedding    | Retrieval Setting | Epochs | Learning Rate | Loss Function    |
 |-----------|-----------|-------------------|--------|---------------|------------------|
 | NQ        | RoBERTa   | Top 5            | 10     | 0.001         | MSELoss          |
 | PopQA     | RoBERTa   | Top 5            | 10     | 0.01          | CrossEntropyLoss |
@@ -88,12 +95,33 @@ Our project used several baseline models to evaluate performance:
 
 ### Big models
 
-| Retrieval Setting | Learning Rate | Epochs | Loss Function | Optimizer |
-|-------------------|---------------|--------|---------------|-----------|
-| Top 10           | 0.01          | 10     | MSELoss       | AdamW     |
-| Top 5            | 0.001         | 10     | MSELoss       | AdamW     |
+| Embedding | Retrieval Setting | Epochs | Learning Rate | Loss Function | Optimizer |
+|-----------|-------------------|--------|---------------|---------------|-----------|
+| BERT      | Top 5            | 10     | 0.001         | MSELoss       | AdamW     |
+| BERT      | Top 10           | 10     | 0.01          | MSELoss       | AdamW     |
 
-Table 1-Accuracy Comparison of ACTIVERAG Agents and AURA Models
+## Results
+### Table 1-Accuracy Comparison of ACTIVERAG Agents and AURA Models
+![Table 1-Accuracy Comparison of ACTIVERAG Agents and AURA Models
+](fig/Results-1.png)
+The Best Small Model consistently exceeds the accuracy of individual ACTIVERAG agents across all datasets and retrieval settings, achieving up to 96.00% on TriviaQA and 73.33% on PopQA in the top-10 setup, outperforming agents like Anchoring and Cognition. In contrast, the Big Model, trained across datasets, reaches competitive accuracy (e.g., 92.67% on TriviaQA and 71.33% on PopQA) but generally falls short of the small model's fine-tuned performance.
+
+### Table 2-BLEU Comparison of ACTIVERAG Agents and AURA Models
+![Table 2--BLEU Comparison of ACTIVERAG Agents and AURA Models
+](fig/Results-2.png)
+The Best Small Model achieves the highest BLEU scores across most datasets and retrieval settings, showing superior alignment with correct answers (e.g., 0.113 on TriviaQA and 0.071 on PopQA in the top-5 setting). The Big Model performs competitively, with BLEU scores close to those of individual agents (e.g., 0.081 on NQ in the top-10 setting) but generally lower than the small model, highlighting the small model’s enhanced contextual relevance through dataset-specific fine-tuning.
+
+### Table 3-Accuracy Comparison of AURA Models and Baseline Models
+![Table 3-Accuracy Comparison of AURA Models and Baseline Models
+](fig/Results-3.png)
+The Best Small Model consistently achieves the highest accuracy across all datasets and retrieval settings, outperforming baseline models such as ChatGPT-3.5, CoT, and Vanilla RAG (e.g., 96.00% on TriviaQA and 73.33% on PopQA in the top-10 setting). The Big Model performs competitively, often surpassing baseline models (e.g., 91.33% on TriviaQA in the top-5 setting), but generally falls short of the best small model’s fine-tuned accuracy.
+
+### Figure 1-Agent Selection Frequency Across Datasets
+![fig1](fig/fig1.png)
+The bar plot illustrates the selection frequency of each agent across the four datasets during the testing of each small model. This figure demonstrates that our model dynamically utilizes different agents rather than relying on a single agent consistently.
+This diversity in agent selection highlights our model's adaptive mechanism, where it assigns dynamic weights to agents based on the context of each query. This adaptability contributed to improved accuracy and contextual relevance in our results, as the model could leverage the unique strengths of each agent to generate a more comprehensive and accurate response.
+
+
 
 ## Contact
 For any questions or issues regarding this project, feel free to contact us at  [yael-k@campus.technion.ac.il],[hillysegal@campus.technion.ac.il] ,[ronshahar@campus.technion.ac.il].
