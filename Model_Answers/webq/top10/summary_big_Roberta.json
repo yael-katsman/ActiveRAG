@@ -127,5 +127,24 @@
             64
         ],
         "optimizer": "AdamW"
+    },
+    {
+        "accuracy": "60.67%",
+        "average_bleu_score": 0.007467806337267587,
+        "agent_histogram": {
+            "cognition": 28,
+            "anchoring": 50,
+            "associate": 48,
+            "logician": 21,
+            "cot": 3
+        },
+        "epochs": 15,
+        "learning_rate": 0.001,
+        "loss_function": "MSELoss",
+        "hidden_sizes": [
+            128,
+            64
+        ],
+        "optimizer": "AdamW"
     }
 ]

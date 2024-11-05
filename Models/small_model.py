@@ -9,6 +9,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from collections import Counter
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning, message="The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols")
+warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 # Download necessary NLTK data
 nltk.download("stopwords")
