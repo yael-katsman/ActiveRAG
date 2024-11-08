@@ -23,7 +23,7 @@
 
 This project extends the ACTIVERAG framework to improve Large Language Model (LLM) performance on knowledge-intensive question-answering tasks by addressing limitations in traditional Retrieval-Augmented Generation (RAG) systems. Conventional RAG models retrieve information passively, often leading to hallucinations, incomplete answers, and poor contextual integration. ACTIVERAG introduced a multi-agent approach with agents like Anchoring, Logician, Cognition, and Associate, each contributing unique reasoning and retrieval capabilities. However, previous implementations generated separate outputs from each agent, resulting in fragmented responses.
 
-AURA (ActiveRAG Unified Agent Model) consolidates multiple agents into a unified output by embedding each agent’s response with BERT and dynamically assigning weights through a neural network. This setup selects the most contextually relevant response by locating the agent output closest to a central embedding point. AURA’s dynamic agent weighting system adapts to the specific needs of each query, resulting in more accurate and contextually aligned answers.
+AURA (ActiveRAG Unified Agent Model) consolidates multiple agents into a unified output by embedding each agent’s response with BERT or RoBERTa and dynamically assigning weights through a neural network. This setup selects the most contextually relevant response by locating the agent output closest to a central embedding point. AURA’s dynamic agent weighting system adapts to the specific needs of each query, resulting in more accurate and contextually aligned answers.
 
 ## Prerequisites
 You will need the following dependencies installed on your machine:
@@ -44,7 +44,7 @@ To run the small model:
 ```bash
 python -m Models.small_model --dataset nq --topk 5
 ```
-To run the big model
+To run the big model:
 
 ```bash
 python -m Models.big_model --dataset nq --topk 5
