@@ -77,7 +77,7 @@ Our project used several baseline models to evaluate performance:
 
 1.ChatGPT-3.5: This model was tested without retrieval-augmented generation (RAG), relying solely on its internal knowledge without incorporating external information. 
 
-2.Chain of Thought): The CoT model generates intermediate reasoning steps to improve answer quality.
+2.Chain-of-Thought: The CoT model generates intermediate reasoning steps to improve answer quality.
 
 3.Guideline: This baseline uses guided question answering without retrieval augmentation, providing structured answer generation without external information.
 
